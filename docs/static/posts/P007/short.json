@@ -1,0 +1,7 @@
+{
+  "title1": "SPECTRO",
+  "title2": "VER.1",
+  "id": "P007",
+  "date": "10.12.2019",
+  "description": "My purpose in this project was to built a spectroscope to analyze plasma in our fusor chamber. I knew that we didn’t need accuracy of lab grade spectroscope so I decided to make my own. To cut the cost I bought cheapest camera due to 640px horizontal resolution I was convinced it was enough. And it was… But, very low sensitivity of sensor and high noise levels made this camera useless if it comes to analyzing light sources as weak as glow discharge in our chamber. Nevertheless I still managed to use it to measure some basics stuff. Next version of spectroscope will use prism instead of diffraction grating (to minimize loss) and will have much better sensor than one used in this project."
+}

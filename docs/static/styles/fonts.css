@@ -1,0 +1,29 @@
+@font-face {
+    font-family: ImpactuDesu;
+    src: url("../fonts/impact.ttf");
+}
+
+@font-face {
+    font-family: ImpactedDesu;
+    src: url("../fonts/impacted.ttf");
+}
+
+@font-face {
+    font-family: UnixelDesu;
+    src: url("../fonts/unixel-Regular.ttf");
+}
+
+@font-face {
+    font-family: BrutaluDesu;
+    src: url("../fonts/brutalistmono.ttf");
+}
+
+@font-face {
+    font-family: PTMono;
+    src: url("../fonts/ptmono.ttf");
+}
+
+/*
+Copyright 2023 The Unixel Project Authors (https://github.com/MDarvishi5124/Unixel)
+https://fontesk.com/license/free-for-commercial-use,ofl-gpl/
+*/

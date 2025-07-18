@@ -1,0 +1,92 @@
+#cds_body {
+
+    counter-reset: cd-counter; /* Create a cd-counter */
+    background-color: black;
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    padding: 40px;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+#cds_content {
+    margin-top: 8vh;
+    margin-left: var(--main-borders);
+    margin-right: var(--main-borders);
+    margin-bottom: auto;
+    width: 100%;
+    max-width: 1240px;
+    min-width: 460px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    justify-content: center;
+    align-items: center;
+    font-family: BrutaluDesu;
+    color: var(--egg-white);
+
+}
+
+#cds_content p {
+    font-size: 16px;
+    white-space: normal;
+    word-wrap: break-word;
+    margin-bottom: -10px;
+}
+
+#cds_content h1 {
+    font-family: ImpactuDesu;
+    font-size: 44px;
+}
+
+#home {
+    top: 0;
+    right: 0;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    z-index: 66;
+}
+
+#home img {
+    width: 100%;
+    height: 100%;
+}
+
+#showcase {
+    width: min(90svw, 1200px);
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+    gap: 20px; /* Adjust gap between grid items */
+
+    padding: 20px; /* Adjust padding inside the showcase container */
+    box-sizing: border-box;
+}
+
+.cd {
+    display: flex;
+    flex-direction: column; /* Arrange image and text vertically */
+    justify-content: flex-start; /* Align items at the start */
+    align-items: center; /* Center items horizontally */
+    box-sizing: border-box;
+    padding: 0;
+    overflow: hidden; /* Ensure any overflow is hidden */
+}
+
+.cd img {
+    width: 100%; /* Ensure the image takes up the full width of its container */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: contain; /* Ensure the entire image is visible within the container */
+    aspect-ratio: 1; /* Ensure the image is square */
+}
+
+#showcase p {
+    text-align: center; /* Center the text */
+    font-size: 0.8vmin; /* Adjust font size as needed */
+    font-family: BrutaluDesu;
+    color: var(--egg-white);
+}

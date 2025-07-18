@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>POST</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../../styles/fonts.css">
+    <link rel="stylesheet" href="../../styles/transitions.css">
+    <link rel="stylesheet" href="../../styles/global.css">
+    <link rel="stylesheet" href="../../styles/post.css">
+    <script type="text/javascript" src="../../scripts/global.js"></script>
+
+
+  </head>
+  <body id="post_body">
+    <audio id="hover" src="../../sounds/hover.wav"></audio>
+    <audio id="click" src="../../sounds/click.wav"></audio>
+
+    <div class="transition transition-1 is-active"></div>
+    <div id="home"><img src="../../graphics/home.svg" onmouseenter="handleHover()" onmousedown='clickWaitGo(event, "/")'></div>
+
+    <div id="post_content">
+
+      <p>I recently tested effectiveness of combining two filters in purpose of creating cheap UV pass filter. I bought two UV filters ZWB1 and ZWB3, IR filter and two blue colored glass filters used in astronomy from delta and omegon. Blue filters ( #38a ) are “same ones” from different manufactures but their transmission statistics differ.</p>
+      <img src="transmission.jpg">
+      <p>Apart from the fact that the blue glass filters are visibly different color ( you can spot the difference with naked eye ) they both cut off infrared leakage very well. Omegon version is slightly better, but it’s possible that this producer releases some batches with different characteristics. The price, which is about only $12 compensates for divergence, and with use of ZWB1 or ZWB3 filter produces fine isolated UV output.</p>
+      <img src="uvsource.jpg">
+      <p>Both filters transmit UV with almost no loss. The presented IR filter is: ProPlanet 742 IR. In conclusion for decent and cheap UV filter you can combine blue glass filter #38a and ZWB1 (more light, wider spectrum) or ZWB3 (narrower spectrum, less IR leakage).</p>
+
+      <div style="min-height: 10vh;"></div>
+    </div>
+
+
+  <script type="text/javascript" src="../../scripts/transition.js"></script>
+  </body>
+
+</html>

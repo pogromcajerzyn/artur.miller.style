@@ -1,0 +1,44 @@
+#post_body {
+    background-color: black;
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+#post_content {
+
+    margin-left: var(--main-borders);
+    margin-right: var(--main-borders);
+    margin-bottom: auto;
+    margin-top: 0;
+    max-width: 1000px;
+    min-width: 500px;
+    padding-top: 16vh;
+}
+
+#post_content p {
+    font-family: BrutaluDesu;
+    color: var(--egg-white);
+    font-size: 14px;
+    line-height: 26px;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+#post_content img,
+#post_content video {
+    width: 100%;
+    height: auto;
+    border: var(--small-edges) solid var(--dark-scarlet);
+}
+
+#post_content iframe {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    border: var(--small-edges) solid var(--dark-scarlet);
+}
+
+#post_content audio {
+    width: 100%;
+}

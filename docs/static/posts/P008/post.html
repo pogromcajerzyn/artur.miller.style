@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>POST</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../../styles/fonts.css">
+    <link rel="stylesheet" href="../../styles/transitions.css">
+    <link rel="stylesheet" href="../../styles/global.css">
+    <link rel="stylesheet" href="../../styles/post.css">
+    <script type="text/javascript" src="../../scripts/global.js"></script>
+
+
+  </head>
+  <body id="post_body">
+    <audio id="hover" src="../../sounds/hover.wav"></audio>
+    <audio id="click" src="../../sounds/click.wav"></audio>
+
+    <div class="transition transition-1 is-active"></div>
+    <div id="home"><img src="../../graphics/home.svg" onmouseenter="handleHover()" onmousedown='clickWaitGo(event, "/")'></div>
+
+    <div id="post_content">
+
+      <p>In various systems in witch main role is played by waves such as optics or acoustics the main source of trouble can be diffraction. A simple equation is able to predict diffraction pattern but it gets more complicated with ungeometrical shapes. Computer algorithm that I wrote is definitely not the fastest but still accurate enough to show a wave propagation in form of intensity map. The script inputs a boolean transparency mask and calculates a produced image for 2D and 3D case. In case of 3D calculation it is necessary to provide distance from the screen. Max output resolution is 1000x1000px due to matrix size limitations. It is a nice example to show how a simple algorithm can produce accurate and fun outcomes. Point of the simulation is not to make experiments obsolete but to predict outcome to see if the experiment is worth conducting. This is to simple of example to bother with experiments as almost everything that there is to know about diffraction is already discovered. Nevertheless such simulation serves a important purpose: education. For those who have passion of discovery there is nothing more interesting then trying to play with reality that surrounds us and the easiest way to do it is to construct a simulator. After very pleasant and unpredicted by me outcome of this simulation I think this will not be the last simulator that I’ll build. Algorithm uses Huygens’ principle which tells us that every point of a wavefront can be interpreted as an origin of a spherical wavefront. For each transparent point in film and for every pixel program calculates phase difference. Then the second image is produced that is shifted in phase. A standard deviation is used to determine how much each pixel has changed in amplitude when phase of output was shifted. The values of standard deviation are then shown as image.</p>
+      <img src="12.gif">
+      <p>In example above we can observe that interference occurs when size of slit is bigger then half of wavelength. The light interferes constructively or destructively creating patterns. When we add more slits pattern is getting complicated. In top picture we can observe that intensity in radial coordinates is constant so the distance from the screen is causing only variations in scale of image. But example below show that in more complex case image is dependent on the distance to the source. Last example shows diffraction grating with 20nm slits.</p>
+      <img src="34.gif">
+      <img src="56.gif">
+      <p>Last set represents 3D diffraction patterns for various shapes of slits. Red shape is a transparent layer in mask. All images were casted at screen 500nm away. In both 2D and 3D simulations wavefront was plane and coherent. Produced images agree with analytical values.</p>
+      <img src="3d.png">
+
+
+
+      <div style="min-height: 10vh;"></div>
+    </div>
+
+
+  <script type="text/javascript" src="../../scripts/transition.js"></script>
+  </body>
+
+</html>

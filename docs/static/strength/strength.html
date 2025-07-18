@@ -1,0 +1,2294 @@
+
+    <!DOCTYPE html>
+    <html>
+      <head>
+        <title>Strength stats</title>
+        <link rel="icon" href="../graphics/icon.png" type="image/x-icon">
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="../styles/fonts.css">
+        <link rel="stylesheet" href="../styles/transitions.css">
+        <link rel="stylesheet" href="../styles/global.css">
+        <link rel="stylesheet" href="strength.css">
+        <script type="text/javascript" src="../scripts/global.js"></script>
+      </head>
+      <body id="strength_body">
+        <audio id="hover" src="../sounds/hover.wav"></audio>
+        <audio id="click" src="../sounds/click.wav"></audio>
+
+        <div class="transition transition-1 is-active"></div>
+        <div id="home"><img src="../graphics/home.svg" 
+        onmouseenter="handleHover()" onmousedown='clickWaitGo(event, "/")'></div>
+
+        <div id="strength_content">
+
+            <p class="big-font">My weightlifting adventure</p>
+            <br><br><br><br>
+            <p>Total lift normalised by bodyweight over time (hover for details)</p>
+            <svg id="strength_stats" >
+                <line x1="53.2258064516129%" y1="0%" x2="53.2258064516129%" y2="100%" style="stroke:var(--dark-scarlet);stroke-width:3px" />
+<rect x="48.2258064516129%" y="95%" width="10%" height="5%" fill="black" />
+<text x="53.2258064516129%" y="98%" text-anchor="middle" style="font-size: 12px; font-family: ImpactuDesu; fill: var(--egg-white);">CUTTING</text>
+<line x1="59.67741935483871%" y1="0%" x2="59.67741935483871%" y2="100%" style="stroke:var(--dark-scarlet);stroke-width:3px" />
+<rect x="54.67741935483871%" y="95%" width="10%" height="5%" fill="black" />
+<text x="59.67741935483871%" y="98%" text-anchor="middle" style="font-size: 12px; font-family: ImpactuDesu; fill: var(--egg-white);">SUPPLEMENTS</text>
+<line class="line_avg" x1="2.0%" y1="84.02271307301035%" x2="3.6271186440677967%" y2="80.3510483916804%"> </line>
+<line class="line_avg" x1="3.6271186440677967%" y1="80.3510483916804%" x2="5.254237288135593%" y2="76.9057061022358%"> </line>
+<line class="line_avg" x1="5.254237288135593%" y1="76.9057061022358%" x2="6.88135593220339%" y2="73.63188839597859%"> </line>
+<line class="line_avg" x1="6.88135593220339%" y1="73.63188839597859%" x2="8.508474576271187%" y2="70.50180635758659%"> </line>
+<line class="line_avg" x1="8.508474576271187%" y1="70.50180635758659%" x2="10.135593220338983%" y2="67.49854504371035%"> </line>
+<line class="line_avg" x1="10.135593220338983%" y1="67.49854504371035%" x2="11.76271186440678%" y2="64.61069373556609%"> </line>
+<line class="line_avg" x1="11.76271186440678%" y1="64.61069373556609%" x2="13.389830508474578%" y2="61.830022131777014%"> </line>
+<line class="line_avg" x1="13.389830508474578%" y1="61.830022131777014%" x2="15.016949152542374%" y2="59.15030628215709%"> </line>
+<line class="line_avg" x1="15.016949152542374%" y1="59.15030628215709%" x2="16.64406779661017%" y2="56.56667020609757%"> </line>
+<line class="line_avg" x1="16.64406779661017%" y1="56.56667020609757%" x2="18.271186440677965%" y2="54.07518765536747%"> </line>
+<line class="line_avg" x1="18.271186440677965%" y1="54.07518765536747%" x2="19.898305084745765%" y2="51.6726269255571%"> </line>
+<line class="line_avg" x1="19.898305084745765%" y1="51.6726269255571%" x2="21.52542372881356%" y2="49.35627970145697%"> </line>
+<line class="line_avg" x1="21.52542372881356%" y1="49.35627970145697%" x2="23.152542372881356%" y2="47.123841948585095%"> </line>
+<line class="line_avg" x1="23.152542372881356%" y1="47.123841948585095%" x2="24.779661016949156%" y2="44.97332844350149%"> </line>
+<line class="line_avg" x1="24.779661016949156%" y1="44.97332844350149%" x2="26.40677966101695%" y2="42.90300984166447%"> </line>
+<line class="line_avg" x1="26.40677966101695%" y1="42.90300984166447%" x2="28.033898305084747%" y2="40.91136530768699%"> </line>
+<line class="line_avg" x1="28.033898305084747%" y1="40.91136530768699%" x2="29.661016949152543%" y2="38.99704617460566%"> </line>
+<line class="line_avg" x1="29.661016949152543%" y1="38.99704617460566%" x2="31.28813559322034%" y2="37.15884759611072%"> </line>
+<line class="line_avg" x1="31.28813559322034%" y1="37.15884759611072%" x2="32.91525423728814%" y2="35.39568610591914%"> </line>
+<line class="line_avg" x1="32.91525423728814%" y1="35.39568610591914%" x2="34.54237288135593%" y2="33.706581624506725%"> </line>
+<line class="line_avg" x1="34.54237288135593%" y1="33.706581624506725%" x2="36.16949152542373%" y2="32.090642857544935%"> </line>
+<line class="line_avg" x1="36.16949152542373%" y1="32.090642857544935%" x2="37.79661016949153%" y2="30.547055326013833%"> </line>
+<line class="line_avg" x1="37.79661016949153%" y1="30.547055326013833%" x2="39.42372881355932%" y2="29.075071459959872%"> </line>
+<line class="line_avg" x1="39.42372881355932%" y1="29.075071459959872%" x2="41.05084745762712%" y2="27.674002326838945%"> </line>
+<line class="line_avg" x1="41.05084745762712%" y1="27.674002326838945%" x2="42.67796610169492%" y2="26.34321067302062%"> </line>
+<line class="line_avg" x1="42.67796610169492%" y1="26.34321067302062%" x2="44.30508474576271%" y2="25.08210502723705%"> </line>
+<line class="line_avg" x1="44.30508474576271%" y1="25.08210502723705%" x2="45.93220338983051%" y2="23.890134668415612%"> </line>
+<line class="line_avg" x1="45.93220338983051%" y1="23.890134668415612%" x2="47.55932203389831%" y2="22.766785307249847%"> </line>
+<line class="line_avg" x1="47.55932203389831%" y1="22.766785307249847%" x2="49.186440677966104%" y2="21.711575360153347%"> </line>
+<line class="line_avg" x1="49.186440677966104%" y1="21.711575360153347%" x2="50.8135593220339%" y2="20.724052713033416%"> </line>
+<line class="line_avg" x1="50.8135593220339%" y1="20.724052713033416%" x2="52.440677966101696%" y2="19.80379190228814%"> </line>
+<line class="line_avg" x1="52.440677966101696%" y1="19.80379190228814%" x2="54.067796610169495%" y2="18.950391643023522%"> </line>
+<line class="line_avg" x1="54.067796610169495%" y1="18.950391643023522%" x2="55.694915254237294%" y2="18.16347265604145%"> </line>
+<line class="line_avg" x1="55.694915254237294%" y1="18.16347265604145%" x2="57.32203389830509%" y2="17.442675747628527%"> </line>
+<line class="line_avg" x1="57.32203389830509%" y1="17.442675747628527%" x2="58.949152542372886%" y2="16.787660108205273%"> </line>
+<line class="line_avg" x1="58.949152542372886%" y1="16.787660108205273%" x2="60.57627118644068%" y2="16.198101797353956%"> </line>
+<line class="line_avg" x1="60.57627118644068%" y1="16.198101797353956%" x2="62.20338983050848%" y2="15.673692391656004%"> </line>
+<line class="line_avg" x1="62.20338983050848%" y1="15.673692391656004%" x2="63.83050847457628%" y2="15.214137774725714%"> </line>
+<line class="line_avg" x1="63.83050847457628%" y1="15.214137774725714%" x2="65.45762711864407%" y2="14.819157049314526%"> </line>
+<line class="line_avg" x1="65.45762711864407%" y1="14.819157049314526%" x2="67.08474576271186%" y2="14.488481558545573%"> </line>
+<line class="line_avg" x1="67.08474576271186%" y1="14.488481558545573%" x2="68.71186440677967%" y2="14.221853999005361%"> </line>
+<line class="line_avg" x1="68.71186440677967%" y1="14.221853999005361%" x2="70.33898305084746%" y2="14.019027623411603%"> </line>
+<line class="line_avg" x1="70.33898305084746%" y1="14.019027623411603%" x2="71.96610169491525%" y2="13.879765510519974%"> </line>
+<line class="line_avg" x1="71.96610169491525%" y1="13.879765510519974%" x2="73.59322033898306%" y2="13.803839904173401%"> </line>
+<line class="line_avg" x1="73.59322033898306%" y1="13.803839904173401%" x2="75.22033898305085%" y2="13.791031611839571%"> </line>
+<line class="line_avg" x1="75.22033898305085%" y1="13.791031611839571%" x2="76.84745762711864%" y2="13.84112945164361%"> </line>
+<line class="line_avg" x1="76.84745762711864%" y1="13.84112945164361%" x2="78.47457627118645%" y2="13.95392974950937%"> </line>
+<line class="line_avg" x1="78.47457627118645%" y1="13.95392974950937%" x2="80.10169491525424%" y2="14.12923587495061%"> </line>
+<line class="line_avg" x1="80.10169491525424%" y1="14.12923587495061%" x2="81.72881355932203%" y2="14.36685781662618%"> </line>
+<line class="line_avg" x1="81.72881355932203%" y1="14.36685781662618%" x2="83.35593220338984%" y2="14.666611791531068%"> </line>
+<line class="line_avg" x1="83.35593220338984%" y1="14.666611791531068%" x2="84.98305084745763%" y2="15.02831988206799%"> </line>
+<line class="line_avg" x1="84.98305084745763%" y1="15.02831988206799%" x2="86.61016949152543%" y2="15.451809704680272%"> </line>
+<line class="line_avg" x1="86.61016949152543%" y1="15.451809704680272%" x2="88.23728813559323%" y2="15.936914100469949%"> </line>
+<line class="line_avg" x1="88.23728813559323%" y1="15.936914100469949%" x2="89.86440677966102%" y2="16.48347084852594%"> </line>
+<line class="line_avg" x1="89.86440677966102%" y1="16.48347084852594%" x2="91.49152542372882%" y2="17.091322403004597%"> </line>
+<line class="line_avg" x1="91.49152542372882%" y1="17.091322403004597%" x2="93.11864406779662%" y2="17.76031564434743%"> </line>
+<line class="line_avg" x1="93.11864406779662%" y1="17.76031564434743%" x2="94.74576271186442%" y2="18.49030165197746%"> </line>
+<line class="line_avg" x1="94.74576271186442%" y1="18.49030165197746%" x2="96.37288135593221%" y2="19.281135489634835%"> </line>
+<line class="line_avg" x1="96.37288135593221%" y1="19.281135489634835%" x2="98.0%" y2="20.132676007001464%"> </line>
+ <circle class="dot" cx="2.0%" cy="98.0%"><title>Date: 2022-10-24
+        Week: 1
+        Bench: 60.0 1 rep est: 60.8 bw: 0.60
+        Deadlift: 100.0 3 rep est: 107.2 bw: 1.05
+        Squat: 100.0 3 rep est: 107.2 bw: 1.05
+        BW: 102.0 kg
+        Total-est: 275.2 bw. 2.70
+        </title></circle>
+<circle class="dot" cx="3.6134453781512605%" cy="85.9898945703749%"><title>Date: 2022-11-07
+        Week: 3
+        Bench: 60.0 3 rep est: 64.3 bw: 0.62
+        Deadlift: 120.0 1 rep est: 121.7 bw: 1.17
+        Squat: 110.0 3 rep est: 117.9 bw: 1.13
+        BW: 104.0 kg
+        Total-est: 303.9 bw. 2.92
+        </title></circle>
+<circle class="dot" cx="4.420168067226891%" cy="79.67412495474504%"><title>Date: 2022-11-14
+        Week: 4
+        Bench: 65.0 2 rep est: 67.7 bw: 0.65
+        Deadlift: 125.0 1 rep est: 126.7 bw: 1.22
+        Squat: 120.0 1 rep est: 121.7 bw: 1.17
+        BW: 104.0 kg
+        Total-est: 316.1 bw. 3.04
+        </title></circle>
+<circle class="dot" cx="5.226890756302521%" cy="76.9838328502203%"><title>Date: 2022-11-21
+        Week: 5
+        Bench: 70.0 1 rep est: 71.0 bw: 0.68
+        Deadlift: 130.0 1 rep est: 131.8 bw: 1.26
+        Squat: 120.0 1 rep est: 121.7 bw: 1.16
+        BW: 105.0 kg
+        Total-est: 324.4 bw. 3.09
+        </title></circle>
+<circle class="dot" cx="8.453781512605042%" cy="66.62138378070827%"><title>Date: 2022-12-19
+        Week: 9
+        Bench: 80.0 1 rep est: 81.1 bw: 0.77
+        Deadlift: 140.0 1 rep est: 141.9 bw: 1.35
+        Squat: 120.0 1 rep est: 121.7 bw: 1.16
+        BW: 105.0 kg
+        Total-est: 344.7 bw. 3.28
+        </title></circle>
+<circle class="dot" cx="9.260504201680671%" cy="62.87132617436065%"><title>Date: 2022-12-26
+        Week: 10
+        Bench: 80.0 1 rep est: 81.1 bw: 0.77
+        Deadlift: 140.0 2 rep est: 145.9 bw: 1.39
+        Squat: 120.0 2 rep est: 125.1 bw: 1.19
+        BW: 105.0 kg
+        Total-est: 352.1 bw. 3.35
+        </title></circle>
+<circle class="dot" cx="10.067226890756302%" cy="62.96121984702403%"><title>Date: 2023-01-02
+        Week: 11
+        Bench: 80.0 2 rep est: 83.4 bw: 0.79
+        Deadlift: 130.0 4 rep est: 143.5 bw: 1.37
+        Squat: 120.0 2 rep est: 125.1 bw: 1.19
+        BW: 105.0 kg
+        Total-est: 351.9 bw. 3.35
+        </title></circle>
+<circle class="dot" cx="10.873949579831933%" cy="52.309814597234634%"><title>Date: 2023-01-09
+        Week: 12
+        Bench: 80.0 1 rep est: 81.1 bw: 0.77
+        Deadlift: 140.0 5 rep est: 159.2 bw: 1.52
+        Squat: 120.0 4 rep est: 132.4 bw: 1.26
+        BW: 105.0 kg
+        Total-est: 372.7 bw. 3.55
+        </title></circle>
+<circle class="dot_ignore" cx="12.487394957983193%" cy="70.84344598196719%"><title>Date: 2023-01-23
+        Week: 14
+        Bench: 80.0 2 rep est: 83.4 bw: 0.79
+        Deadlift: 140.0 2 rep est: 145.9 bw: 1.39
+        Squat: 100.0 3 rep est: 107.2 bw: 1.02
+        BW: 105.0 kg
+        Total-est: 336.5 bw. 3.20
+        </title></circle>
+<circle class="dot_ignore" cx="13.294117647058822%" cy="74.39886323387034%"><title>Date: 2023-01-30
+        Week: 15
+        Bench: 80.0 2 rep est: 83.4 bw: 0.79
+        Deadlift: 120.0 4 rep est: 132.4 bw: 1.26
+        Squat: 100.0 5 rep est: 113.7 bw: 1.08
+        BW: 105.0 kg
+        Total-est: 329.5 bw. 3.14
+        </title></circle>
+<circle class="dot" cx="14.100840336134453%" cy="53.1492202183758%"><title>Date: 2023-02-06
+        Week: 16
+        Bench: 85.0 1 rep est: 86.2 bw: 0.83
+        Deadlift: 140.0 2 rep est: 145.9 bw: 1.40
+        Squat: 130.0 2 rep est: 135.5 bw: 1.30
+        BW: 104.0 kg
+        Total-est: 367.6 bw. 3.53
+        </title></circle>
+<circle class="dot" cx="15.714285714285714%" cy="51.29451348274318%"><title>Date: 2023-02-20
+        Week: 18
+        Bench: 80.0 3 rep est: 85.8 bw: 0.82
+        Deadlift: 150.0 1 rep est: 152.1 bw: 1.45
+        Squat: 135.0 1 rep est: 136.9 bw: 1.30
+        BW: 105.0 kg
+        Total-est: 374.7 bw. 3.57
+        </title></circle>
+<circle class="dot" cx="17.327731092436974%" cy="52.71845401765981%"><title>Date: 2023-03-06
+        Week: 20
+        Bench: 80.0 3 rep est: 85.8 bw: 0.82
+        Deadlift: 140.0 1 rep est: 141.9 bw: 1.36
+        Squat: 135.0 2 rep est: 140.7 bw: 1.35
+        BW: 104.0 kg
+        Total-est: 368.4 bw. 3.54
+        </title></circle>
+<circle class="dot" cx="19.747899159663866%" cy="42.073446179145726%"><title>Date: 2023-03-27
+        Week: 23
+        Bench: 90.0 1 rep est: 91.3 bw: 0.89
+        Deadlift: 155.0 1 rep est: 157.2 bw: 1.53
+        Squat: 135.0 1 rep est: 136.9 bw: 1.33
+        BW: 103.0 kg
+        Total-est: 385.3 bw. 3.74
+        </title></circle>
+<circle class="dot_ignore" cx="24.588235294117645%" cy="71.29575196118228%"><title>Date: 2023-05-08
+        Week: 29
+        Bench: 70.0 5 rep est: 79.6 bw: 0.75
+        Deadlift: 100.0 10 rep est: 134.1 bw: 1.26
+        Squat: 100.0 8 rep est: 125.1 bw: 1.18
+        BW: 106.0 kg
+        Total-est: 338.8 bw. 3.20
+        </title></circle>
+<circle class="dot" cx="25.394957983193276%" cy="52.77825134974438%"><title>Date: 2023-05-15
+        Week: 30
+        Bench: 85.0 2 rep est: 88.6 bw: 0.84
+        Deadlift: 105.0 10 rep est: 140.8 bw: 1.33
+        Squat: 105.0 11 rep est: 146.0 bw: 1.38
+        BW: 106.0 kg
+        Total-est: 375.4 bw. 3.54
+        </title></circle>
+<circle class="dot" cx="26.201680672268907%" cy="47.58284365630172%"><title>Date: 2023-05-22
+        Week: 31
+        Bench: 80.0 4 rep est: 88.3 bw: 0.84
+        Deadlift: 135.0 4 rep est: 149.0 bw: 1.42
+        Squat: 135.0 3 rep est: 144.7 bw: 1.38
+        BW: 105.0 kg
+        Total-est: 382.0 bw. 3.64
+        </title></circle>
+<circle class="dot" cx="31.84873949579832%" cy="35.408305051392276%"><title>Date: 2023-07-10
+        Week: 38
+        Bench: 80.0 8 rep est: 100.1 bw: 0.94
+        Deadlift: 135.0 8 rep est: 168.9 bw: 1.59
+        Squat: 135.0 2 rep est: 140.7 bw: 1.33
+        BW: 106.0 kg
+        Total-est: 409.7 bw. 3.86
+        </title></circle>
+<circle class="dot" cx="32.65546218487395%" cy="38.53657616519354%"><title>Date: 2023-07-17
+        Week: 39
+        Bench: 90.0 4 rep est: 99.3 bw: 0.94
+        Deadlift: 160.0 1 rep est: 162.2 bw: 1.53
+        Squat: 140.0 1 rep est: 141.9 bw: 1.34
+        BW: 106.0 kg
+        Total-est: 403.5 bw. 3.81
+        </title></circle>
+<circle class="dot" cx="33.462184873949575%" cy="34.97712666714305%"><title>Date: 2023-07-24
+        Week: 40
+        Bench: 95.0 3 rep est: 101.8 bw: 0.96
+        Deadlift: 160.0 2 rep est: 166.7 bw: 1.57
+        Squat: 140.0 1 rep est: 141.9 bw: 1.34
+        BW: 106.0 kg
+        Total-est: 410.5 bw. 3.87
+        </title></circle>
+<circle class="dot" cx="37.49579831932773%" cy="36.57365607172884%"><title>Date: 2023-08-28
+        Week: 45
+        Bench: 95.0 2 rep est: 99.0 bw: 0.93
+        Deadlift: 150.0 3 rep est: 160.8 bw: 1.50
+        Squat: 141.2 3 rep est: 151.4 bw: 1.42
+        BW: 107.0 kg
+        Total-est: 411.2 bw. 3.84
+        </title></circle>
+<circle class="dot" cx="39.109243697479%" cy="36.78723077080251%"><title>Date: 2023-09-11
+        Week: 47
+        Bench: 90.0 3 rep est: 96.5 bw: 0.90
+        Deadlift: 160.0 1 rep est: 162.2 bw: 1.52
+        Squat: 150.0 1 rep est: 152.1 bw: 1.42
+        BW: 107.0 kg
+        Total-est: 410.8 bw. 3.84
+        </title></circle>
+<circle class="dot" cx="45.563025210084035%" cy="26.011400864918684%"><title>Date: 2023-11-06
+        Week: 55
+        Bench: 90.0 3 rep est: 96.5 bw: 0.89
+        Deadlift: 170.0 1 rep est: 172.4 bw: 1.58
+        Squat: 160.0 3 rep est: 171.5 bw: 1.57
+        BW: 109.0 kg
+        Total-est: 440.4 bw. 4.04
+        </title></circle>
+<circle class="dot" cx="47.983193277310924%" cy="33.471738307725154%"><title>Date: 2023-11-27
+        Week: 58
+        Bench: 80.0 7 rep est: 96.9 bw: 0.90
+        Deadlift: 160.0 1 rep est: 162.2 bw: 1.50
+        Squat: 160.0 1 rep est: 162.2 bw: 1.50
+        BW: 108.0 kg
+        Total-est: 421.3 bw. 3.90
+        </title></circle>
+<circle class="dot" cx="49.596638655462186%" cy="31.174432303719737%"><title>Date: 2023-12-11
+        Week: 60
+        Bench: 85.0 7 rep est: 102.9 bw: 0.95
+        Deadlift: 160.0 1 rep est: 162.2 bw: 1.50
+        Squat: 150.0 3 rep est: 160.8 bw: 1.49
+        BW: 108.0 kg
+        Total-est: 425.9 bw. 3.94
+        </title></circle>
+<circle class="dot" cx="50.403361344537814%" cy="28.209042695665044%"><title>Date: 2023-12-18
+        Week: 61
+        Bench: 95.0 2 rep est: 99.0 bw: 0.92
+        Deadlift: 160.0 4 rep est: 176.6 bw: 1.63
+        Squat: 150.0 2 rep est: 156.3 bw: 1.45
+        BW: 108.0 kg
+        Total-est: 431.9 bw. 4.00
+        </title></circle>
+<circle class="dot" cx="51.21008403361344%" cy="28.1662402154083%"><title>Date: 2023-12-25
+        Week: 62
+        Bench: 100.0 1 rep est: 101.4 bw: 0.93
+        Deadlift: 160.0 1 rep est: 162.2 bw: 1.49
+        Squat: 170.0 1 rep est: 172.4 bw: 1.58
+        BW: 109.0 kg
+        Total-est: 436.0 bw. 4.00
+        </title></circle>
+<circle class="dot" cx="52.01680672268908%" cy="23.526524780591714%"><title>Date: 2024-01-01
+        Week: 63
+        Bench: 105.0 1 rep est: 106.5 bw: 0.97
+        Deadlift: 160.0 3 rep est: 171.5 bw: 1.56
+        Squat: 160.0 3 rep est: 171.5 bw: 1.56
+        BW: 110.0 kg
+        Total-est: 449.5 bw. 4.09
+        </title></circle>
+<circle class="dot" cx="53.63025210084034%" cy="21.06647419803413%"><title>Date: 2024-01-15
+        Week: 65
+        Bench: 100.0 2 rep est: 104.2 bw: 0.94
+        Deadlift: 170.0 1 rep est: 172.4 bw: 1.55
+        Squat: 165.0 4 rep est: 182.1 bw: 1.64
+        BW: 111.0 kg
+        Total-est: 458.7 bw. 4.13
+        </title></circle>
+<circle class="dot" cx="54.436974789915965%" cy="29.634277370099582%"><title>Date: 2024-01-22
+        Week: 66
+        Bench: 95.0 3 rep est: 101.8 bw: 0.92
+        Deadlift: 160.0 2 rep est: 166.7 bw: 1.50
+        Squat: 170.0 1 rep est: 172.4 bw: 1.55
+        BW: 111.0 kg
+        Total-est: 440.9 bw. 3.97
+        </title></circle>
+<circle class="dot_ignore" cx="56.857142857142854%" cy="42.80706802932453%"><title>Date: 2024-02-12
+        Week: 69
+        Bench: 100.0 1 rep est: 101.4 bw: 0.91
+        Deadlift: 160.0 1 rep est: 162.2 bw: 1.46
+        Squat: 140.0 3 rep est: 150.1 bw: 1.35
+        BW: 111.0 kg
+        Total-est: 413.7 bw. 3.73
+        </title></circle>
+<circle class="dot" cx="57.66386554621849%" cy="24.542358818436448%"><title>Date: 2024-02-19
+        Week: 70
+        Bench: 90.0 4 rep est: 99.3 bw: 0.90
+        Deadlift: 160.0 3 rep est: 171.5 bw: 1.56
+        Squat: 160.0 4 rep est: 176.6 bw: 1.61
+        BW: 110.0 kg
+        Total-est: 447.4 bw. 4.07
+        </title></circle>
+<circle class="dot_ignore" cx="60.08403361344537%" cy="62.21126495447371%"><title>Date: 2024-03-11
+        Week: 73
+        Bench: 95.0 2 rep est: 99.0 bw: 0.90
+        Deadlift: 160.0 1 rep est: 162.2 bw: 1.47
+        Squat: 90.0 7 rep est: 109.0 bw: 0.99
+        BW: 110.0 kg
+        Total-est: 370.2 bw. 3.37
+        </title></circle>
+<circle class="dot_ignore" cx="60.89075630252101%" cy="40.604462248449764%"><title>Date: 2024-03-18
+        Week: 74
+        Bench: 100.0 1 rep est: 101.4 bw: 0.92
+        Deadlift: 170.0 1 rep est: 172.4 bw: 1.57
+        Squat: 120.0 6 rep est: 140.7 bw: 1.28
+        BW: 110.0 kg
+        Total-est: 414.5 bw. 3.77
+        </title></circle>
+<circle class="dot_ignore" cx="61.69747899159664%" cy="44.444072100062805%"><title>Date: 2024-03-25
+        Week: 75
+        Bench: 90.0 3 rep est: 96.5 bw: 0.89
+        Deadlift: 170.0 1 rep est: 172.4 bw: 1.58
+        Squat: 100.0 10 rep est: 134.1 bw: 1.23
+        BW: 109.0 kg
+        Total-est: 402.9 bw. 3.70
+        </title></circle>
+<circle class="dot" cx="62.50420168067227%" cy="19.9122997074258%"><title>Date: 2024-04-01
+        Week: 76
+        Bench: 95.0 2 rep est: 99.0 bw: 0.92
+        Deadlift: 175.0 1 rep est: 177.4 bw: 1.64
+        Squat: 156.0 4 rep est: 172.2 bw: 1.59
+        BW: 108.0 kg
+        Total-est: 448.6 bw. 4.15
+        </title></circle>
+<circle class="dot" cx="63.310924369747895%" cy="23.83533403661078%"><title>Date: 2024-04-08
+        Week: 77
+        Bench: 91.0 5 rep est: 103.5 bw: 0.95
+        Deadlift: 166.0 2 rep est: 173.0 bw: 1.59
+        Squat: 166.0 1 rep est: 168.3 bw: 1.54
+        BW: 109.0 kg
+        Total-est: 444.8 bw. 4.08
+        </title></circle>
+<circle class="dot" cx="64.92436974789915%" cy="9.98279084241376%"><title>Date: 2024-04-22
+        Week: 79
+        Bench: 91.0 6 rep est: 106.7 bw: 0.99
+        Deadlift: 176.0 2 rep est: 183.4 bw: 1.70
+        Squat: 176.0 1 rep est: 178.4 bw: 1.65
+        BW: 108.0 kg
+        Total-est: 468.6 bw. 4.34
+        </title></circle>
+<circle class="dot" cx="67.34453781512605%" cy="22.12744568974037%"><title>Date: 2024-05-13
+        Week: 82
+        Bench: 95.0 2 rep est: 99.0 bw: 0.93
+        Deadlift: 176.0 1 rep est: 178.4 bw: 1.67
+        Squat: 156.0 2 rep est: 162.6 bw: 1.52
+        BW: 107.0 kg
+        Total-est: 440.0 bw. 4.11
+        </title></circle>
+<circle class="dot" cx="68.15126050420167%" cy="19.630555708544936%"><title>Date: 2024-05-20
+        Week: 83
+        Bench: 101.0 1 rep est: 102.4 bw: 0.95
+        Deadlift: 176.0 1 rep est: 178.4 bw: 1.65
+        Squat: 166.0 1 rep est: 168.3 bw: 1.56
+        BW: 108.0 kg
+        Total-est: 449.2 bw. 4.16
+        </title></circle>
+<circle class="dot" cx="69.76470588235294%" cy="5.5810018689534715%"><title>Date: 2024-06-03
+        Week: 85
+        Bench: 101.0 2 rep est: 105.3 bw: 0.97
+        Deadlift: 181.0 1 rep est: 183.5 bw: 1.70
+        Squat: 176.0 3 rep est: 188.7 bw: 1.75
+        BW: 108.0 kg
+        Total-est: 477.4 bw. 4.42
+        </title></circle>
+<circle class="dot" cx="70.57142857142857%" cy="11.281909259090998%"><title>Date: 2024-06-10
+        Week: 86
+        Bench: 101.0 2 rep est: 105.3 bw: 0.98
+        Deadlift: 176.0 1 rep est: 178.4 bw: 1.67
+        Squat: 166.0 3 rep est: 177.9 bw: 1.66
+        BW: 107.0 kg
+        Total-est: 461.6 bw. 4.31
+        </title></circle>
+<circle class="dot" cx="71.3781512605042%" cy="14.713490232922569%"><title>Date: 2024-06-17
+        Week: 87
+        Bench: 106.0 1 rep est: 107.5 bw: 0.99
+        Deadlift: 176.0 1 rep est: 178.4 bw: 1.64
+        Squat: 156.0 5 rep est: 177.4 bw: 1.63
+        BW: 109.0 kg
+        Total-est: 463.3 bw. 4.25
+        </title></circle>
+<circle class="dot" cx="72.18487394957982%" cy="7.037301631013443%"><title>Date: 2024-06-24
+        Week: 88
+        Bench: 106.0 1 rep est: 107.5 bw: 1.00
+        Deadlift: 176.0 1 rep est: 178.4 bw: 1.65
+        Squat: 186.0 1 rep est: 188.6 bw: 1.75
+        BW: 108.0 kg
+        Total-est: 474.5 bw. 4.39
+        </title></circle>
+<circle class="dot" cx="72.99159663865547%" cy="2.0%"><title>Date: 2024-07-01
+        Week: 89
+        Bench: 111.0 1 rep est: 112.5 bw: 1.04
+        Deadlift: 176.0 1 rep est: 178.4 bw: 1.65
+        Squat: 191.0 1 rep est: 193.7 bw: 1.79
+        BW: 108.0 kg
+        Total-est: 484.6 bw. 4.49
+        </title></circle>
+<circle class="dot" cx="73.7983193277311%" cy="11.03111534549091%"><title>Date: 2024-07-08
+        Week: 90
+        Bench: 101.0 2 rep est: 105.3 bw: 0.98
+        Deadlift: 176.0 1 rep est: 178.4 bw: 1.67
+        Squat: 176.0 1 rep est: 178.4 bw: 1.67
+        BW: 107.0 kg
+        Total-est: 462.1 bw. 4.32
+        </title></circle>
+<circle class="dot" cx="75.41176470588235%" cy="4.51865081550724%"><title>Date: 2024-07-22
+        Week: 92
+        Bench: 106.0 1 rep est: 107.5 bw: 1.00
+        Deadlift: 181.0 1 rep est: 183.5 bw: 1.70
+        Squat: 186.0 1 rep est: 188.6 bw: 1.75
+        BW: 108.0 kg
+        Total-est: 479.6 bw. 4.44
+        </title></circle>
+<circle class="dot" cx="76.218487394958%" cy="8.64735504952387%"><title>Date: 2024-07-29
+        Week: 93
+        Bench: 106.0 1 rep est: 107.5 bw: 1.00
+        Deadlift: 166.0 1 rep est: 168.3 bw: 1.57
+        Squat: 188.5 1 rep est: 191.1 bw: 1.79
+        BW: 107.0 kg
+        Total-est: 466.9 bw. 4.36
+        </title></circle>
+<circle class="dot" cx="77.02521008403363%" cy="9.515940466344087%"><title>Date: 2024-08-05
+        Week: 94
+        Bench: 106.0 1 rep est: 107.5 bw: 1.00
+        Deadlift: 171.0 1 rep est: 173.4 bw: 1.61
+        Squat: 176.0 3 rep est: 188.7 bw: 1.75
+        BW: 108.0 kg
+        Total-est: 469.5 bw. 4.35
+        </title></circle>
+<circle class="dot" cx="77.83193277310926%" cy="3.562975833174114%"><title>Date: 2024-08-12
+        Week: 95
+        Bench: 101.0 1 rep est: 102.4 bw: 0.96
+        Deadlift: 178.5 1 rep est: 181.0 bw: 1.69
+        Squat: 191.0 1 rep est: 193.7 bw: 1.81
+        BW: 107.0 kg
+        Total-est: 477.0 bw. 4.46
+        </title></circle>
+<circle class="dot" cx="82.67226890756302%" cy="15.420131892434343%"><title>Date: 2024-09-23
+        Week: 101
+        Bench: 101.0 1 rep est: 102.4 bw: 0.97
+        Deadlift: 166.0 1 rep est: 168.3 bw: 1.59
+        Squat: 176.0 1 rep est: 178.4 bw: 1.68
+        BW: 106.0 kg
+        Total-est: 449.2 bw. 4.24
+        </title></circle>
+<circle class="dot" cx="98.0%" cy="35.949512124487015%"><title>Date: 2025-02-03
+        Week: 120
+        Bench: 91.0 1 rep est: 92.3 bw: 0.87
+        Deadlift: 146.0 1 rep est: 148.0 bw: 1.40
+        Squat: 166.0 1 rep est: 168.3 bw: 1.59
+        BW: 106.0 kg
+        Total-est: 408.6 bw. 3.85
+        </title></circle>
+
+            </svg>
+
+            <div class="stats">
+                <div class="stat">
+                    <p>Lifting for</p>
+                    <p id="daysCounter" class="big-font">69 days</p>
+                </div>
+                <div class="stat">
+                    <p>Max total lift</p>
+                    <p class="big-font">483 kg</p>
+                </div>
+                <div class="stat">
+                    <p>Body-weight</p>
+                    <p class="big-font">104.0 kg</p>
+                </div>
+                <div class="stat">
+                    <p>Attendance</p>
+                    <p class="big-font">60.22 %</p>
+                </div>
+                <div class="stat">
+                    <p>Estimated max lift</p>
+                    <p class="big-font">489.7 kg</p>
+                </div>
+            </div>
+
+            <br><br><br><br>
+            <p>Deadlift progress - max estimated from set (hover for details)</p>
+            <svg id="deadlift_stats">
+                <line x1="53.2258064516129%" y1="0%" x2="53.2258064516129%" y2="100%" style="stroke:var(--dark-scarlet);stroke-width:3px" />
+<rect x="48.2258064516129%" y="95%" width="10%" height="5%" fill="black" />
+<text x="53.2258064516129%" y="98%" text-anchor="middle" style="font-size: 12px; font-family: ImpactuDesu; fill: var(--egg-white);">CUTTING</text>
+<line x1="59.67741935483871%" y1="0%" x2="59.67741935483871%" y2="100%" style="stroke:var(--dark-scarlet);stroke-width:3px" />
+<rect x="54.67741935483871%" y="95%" width="10%" height="5%" fill="black" />
+<text x="59.67741935483871%" y="98%" text-anchor="middle" style="font-size: 12px; font-family: ImpactuDesu; fill: var(--egg-white);">SUPPLEMENTS</text>
+<line class="line_avg" x1="2.0%" y1="86.24097057612389%" x2="3.6271186440677967%" y2="76.66041905832688%"> </line>
+<line class="line_avg" x1="3.6271186440677967%" y1="76.66041905832688%" x2="5.254237288135593%" y2="69.78813244525233%"> </line>
+<line class="line_avg" x1="5.254237288135593%" y1="69.78813244525233%" x2="6.88135593220339%" y2="64.35047767414804%"> </line>
+<line class="line_avg" x1="6.88135593220339%" y1="64.35047767414804%" x2="8.508474576271187%" y2="59.82995170095532%"> </line>
+<line class="line_avg" x1="8.508474576271187%" y1="59.82995170095532%" x2="10.135593220338983%" y2="55.95733569139705%"> </line>
+<line class="line_avg" x1="10.135593220338983%" y1="55.95733569139705%" x2="11.76271186440678%" y2="52.5721041789395%"> </line>
+<line class="line_avg" x1="11.76271186440678%" y1="52.5721041789395%" x2="13.389830508474578%" y2="49.56973755333312%"> </line>
+<line class="line_avg" x1="13.389830508474578%" y1="49.56973755333312%" x2="15.016949152542374%" y2="46.8778379724914%"> </line>
+<line class="line_avg" x1="15.016949152542374%" y1="46.8778379724914%" x2="16.64406779661017%" y2="44.443894831569914%"> </line>
+<line class="line_avg" x1="16.64406779661017%" y1="44.443894831569914%" x2="18.271186440677965%" y2="42.228439552243785%"> </line>
+<line class="line_avg" x1="18.271186440677965%" y1="42.228439552243785%" x2="19.898305084745765%" y2="40.20095011581286%"> </line>
+<line class="line_avg" x1="19.898305084745765%" y1="40.20095011581286%" x2="21.52542372881356%" y2="38.33726784276074%"> </line>
+<line class="line_avg" x1="21.52542372881356%" y1="38.33726784276074%" x2="23.152542372881356%" y2="36.61789681863006%"> </line>
+<line class="line_avg" x1="23.152542372881356%" y1="36.61789681863006%" x2="24.779661016949156%" y2="35.02684405824107%"> </line>
+<line class="line_avg" x1="24.779661016949156%" y1="35.02684405824107%" x2="26.40677966101695%" y2="33.550804555030425%"> </line>
+<line class="line_avg" x1="26.40677966101695%" y1="33.550804555030425%" x2="28.033898305084747%" y2="32.17857391549035%"> </line>
+<line class="line_avg" x1="28.033898305084747%" y1="32.17857391549035%" x2="29.661016949152543%" y2="30.90061561831527%"> </line>
+<line class="line_avg" x1="29.661016949152543%" y1="30.90061561831527%" x2="31.28813559322034%" y2="29.708736018766558%"> </line>
+<line class="line_avg" x1="31.28813559322034%" y1="29.708736018766558%" x2="32.91525423728814%" y2="28.595836112440054%"> </line>
+<line class="line_avg" x1="32.91525423728814%" y1="28.595836112440054%" x2="34.54237288135593%" y2="27.55571906409739%"> </line>
+<line class="line_avg" x1="34.54237288135593%" y1="27.55571906409739%" x2="36.16949152542373%" y2="26.582938959730257%"> </line>
+<line class="line_avg" x1="36.16949152542373%" y1="26.582938959730257%" x2="37.79661016949153%" y2="25.672680511887165%"> </line>
+<line class="line_avg" x1="37.79661016949153%" y1="25.672680511887165%" x2="39.42372881355932%" y2="24.820662334402584%"> </line>
+<line class="line_avg" x1="39.42372881355932%" y1="24.820662334402584%" x2="41.05084745762712%" y2="24.023058394956593%"> </line>
+<line class="line_avg" x1="41.05084745762712%" y1="24.023058394956593%" x2="42.67796610169492%" y2="23.276433649829258%"> </line>
+<line class="line_avg" x1="42.67796610169492%" y1="23.276433649829258%" x2="44.30508474576271%" y2="22.577690861583505%"> </line>
+<line class="line_avg" x1="44.30508474576271%" y1="22.577690861583505%" x2="45.93220338983051%" y2="21.92402632052672%"> </line>
+<line class="line_avg" x1="45.93220338983051%" y1="21.92402632052672%" x2="47.55932203389831%" y2="21.31289271925324%"> </line>
+<line class="line_avg" x1="47.55932203389831%" y1="21.31289271925324%" x2="49.186440677966104%" y2="20.74196782142515%"> </line>
+<line class="line_avg" x1="49.186440677966104%" y1="20.74196782142515%" x2="50.8135593220339%" y2="20.209127860012615%"> </line>
+<line class="line_avg" x1="50.8135593220339%" y1="20.209127860012615%" x2="52.440677966101696%" y2="19.712424823835107%"> </line>
+<line class="line_avg" x1="52.440677966101696%" y1="19.712424823835107%" x2="54.067796610169495%" y2="19.25006696169126%"> </line>
+<line class="line_avg" x1="54.067796610169495%" y1="19.25006696169126%" x2="55.694915254237294%" y2="18.820401966165576%"> </line>
+<line class="line_avg" x1="55.694915254237294%" y1="18.820401966165576%" x2="57.32203389830509%" y2="18.421902401617018%"> </line>
+<line class="line_avg" x1="57.32203389830509%" y1="18.421902401617018%" x2="58.949152542372886%" y2="18.053153021937504%"> </line>
+<line class="line_avg" x1="58.949152542372886%" y1="18.053153021937504%" x2="60.57627118644068%" y2="17.71283968856997%"> </line>
+<line class="line_avg" x1="60.57627118644068%" y1="17.71283968856997%" x2="62.20338983050848%" y2="17.39973964883947%"> </line>
+<line class="line_avg" x1="62.20338983050848%" y1="17.39973964883947%" x2="63.83050847457628%" y2="17.11271297718602%"> </line>
+<line class="line_avg" x1="63.83050847457628%" y1="17.11271297718602%" x2="65.45762711864407%" y2="16.85069501412042%"> </line>
+<line class="line_avg" x1="65.45762711864407%" y1="16.85069501412042%" x2="67.08474576271186%" y2="16.612689664747137%"> </line>
+<line class="line_avg" x1="67.08474576271186%" y1="16.612689664747137%" x2="68.71186440677967%" y2="16.397763440962862%"> </line>
+<line class="line_avg" x1="68.71186440677967%" y1="16.397763440962862%" x2="70.33898305084746%" y2="16.205040149163352%"> </line>
+<line class="line_avg" x1="70.33898305084746%" y1="16.205040149163352%" x2="71.96610169491525%" y2="16.033696140251067%"> </line>
+<line class="line_avg" x1="71.96610169491525%" y1="16.033696140251067%" x2="73.59322033898306%" y2="15.882956051337189%"> </line>
+<line class="line_avg" x1="73.59322033898306%" y1="15.882956051337189%" x2="75.22033898305085%" y2="15.752088978238689%"> </line>
+<line class="line_avg" x1="75.22033898305085%" y1="15.752088978238689%" x2="76.84745762711864%" y2="15.640405027256563%"> </line>
+<line class="line_avg" x1="76.84745762711864%" y1="15.640405027256563%" x2="78.47457627118645%" y2="15.547252201109586%"> </line>
+<line class="line_avg" x1="78.47457627118645%" y1="15.547252201109586%" x2="80.10169491525424%" y2="15.472013580621194%"> </line>
+<line class="line_avg" x1="80.10169491525424%" y1="15.472013580621194%" x2="81.72881355932203%" y2="15.414104768617449%"> </line>
+<line class="line_avg" x1="81.72881355932203%" y1="15.414104768617449%" x2="83.35593220338984%" y2="15.37297156704841%"> </line>
+<line class="line_avg" x1="83.35593220338984%" y1="15.37297156704841%" x2="84.98305084745763%" y2="15.348087861576232%"> </line>
+<line class="line_avg" x1="84.98305084745763%" y1="15.348087861576232%" x2="86.61016949152543%" y2="15.338953692151279%"> </line>
+<line class="line_avg" x1="86.61016949152543%" y1="15.338953692151279%" x2="88.23728813559323%" y2="15.345093489247233%"> </line>
+<line class="line_avg" x1="88.23728813559323%" y1="15.345093489247233%" x2="89.86440677966102%" y2="15.366054459486179%"> </line>
+<line class="line_avg" x1="89.86440677966102%" y1="15.366054459486179%" x2="91.49152542372882%" y2="15.401405105141293%"> </line>
+<line class="line_avg" x1="91.49152542372882%" y1="15.401405105141293%" x2="93.11864406779662%" y2="15.45073386428949%"> </line>
+<line class="line_avg" x1="93.11864406779662%" y1="15.45073386428949%" x2="94.74576271186442%" y2="15.513647859928724%"> </line>
+<line class="line_avg" x1="94.74576271186442%" y1="15.513647859928724%" x2="96.37288135593221%" y2="15.589771747641024%"> </line>
+<line class="line_avg" x1="96.37288135593221%" y1="15.589771747641024%" x2="98.0%" y2="15.678746652371288%"> </line>
+ <circle class="dot" cx="2.0%" cy="98.0%"><title>Date: 2022-10-24
+        Week: 1
+        Deadlift estimated: 107.20 kg
+        BW ratio: 1.05 : 3 rep(s) at 100.0 kg
+        </title></circle>
+<circle class="dot" cx="2.80672268907563%" cy="79.79676753411695%"><title>Date: 2022-10-31
+        Week: 2
+        Deadlift estimated: 121.67 kg
+        BW ratio: 1.18 : 1 rep(s) at 120.0 kg
+        </title></circle>
+<circle class="dot" cx="3.6134453781512605%" cy="79.79676753411695%"><title>Date: 2022-11-07
+        Week: 3
+        Deadlift estimated: 121.67 kg
+        BW ratio: 1.17 : 1 rep(s) at 120.0 kg
+        </title></circle>
+<circle class="dot" cx="4.420168067226891%" cy="73.41998331000912%"><title>Date: 2022-11-14
+        Week: 4
+        Deadlift estimated: 126.74 kg
+        BW ratio: 1.22 : 1 rep(s) at 125.0 kg
+        </title></circle>
+<circle class="dot" cx="5.226890756302521%" cy="67.04319908590126%"><title>Date: 2022-11-21
+        Week: 5
+        Deadlift estimated: 131.81 kg
+        BW ratio: 1.26 : 1 rep(s) at 130.0 kg
+        </title></circle>
+<circle class="dot" cx="6.033613445378151%" cy="67.04319908590126%"><title>Date: 2022-11-28
+        Week: 6
+        Deadlift estimated: 131.81 kg
+        BW ratio: 1.27 : 1 rep(s) at 130.0 kg
+        </title></circle>
+<circle class="dot" cx="7.647058823529411%" cy="55.873522633417636%"><title>Date: 2022-12-12
+        Week: 8
+        Deadlift estimated: 140.69 kg
+        BW ratio: 1.35 : 2 rep(s) at 135.0 kg
+        </title></circle>
+<circle class="dot" cx="8.453781512605042%" cy="54.28963063768556%"><title>Date: 2022-12-19
+        Week: 9
+        Deadlift estimated: 141.95 kg
+        BW ratio: 1.35 : 1 rep(s) at 140.0 kg
+        </title></circle>
+<circle class="dot" cx="9.260504201680671%" cy="49.319223882332636%"><title>Date: 2022-12-26
+        Week: 10
+        Deadlift estimated: 145.90 kg
+        BW ratio: 1.39 : 2 rep(s) at 140.0 kg
+        </title></circle>
+<circle class="dot" cx="10.067226890756302%" cy="52.38072931606598%"><title>Date: 2023-01-02
+        Week: 11
+        Deadlift estimated: 143.46 kg
+        BW ratio: 1.37 : 4 rep(s) at 130.0 kg
+        </title></circle>
+<circle class="dot" cx="10.873949579831933%" cy="32.596334060699284%"><title>Date: 2023-01-09
+        Week: 12
+        Deadlift estimated: 159.19 kg
+        BW ratio: 1.52 : 5 rep(s) at 140.0 kg
+        </title></circle>
+<circle class="dot" cx="12.487394957983193%" cy="49.319223882332636%"><title>Date: 2023-01-23
+        Week: 14
+        Deadlift estimated: 145.90 kg
+        BW ratio: 1.39 : 2 rep(s) at 140.0 kg
+        </title></circle>
+<circle class="dot_ignore" cx="13.294117647058822%" cy="66.26218005426988%"><title>Date: 2023-01-30
+        Week: 15
+        Deadlift estimated: 132.43 kg
+        BW ratio: 1.26 : 4 rep(s) at 120.0 kg
+        </title></circle>
+<circle class="dot" cx="14.100840336134453%" cy="49.319223882332636%"><title>Date: 2023-02-06
+        Week: 16
+        Deadlift estimated: 145.90 kg
+        BW ratio: 1.40 : 2 rep(s) at 140.0 kg
+        </title></circle>
+<circle class="dot" cx="15.714285714285714%" cy="41.5360621894699%"><title>Date: 2023-02-20
+        Week: 18
+        Deadlift estimated: 152.09 kg
+        BW ratio: 1.45 : 1 rep(s) at 150.0 kg
+        </title></circle>
+<circle class="dot" cx="17.327731092436974%" cy="54.28963063768556%"><title>Date: 2023-03-06
+        Week: 20
+        Deadlift estimated: 141.95 kg
+        BW ratio: 1.36 : 1 rep(s) at 140.0 kg
+        </title></circle>
+<circle class="dot" cx="18.134453781512605%" cy="54.28963063768556%"><title>Date: 2023-03-13
+        Week: 21
+        Deadlift estimated: 141.95 kg
+        BW ratio: 1.35 : 1 rep(s) at 140.0 kg
+        </title></circle>
+<circle class="dot" cx="18.941176470588236%" cy="41.5360621894699%"><title>Date: 2023-03-20
+        Week: 22
+        Deadlift estimated: 152.09 kg
+        BW ratio: 1.46 : 1 rep(s) at 150.0 kg
+        </title></circle>
+<circle class="dot" cx="19.747899159663866%" cy="35.159277965362044%"><title>Date: 2023-03-27
+        Week: 23
+        Deadlift estimated: 157.15 kg
+        BW ratio: 1.53 : 1 rep(s) at 155.0 kg
+        </title></circle>
+<circle class="dot" cx="20.5546218487395%" cy="36.210626380163994%"><title>Date: 2023-04-03
+        Week: 24
+        Deadlift estimated: 156.32 kg
+        BW ratio: 1.50 : 2 rep(s) at 150.0 kg
+        </title></circle>
+<circle class="dot_ignore" cx="24.588235294117645%" cy="64.19666666703674%"><title>Date: 2023-05-08
+        Week: 29
+        Deadlift estimated: 134.07 kg
+        BW ratio: 1.26 : 10 rep(s) at 100.0 kg
+        </title></circle>
+<circle class="dot_ignore" cx="25.394957983193276%" cy="55.76452055475376%"><title>Date: 2023-05-15
+        Week: 30
+        Deadlift estimated: 140.77 kg
+        BW ratio: 1.33 : 10 rep(s) at 105.0 kg
+        </title></circle>
+<circle class="dot" cx="26.201680672268907%" cy="45.44000394696468%"><title>Date: 2023-05-22
+        Week: 31
+        Deadlift estimated: 148.98 kg
+        BW ratio: 1.42 : 4 rep(s) at 135.0 kg
+        </title></circle>
+<circle class="dot" cx="27.00840336134454%" cy="33.69913346947647%"><title>Date: 2023-05-29
+        Week: 32
+        Deadlift estimated: 158.32 kg
+        BW ratio: 1.52 : 6 rep(s) at 135.0 kg
+        </title></circle>
+<circle class="dot" cx="30.235294117647058%" cy="45.44000394696468%"><title>Date: 2023-06-26
+        Week: 36
+        Deadlift estimated: 148.98 kg
+        BW ratio: 1.42 : 4 rep(s) at 135.0 kg
+        </title></circle>
+<circle class="dot" cx="31.84873949579832%" cy="20.388764547566524%"><title>Date: 2023-07-10
+        Week: 38
+        Deadlift estimated: 168.90 kg
+        BW ratio: 1.59 : 8 rep(s) at 135.0 kg
+        </title></circle>
+<circle class="dot" cx="32.65546218487395%" cy="28.782493741252956%"><title>Date: 2023-07-17
+        Week: 39
+        Deadlift estimated: 162.22 kg
+        BW ratio: 1.53 : 1 rep(s) at 160.0 kg
+        </title></circle>
+<circle class="dot" cx="33.462184873949575%" cy="23.1020288779941%"><title>Date: 2023-07-24
+        Week: 40
+        Deadlift estimated: 166.74 kg
+        BW ratio: 1.57 : 2 rep(s) at 160.0 kg
+        </title></circle>
+<circle class="dot" cx="34.26890756302521%" cy="36.210626380163994%"><title>Date: 2023-07-31
+        Week: 41
+        Deadlift estimated: 156.32 kg
+        BW ratio: 1.46 : 2 rep(s) at 150.0 kg
+        </title></circle>
+<circle class="dot" cx="35.07563025210084%" cy="44.06416443491741%"><title>Date: 2023-08-07
+        Week: 42
+        Deadlift estimated: 150.08 kg
+        BW ratio: 1.40 : 3 rep(s) at 140.0 kg
+        </title></circle>
+<circle class="dot" cx="37.49579831932773%" cy="30.58020554364677%"><title>Date: 2023-08-28
+        Week: 45
+        Deadlift estimated: 160.80 kg
+        BW ratio: 1.50 : 3 rep(s) at 150.0 kg
+        </title></circle>
+<circle class="dot" cx="38.30252100840336%" cy="41.5360621894699%"><title>Date: 2023-09-04
+        Week: 46
+        Deadlift estimated: 152.09 kg
+        BW ratio: 1.42 : 1 rep(s) at 150.0 kg
+        </title></circle>
+<circle class="dot" cx="39.109243697479%" cy="28.782493741252956%"><title>Date: 2023-09-11
+        Week: 47
+        Deadlift estimated: 162.22 kg
+        BW ratio: 1.52 : 1 rep(s) at 160.0 kg
+        </title></circle>
+<circle class="dot" cx="41.529411764705884%" cy="30.58020554364677%"><title>Date: 2023-10-02
+        Week: 50
+        Deadlift estimated: 160.80 kg
+        BW ratio: 1.50 : 3 rep(s) at 150.0 kg
+        </title></circle>
+<circle class="dot" cx="43.14285714285714%" cy="28.782493741252956%"><title>Date: 2023-10-16
+        Week: 52
+        Deadlift estimated: 162.22 kg
+        BW ratio: 1.52 : 1 rep(s) at 160.0 kg
+        </title></circle>
+<circle class="dot" cx="45.563025210084035%" cy="16.02892529303728%"><title>Date: 2023-11-06
+        Week: 55
+        Deadlift estimated: 172.36 kg
+        BW ratio: 1.58 : 1 rep(s) at 170.0 kg
+        </title></circle>
+<circle class="dot" cx="47.983193277310924%" cy="28.782493741252956%"><title>Date: 2023-11-27
+        Week: 58
+        Deadlift estimated: 162.22 kg
+        BW ratio: 1.50 : 1 rep(s) at 160.0 kg
+        </title></circle>
+<circle class="dot" cx="49.596638655462186%" cy="28.782493741252956%"><title>Date: 2023-12-11
+        Week: 60
+        Deadlift estimated: 162.22 kg
+        BW ratio: 1.50 : 1 rep(s) at 160.0 kg
+        </title></circle>
+<circle class="dot" cx="50.403361344537814%" cy="10.736377101456837%"><title>Date: 2023-12-18
+        Week: 61
+        Deadlift estimated: 176.57 kg
+        BW ratio: 1.63 : 4 rep(s) at 160.0 kg
+        </title></circle>
+<circle class="dot" cx="51.21008403361344%" cy="28.782493741252956%"><title>Date: 2023-12-25
+        Week: 62
+        Deadlift estimated: 162.22 kg
+        BW ratio: 1.49 : 1 rep(s) at 160.0 kg
+        </title></circle>
+<circle class="dot" cx="52.01680672268908%" cy="17.09624665237486%"><title>Date: 2024-01-01
+        Week: 63
+        Deadlift estimated: 171.51 kg
+        BW ratio: 1.56 : 3 rep(s) at 160.0 kg
+        </title></circle>
+<circle class="dot" cx="53.63025210084034%" cy="16.02892529303728%"><title>Date: 2024-01-15
+        Week: 65
+        Deadlift estimated: 172.36 kg
+        BW ratio: 1.55 : 1 rep(s) at 170.0 kg
+        </title></circle>
+<circle class="dot" cx="54.436974789915965%" cy="23.1020288779941%"><title>Date: 2024-01-22
+        Week: 66
+        Deadlift estimated: 166.74 kg
+        BW ratio: 1.50 : 2 rep(s) at 160.0 kg
+        </title></circle>
+<circle class="dot" cx="55.2436974789916%" cy="10.736377101456837%"><title>Date: 2024-01-29
+        Week: 67
+        Deadlift estimated: 176.57 kg
+        BW ratio: 1.59 : 4 rep(s) at 160.0 kg
+        </title></circle>
+<circle class="dot" cx="56.857142857142854%" cy="28.782493741252956%"><title>Date: 2024-02-12
+        Week: 69
+        Deadlift estimated: 162.22 kg
+        BW ratio: 1.46 : 1 rep(s) at 160.0 kg
+        </title></circle>
+<circle class="dot" cx="57.66386554621849%" cy="17.09624665237486%"><title>Date: 2024-02-19
+        Week: 70
+        Deadlift estimated: 171.51 kg
+        BW ratio: 1.56 : 3 rep(s) at 160.0 kg
+        </title></circle>
+<circle class="dot" cx="59.27731092436974%" cy="16.02892529303728%"><title>Date: 2024-03-04
+        Week: 72
+        Deadlift estimated: 172.36 kg
+        BW ratio: 1.57 : 1 rep(s) at 170.0 kg
+        </title></circle>
+<circle class="dot" cx="60.08403361344537%" cy="28.782493741252956%"><title>Date: 2024-03-11
+        Week: 73
+        Deadlift estimated: 162.22 kg
+        BW ratio: 1.47 : 1 rep(s) at 160.0 kg
+        </title></circle>
+<circle class="dot" cx="60.89075630252101%" cy="16.02892529303728%"><title>Date: 2024-03-18
+        Week: 74
+        Deadlift estimated: 172.36 kg
+        BW ratio: 1.57 : 1 rep(s) at 170.0 kg
+        </title></circle>
+<circle class="dot" cx="61.69747899159664%" cy="16.02892529303728%"><title>Date: 2024-03-25
+        Week: 75
+        Deadlift estimated: 172.36 kg
+        BW ratio: 1.58 : 1 rep(s) at 170.0 kg
+        </title></circle>
+<circle class="dot" cx="62.50420168067227%" cy="9.652141068929431%"><title>Date: 2024-04-01
+        Week: 76
+        Deadlift estimated: 177.43 kg
+        BW ratio: 1.64 : 1 rep(s) at 175.0 kg
+        </title></circle>
+<circle class="dot" cx="63.310924369747895%" cy="15.236870376691904%"><title>Date: 2024-04-08
+        Week: 77
+        Deadlift estimated: 172.99 kg
+        BW ratio: 1.59 : 2 rep(s) at 166.0 kg
+        </title></circle>
+<circle class="dot" cx="64.11764705882352%" cy="8.376784224107846%"><title>Date: 2024-04-15
+        Week: 78
+        Deadlift estimated: 178.45 kg
+        BW ratio: 1.64 : 1 rep(s) at 176.0 kg
+        </title></circle>
+<circle class="dot" cx="64.92436974789915%" cy="2.1282728745219672%"><title>Date: 2024-04-22
+        Week: 79
+        Deadlift estimated: 183.41 kg
+        BW ratio: 1.70 : 2 rep(s) at 176.0 kg
+        </title></circle>
+<circle class="dot" cx="66.53781512605042%" cy="21.13035267232355%"><title>Date: 2024-05-06
+        Week: 81
+        Deadlift estimated: 168.31 kg
+        BW ratio: 1.57 : 1 rep(s) at 166.0 kg
+        </title></circle>
+<circle class="dot" cx="67.34453781512605%" cy="8.376784224107846%"><title>Date: 2024-05-13
+        Week: 82
+        Deadlift estimated: 178.45 kg
+        BW ratio: 1.67 : 1 rep(s) at 176.0 kg
+        </title></circle>
+<circle class="dot" cx="68.15126050420167%" cy="8.376784224107846%"><title>Date: 2024-05-20
+        Week: 83
+        Deadlift estimated: 178.45 kg
+        BW ratio: 1.65 : 1 rep(s) at 176.0 kg
+        </title></circle>
+<circle class="dot" cx="69.76470588235294%" cy="2.0%"><title>Date: 2024-06-03
+        Week: 85
+        Deadlift estimated: 183.52 kg
+        BW ratio: 1.70 : 1 rep(s) at 181.0 kg
+        </title></circle>
+<circle class="dot" cx="70.57142857142857%" cy="8.376784224107846%"><title>Date: 2024-06-10
+        Week: 86
+        Deadlift estimated: 178.45 kg
+        BW ratio: 1.67 : 1 rep(s) at 176.0 kg
+        </title></circle>
+<circle class="dot" cx="71.3781512605042%" cy="8.376784224107846%"><title>Date: 2024-06-17
+        Week: 87
+        Deadlift estimated: 178.45 kg
+        BW ratio: 1.64 : 1 rep(s) at 176.0 kg
+        </title></circle>
+<circle class="dot" cx="72.18487394957982%" cy="8.376784224107846%"><title>Date: 2024-06-24
+        Week: 88
+        Deadlift estimated: 178.45 kg
+        BW ratio: 1.65 : 1 rep(s) at 176.0 kg
+        </title></circle>
+<circle class="dot" cx="72.99159663865547%" cy="8.376784224107846%"><title>Date: 2024-07-01
+        Week: 89
+        Deadlift estimated: 178.45 kg
+        BW ratio: 1.65 : 1 rep(s) at 176.0 kg
+        </title></circle>
+<circle class="dot" cx="73.7983193277311%" cy="8.376784224107846%"><title>Date: 2024-07-08
+        Week: 90
+        Deadlift estimated: 178.45 kg
+        BW ratio: 1.67 : 1 rep(s) at 176.0 kg
+        </title></circle>
+<circle class="dot" cx="74.60504201680672%" cy="8.376784224107846%"><title>Date: 2024-07-15
+        Week: 91
+        Deadlift estimated: 178.45 kg
+        BW ratio: 1.67 : 1 rep(s) at 176.0 kg
+        </title></circle>
+<circle class="dot" cx="75.41176470588235%" cy="2.0%"><title>Date: 2024-07-22
+        Week: 92
+        Deadlift estimated: 183.52 kg
+        BW ratio: 1.70 : 1 rep(s) at 181.0 kg
+        </title></circle>
+<circle class="dot" cx="76.218487394958%" cy="21.13035267232355%"><title>Date: 2024-07-29
+        Week: 93
+        Deadlift estimated: 168.31 kg
+        BW ratio: 1.57 : 1 rep(s) at 166.0 kg
+        </title></circle>
+<circle class="dot" cx="77.02521008403363%" cy="14.753568448215706%"><title>Date: 2024-08-05
+        Week: 94
+        Deadlift estimated: 173.38 kg
+        BW ratio: 1.61 : 1 rep(s) at 171.0 kg
+        </title></circle>
+<circle class="dot" cx="77.83193277310926%" cy="5.188392112053929%"><title>Date: 2024-08-12
+        Week: 95
+        Deadlift estimated: 180.98 kg
+        BW ratio: 1.69 : 1 rep(s) at 178.5 kg
+        </title></circle>
+<circle class="dot" cx="81.8655462184874%" cy="21.13035267232355%"><title>Date: 2024-09-16
+        Week: 100
+        Deadlift estimated: 168.31 kg
+        BW ratio: 1.59 : 1 rep(s) at 166.0 kg
+        </title></circle>
+<circle class="dot" cx="82.67226890756302%" cy="21.13035267232355%"><title>Date: 2024-09-23
+        Week: 101
+        Deadlift estimated: 168.31 kg
+        BW ratio: 1.59 : 1 rep(s) at 166.0 kg
+        </title></circle>
+<circle class="dot" cx="85.89915966386555%" cy="33.88392112054047%"><title>Date: 2024-10-21
+        Week: 105
+        Deadlift estimated: 158.17 kg
+        BW ratio: 1.49 : 1 rep(s) at 156.0 kg
+        </title></circle>
+<circle class="dot_ignore" cx="95.5798319327731%" cy="59.39105801697183%"><title>Date: 2025-01-13
+        Week: 117
+        Deadlift estimated: 137.89 kg
+        BW ratio: 1.28 : 1 rep(s) at 136.0 kg
+        </title></circle>
+<circle class="dot" cx="98.0%" cy="46.63748956875617%"><title>Date: 2025-02-03
+        Week: 120
+        Deadlift estimated: 148.03 kg
+        BW ratio: 1.40 : 1 rep(s) at 146.0 kg
+        </title></circle>
+
+            </svg>
+
+            <div class="stats">
+                <div class="stat">
+                    <p>Max deadlift 1RM</p>
+                    <p class="big-font">181 kg</p>
+                </div>
+                <div class="stat">
+                    <p>Max estimated deadlift</p>
+                    <p class="big-font">183.5 kg</p>
+                </div>
+                <div class="stat">
+                    <p>Max est. lift/BW</p>
+                    <p class="big-font">1.7</p>
+                </div>
+            </div>
+
+            <br><br><br><br>
+            <p>Squat progress - max estimated from set (hover for details)</p>
+            <svg id="squat_stats">
+                <line x1="53.2258064516129%" y1="0%" x2="53.2258064516129%" y2="100%" style="stroke:var(--dark-scarlet);stroke-width:3px" />
+<rect x="48.2258064516129%" y="95%" width="10%" height="5%" fill="black" />
+<text x="53.2258064516129%" y="98%" text-anchor="middle" style="font-size: 12px; font-family: ImpactuDesu; fill: var(--egg-white);">CUTTING</text>
+<line x1="59.67741935483871%" y1="0%" x2="59.67741935483871%" y2="100%" style="stroke:var(--dark-scarlet);stroke-width:3px" />
+<rect x="54.67741935483871%" y="95%" width="10%" height="5%" fill="black" />
+<text x="59.67741935483871%" y="98%" text-anchor="middle" style="font-size: 12px; font-family: ImpactuDesu; fill: var(--egg-white);">SUPPLEMENTS</text>
+<line class="line_avg" x1="2.0%" y1="70.74389820128059%" x2="3.6271186440677967%" y2="70.32277764395278%"> </line>
+<line class="line_avg" x1="3.6271186440677967%" y1="70.32277764395278%" x2="5.254237288135593%" y2="69.48876765297865%"> </line>
+<line class="line_avg" x1="5.254237288135593%" y1="69.48876765297865%" x2="6.88135593220339%" y2="68.40006459795165%"> </line>
+<line class="line_avg" x1="6.88135593220339%" y1="68.40006459795165%" x2="8.508474576271187%" y2="67.13731575159903%"> </line>
+<line class="line_avg" x1="8.508474576271187%" y1="67.13731575159903%" x2="10.135593220338983%" y2="65.74977579608321%"> </line>
+<line class="line_avg" x1="10.135593220338983%" y1="65.74977579608321%" x2="11.76271186440678%" y2="64.27074481056218%"> </line>
+<line class="line_avg" x1="11.76271186440678%" y1="64.27074481056218%" x2="13.389830508474578%" y2="62.72427383025183%"> </line>
+<line class="line_avg" x1="13.389830508474578%" y1="62.72427383025183%" x2="15.016949152542374%" y2="61.12856283737551%"> </line>
+<line class="line_avg" x1="15.016949152542374%" y1="61.12856283737551%" x2="16.64406779661017%" y2="59.497871101452574%"> </line>
+<line class="line_avg" x1="16.64406779661017%" y1="59.497871101452574%" x2="18.271186440677965%" y2="57.84367526068604%"> </line>
+<line class="line_avg" x1="18.271186440677965%" y1="57.84367526068604%" x2="19.898305084745765%" y2="56.17541290841655%"> </line>
+<line class="line_avg" x1="19.898305084745765%" y1="56.17541290841655%" x2="21.52542372881356%" y2="54.50098220869813%"> </line>
+<line class="line_avg" x1="21.52542372881356%" y1="54.50098220869813%" x2="23.152542372881356%" y2="52.827090175013836%"> </line>
+<line class="line_avg" x1="23.152542372881356%" y1="52.827090175013836%" x2="24.779661016949156%" y2="51.159502972384644%"> </line>
+<line class="line_avg" x1="24.779661016949156%" y1="51.159502972384644%" x2="26.40677966101695%" y2="49.50323048552332%"> </line>
+<line class="line_avg" x1="26.40677966101695%" y1="49.50323048552332%" x2="28.033898305084747%" y2="47.86266543303532%"> </line>
+<line class="line_avg" x1="28.033898305084747%" y1="47.86266543303532%" x2="29.661016949152543%" y2="46.241690233249074%"> </line>
+<line class="line_avg" x1="29.661016949152543%" y1="46.241690233249074%" x2="31.28813559322034%" y2="44.643760468312394%"> </line>
+<line class="line_avg" x1="31.28813559322034%" y1="44.643760468312394%" x2="32.91525423728814%" y2="43.07197102944201%"> </line>
+<line class="line_avg" x1="32.91525423728814%" y1="43.07197102944201%" x2="34.54237288135593%" y2="41.529109221403814%"> </line>
+<line class="line_avg" x1="34.54237288135593%" y1="41.529109221403814%" x2="36.16949152542373%" y2="40.01769789520381%"> </line>
+<line class="line_avg" x1="36.16949152542373%" y1="40.01769789520381%" x2="37.79661016949153%" y2="38.54003084624719%"> </line>
+<line class="line_avg" x1="37.79661016949153%" y1="38.54003084624719%" x2="39.42372881355932%" y2="37.0982021442328%"> </line>
+<line class="line_avg" x1="39.42372881355932%" y1="37.0982021442328%" x2="41.05084745762712%" y2="35.6941306397307%"> </line>
+<line class="line_avg" x1="41.05084745762712%" y1="35.6941306397307%" x2="42.67796610169492%" y2="34.32958060505007%"> </line>
+<line class="line_avg" x1="42.67796610169492%" y1="34.32958060505007%" x2="44.30508474576271%" y2="33.00617924124572%"> </line>
+<line class="line_avg" x1="44.30508474576271%" y1="33.00617924124572%" x2="45.93220338983051%" y2="31.725431629495688%"> </line>
+<line class="line_avg" x1="45.93220338983051%" y1="31.725431629495688%" x2="47.55932203389831%" y2="30.488733571726698%"> </line>
+<line class="line_avg" x1="47.55932203389831%" y1="30.488733571726698%" x2="49.186440677966104%" y2="29.297382687000663%"> </line>
+<line class="line_avg" x1="49.186440677966104%" y1="29.297382687000663%" x2="50.8135593220339%" y2="28.15258804743189%"> </line>
+<line class="line_avg" x1="50.8135593220339%" y1="28.15258804743189%" x2="52.440677966101696%" y2="27.055478586805748%"> </line>
+<line class="line_avg" x1="52.440677966101696%" y1="27.055478586805748%" x2="54.067796610169495%" y2="26.007110473176%"> </line>
+<line class="line_avg" x1="54.067796610169495%" y1="26.007110473176%" x2="55.694915254237294%" y2="25.008473600110847%"> </line>
+<line class="line_avg" x1="55.694915254237294%" y1="25.008473600110847%" x2="57.32203389830509%" y2="24.060497323506752%"> </line>
+<line class="line_avg" x1="57.32203389830509%" y1="24.060497323506752%" x2="58.949152542372886%" y2="23.16405555185338%"> </line>
+<line class="line_avg" x1="58.949152542372886%" y1="23.16405555185338%" x2="60.57627118644068%" y2="22.31997127993418%"> </line>
+<line class="line_avg" x1="60.57627118644068%" y1="22.31997127993418%" x2="62.20338983050848%" y2="21.529020637292888%"> </line>
+<line class="line_avg" x1="62.20338983050848%" y1="21.529020637292888%" x2="63.83050847457628%" y2="20.791936516935948%"> </line>
+<line class="line_avg" x1="63.83050847457628%" y1="20.791936516935948%" x2="65.45762711864407%" y2="20.109411838167944%"> </line>
+<line class="line_avg" x1="65.45762711864407%" y1="20.109411838167944%" x2="67.08474576271186%" y2="19.482102485100768%"> </line>
+<line class="line_avg" x1="67.08474576271186%" y1="19.482102485100768%" x2="68.71186440677967%" y2="18.910629964738746%"> </line>
+<line class="line_avg" x1="68.71186440677967%" y1="18.910629964738746%" x2="70.33898305084746%" y2="18.395583815182817%"> </line>
+<line class="line_avg" x1="70.33898305084746%" y1="18.395583815182817%" x2="71.96610169491525%" y2="17.937523790929845%"> </line>
+<line class="line_avg" x1="71.96610169491525%" y1="17.937523790929845%" x2="73.59322033898306%" y2="17.53698185448502%"> </line>
+<line class="line_avg" x1="73.59322033898306%" y1="17.53698185448502%" x2="75.22033898305085%" y2="17.194463993198497%"> </line>
+<line class="line_avg" x1="75.22033898305085%" y1="17.194463993198497%" x2="76.84745762711864%" y2="16.91045187790951%"> </line>
+<line class="line_avg" x1="76.84745762711864%" y1="16.91045187790951%" x2="78.47457627118645%" y2="16.68540438693799%"> </line>
+<line class="line_avg" x1="78.47457627118645%" y1="16.68540438693799%" x2="80.10169491525424%" y2="16.519759000112572%"> </line>
+<line class="line_avg" x1="80.10169491525424%" y1="16.519759000112572%" x2="81.72881355932203%" y2="16.413933083083975%"> </line>
+<line class="line_avg" x1="81.72881355932203%" y1="16.413933083083975%" x2="83.35593220338984%" y2="16.368325071917752%"> </line>
+<line class="line_avg" x1="83.35593220338984%" y1="16.368325071917752%" x2="84.98305084745763%" y2="16.38331556155117%"> </line>
+<line class="line_avg" x1="84.98305084745763%" y1="16.38331556155117%" x2="86.61016949152543%" y2="16.45926831665838%"> </line>
+<line class="line_avg" x1="86.61016949152543%" y1="16.45926831665838%" x2="88.23728813559323%" y2="16.596531204266284%"> </line>
+<line class="line_avg" x1="88.23728813559323%" y1="16.596531204266284%" x2="89.86440677966102%" y2="16.79543705969354%"> </line>
+<line class="line_avg" x1="89.86440677966102%" y1="16.79543705969354%" x2="91.49152542372882%" y2="17.056304488974092%"> </line>
+<line class="line_avg" x1="91.49152542372882%" y1="17.056304488974092%" x2="93.11864406779662%" y2="17.379438617803316%"> </line>
+<line class="line_avg" x1="93.11864406779662%" y1="17.379438617803316%" x2="94.74576271186442%" y2="17.765131784160076%"> </line>
+<line class="line_avg" x1="94.74576271186442%" y1="17.765131784160076%" x2="96.37288135593221%" y2="18.213664189216615%"> </line>
+<line class="line_avg" x1="96.37288135593221%" y1="18.213664189216615%" x2="98.0%" y2="18.7253045003863%"> </line>
+ <circle class=dot cx="2.0%" cy="80.78000978877161%"><title>Date: 2022-10-24
+        Week: 1
+        Squat estimated: 107.20 kg
+        BW ratio: 1.05 : 3 rep(s) at 100.0 kg
+        </title></circle>
+<circle class=dot cx="3.6134453781512605%" cy="72.17828340511005%"><title>Date: 2022-11-07
+        Week: 3
+        Squat estimated: 117.92 kg
+        BW ratio: 1.13 : 3 rep(s) at 110.0 kg
+        </title></circle>
+<circle class=dot cx="4.420168067226891%" cy="68.43347435832754%"><title>Date: 2022-11-14
+        Week: 4
+        Squat estimated: 121.67 kg
+        BW ratio: 1.17 : 1 rep(s) at 120.0 kg
+        </title></circle>
+<circle class=dot cx="5.226890756302521%" cy="69.59006104175344%"><title>Date: 2022-11-21
+        Week: 5
+        Squat estimated: 121.67 kg
+        BW ratio: 1.16 : 1 rep(s) at 120.0 kg
+        </title></circle>
+<circle class=dot cx="8.453781512605042%" cy="69.59006104175344%"><title>Date: 2022-12-19
+        Week: 9
+        Squat estimated: 121.67 kg
+        BW ratio: 1.16 : 1 rep(s) at 120.0 kg
+        </title></circle>
+<circle class=dot cx="9.260504201680671%" cy="66.24161191704192%"><title>Date: 2022-12-26
+        Week: 10
+        Squat estimated: 125.06 kg
+        BW ratio: 1.19 : 2 rep(s) at 120.0 kg
+        </title></circle>
+<circle class=dot cx="10.067226890756302%" cy="66.24161191704192%"><title>Date: 2023-01-02
+        Week: 11
+        Squat estimated: 125.06 kg
+        BW ratio: 1.19 : 2 rep(s) at 120.0 kg
+        </title></circle>
+<circle class=dot cx="10.873949579831933%" cy="58.95246272514447%"><title>Date: 2023-01-09
+        Week: 12
+        Squat estimated: 132.43 kg
+        BW ratio: 1.26 : 4 rep(s) at 120.0 kg
+        </title></circle>
+<circle class=dot_ignore cx="12.487394957983193%" cy="83.89701168389612%"><title>Date: 2023-01-23
+        Week: 14
+        Squat estimated: 107.20 kg
+        BW ratio: 1.02 : 3 rep(s) at 100.0 kg
+        </title></circle>
+<circle class=dot_ignore cx="13.294117647058822%" cy="77.45899958734381%"><title>Date: 2023-01-30
+        Week: 15
+        Squat estimated: 113.71 kg
+        BW ratio: 1.08 : 5 rep(s) at 100.0 kg
+        </title></circle>
+<circle class=dot cx="14.100840336134453%" cy="54.6509746481895%"><title>Date: 2023-02-06
+        Week: 16
+        Squat estimated: 135.48 kg
+        BW ratio: 1.30 : 2 rep(s) at 130.0 kg
+        </title></circle>
+<circle class=dot cx="15.714285714285714%" cy="54.55443415720634%"><title>Date: 2023-02-20
+        Week: 18
+        Squat estimated: 136.88 kg
+        BW ratio: 1.30 : 1 rep(s) at 135.0 kg
+        </title></circle>
+<circle class=dot cx="17.327731092436974%" cy="49.45004766857552%"><title>Date: 2023-03-06
+        Week: 20
+        Squat estimated: 140.69 kg
+        BW ratio: 1.35 : 2 rep(s) at 135.0 kg
+        </title></circle>
+<circle class=dot cx="18.941176470588236%" cy="53.253274138351046%"><title>Date: 2023-03-20
+        Week: 22
+        Squat estimated: 136.88 kg
+        BW ratio: 1.32 : 1 rep(s) at 135.0 kg
+        </title></circle>
+<circle class=dot cx="19.747899159663866%" cy="51.92684887641118%"><title>Date: 2023-03-27
+        Week: 23
+        Squat estimated: 136.88 kg
+        BW ratio: 1.33 : 1 rep(s) at 135.0 kg
+        </title></circle>
+<circle class=dot_ignore cx="22.974789915966387%" cy="98.0%"><title>Date: 2023-04-24
+        Week: 27
+        Squat estimated: 93.82 kg
+        BW ratio: 0.89 : 6 rep(s) at 80.0 kg
+        </title></circle>
+<circle class=dot_ignore cx="24.588235294117645%" cy="67.35517165884133%"><title>Date: 2023-05-08
+        Week: 29
+        Squat estimated: 125.11 kg
+        BW ratio: 1.18 : 8 rep(s) at 100.0 kg
+        </title></circle>
+<circle class=dot cx="25.394957983193276%" cy="46.89409630993637%"><title>Date: 2023-05-15
+        Week: 30
+        Squat estimated: 146.00 kg
+        BW ratio: 1.38 : 11 rep(s) at 105.0 kg
+        </title></circle>
+<circle class=dot cx="26.201680672268907%" cy="46.80468913191126%"><title>Date: 2023-05-22
+        Week: 31
+        Squat estimated: 144.72 kg
+        BW ratio: 1.38 : 3 rep(s) at 135.0 kg
+        </title></circle>
+<circle class=dot cx="31.84873949579832%" cy="52.09957650724638%"><title>Date: 2023-07-10
+        Week: 38
+        Squat estimated: 140.69 kg
+        BW ratio: 1.33 : 2 rep(s) at 135.0 kg
+        </title></circle>
+<circle class=dot cx="32.65546218487395%" cy="50.86645020439231%"><title>Date: 2023-07-17
+        Week: 39
+        Squat estimated: 141.95 kg
+        BW ratio: 1.34 : 1 rep(s) at 140.0 kg
+        </title></circle>
+<circle class=dot cx="33.462184873949575%" cy="50.86645020439231%"><title>Date: 2023-07-24
+        Week: 40
+        Squat estimated: 141.95 kg
+        BW ratio: 1.34 : 1 rep(s) at 140.0 kg
+        </title></circle>
+<circle class=dot cx="37.49579831932773%" cy="42.97907909567573%"><title>Date: 2023-08-28
+        Week: 45
+        Squat estimated: 151.42 kg
+        BW ratio: 1.42 : 3 rep(s) at 141.2 kg
+        </title></circle>
+<circle class=dot cx="39.109243697479%" cy="42.32920482117133%"><title>Date: 2023-09-11
+        Week: 47
+        Squat estimated: 152.09 kg
+        BW ratio: 1.42 : 1 rep(s) at 150.0 kg
+        </title></circle>
+<circle class=dot cx="40.72268907563026%" cy="38.22187820791619%"><title>Date: 2023-09-25
+        Week: 49
+        Squat estimated: 156.32 kg
+        BW ratio: 1.46 : 2 rep(s) at 150.0 kg
+        </title></circle>
+<circle class=dot cx="42.33613445378151%" cy="33.95005657467621%"><title>Date: 2023-10-09
+        Week: 51
+        Squat estimated: 162.22 kg
+        BW ratio: 1.50 : 1 rep(s) at 160.0 kg
+        </title></circle>
+<circle class=dot cx="45.563025210084035%" cy="26.5327382745346%"><title>Date: 2023-11-06
+        Week: 55
+        Squat estimated: 171.51 kg
+        BW ratio: 1.57 : 3 rep(s) at 160.0 kg
+        </title></circle>
+<circle class=dot cx="47.983193277310924%" cy="33.95005657467621%"><title>Date: 2023-11-27
+        Week: 58
+        Squat estimated: 162.22 kg
+        BW ratio: 1.50 : 1 rep(s) at 160.0 kg
+        </title></circle>
+<circle class=dot cx="49.596638655462186%" cy="35.32373215153504%"><title>Date: 2023-12-11
+        Week: 60
+        Squat estimated: 160.80 kg
+        BW ratio: 1.49 : 3 rep(s) at 150.0 kg
+        </title></circle>
+<circle class=dot cx="50.403361344537814%" cy="39.6260744848614%"><title>Date: 2023-12-18
+        Week: 61
+        Squat estimated: 156.32 kg
+        BW ratio: 1.45 : 2 rep(s) at 150.0 kg
+        </title></circle>
+<circle class=dot cx="51.21008403361344%" cy="25.724654167568097%"><title>Date: 2023-12-25
+        Week: 62
+        Squat estimated: 172.36 kg
+        BW ratio: 1.58 : 1 rep(s) at 170.0 kg
+        </title></circle>
+<circle class=dot cx="52.01680672268908%" cy="28.017668618567672%"><title>Date: 2024-01-01
+        Week: 63
+        Squat estimated: 171.51 kg
+        BW ratio: 1.56 : 3 rep(s) at 160.0 kg
+        </title></circle>
+<circle class=dot cx="52.82352941176471%" cy="33.660594228770165%"><title>Date: 2024-01-08
+        Week: 64
+        Squat estimated: 165.54 kg
+        BW ratio: 1.50 : 4 rep(s) at 150.0 kg
+        </title></circle>
+<circle class=dot cx="53.63025210084034%" cy="19.587217481980446%"><title>Date: 2024-01-15
+        Week: 65
+        Squat estimated: 182.09 kg
+        BW ratio: 1.64 : 4 rep(s) at 165.0 kg
+        </title></circle>
+<circle class=dot cx="54.436974789915965%" cy="28.682319427938573%"><title>Date: 2024-01-22
+        Week: 66
+        Squat estimated: 172.36 kg
+        BW ratio: 1.55 : 1 rep(s) at 170.0 kg
+        </title></circle>
+<circle class=dot cx="56.05042016806723%" cy="23.941355995874183%"><title>Date: 2024-02-05
+        Week: 68
+        Squat estimated: 177.43 kg
+        BW ratio: 1.60 : 1 rep(s) at 175.0 kg
+        </title></circle>
+<circle class=dot_ignore cx="56.857142857142854%" cy="49.52574754306109%"><title>Date: 2024-02-12
+        Week: 69
+        Squat estimated: 150.08 kg
+        BW ratio: 1.35 : 3 rep(s) at 140.0 kg
+        </title></circle>
+<circle class=dot cx="57.66386554621849%" cy="23.246295436145743%"><title>Date: 2024-02-19
+        Week: 70
+        Squat estimated: 176.57 kg
+        BW ratio: 1.61 : 4 rep(s) at 160.0 kg
+        </title></circle>
+<circle class=dot_ignore cx="60.08403361344537%" cy="87.05316641252452%"><title>Date: 2024-03-11
+        Week: 73
+        Squat estimated: 108.96 kg
+        BW ratio: 0.99 : 7 rep(s) at 90.0 kg
+        </title></circle>
+<circle class=dot_ignore cx="60.89075630252101%" cy="57.07382972919258%"><title>Date: 2024-03-18
+        Week: 74
+        Squat estimated: 140.73 kg
+        BW ratio: 1.28 : 6 rep(s) at 120.0 kg
+        </title></circle>
+<circle class=dot_ignore cx="61.69747899159664%" cy="62.193132880487354%"><title>Date: 2024-03-25
+        Week: 75
+        Squat estimated: 134.07 kg
+        BW ratio: 1.23 : 10 rep(s) at 100.0 kg
+        </title></circle>
+<circle class=dot cx="62.50420168067227%" cy="24.403439746437225%"><title>Date: 2024-04-01
+        Week: 76
+        Squat estimated: 172.16 kg
+        BW ratio: 1.59 : 4 rep(s) at 156.0 kg
+        </title></circle>
+<circle class=dot cx="63.310924369747895%" cy="29.587017036993274%"><title>Date: 2024-04-08
+        Week: 77
+        Squat estimated: 168.31 kg
+        BW ratio: 1.54 : 1 rep(s) at 166.0 kg
+        </title></circle>
+<circle class=dot cx="64.92436974789915%" cy="18.357554620330504%"><title>Date: 2024-04-22
+        Week: 79
+        Squat estimated: 178.45 kg
+        BW ratio: 1.65 : 1 rep(s) at 176.0 kg
+        </title></circle>
+<circle class=dot cx="67.34453781512605%" cy="32.15575029150672%"><title>Date: 2024-05-13
+        Week: 82
+        Squat estimated: 162.57 kg
+        BW ratio: 1.52 : 2 rep(s) at 156.0 kg
+        </title></circle>
+<circle class=dot cx="68.15126050420167%" cy="28.102868341796974%"><title>Date: 2024-05-20
+        Week: 83
+        Squat estimated: 168.31 kg
+        BW ratio: 1.56 : 1 rep(s) at 166.0 kg
+        </title></circle>
+<circle class=dot cx="68.9579831932773%" cy="22.856975855112665%"><title>Date: 2024-05-27
+        Week: 84
+        Squat estimated: 172.16 kg
+        BW ratio: 1.61 : 4 rep(s) at 156.0 kg
+        </title></circle>
+<circle class=dot cx="69.76470588235294%" cy="8.534832530657136%"><title>Date: 2024-06-03
+        Week: 85
+        Squat estimated: 188.67 kg
+        BW ratio: 1.75 : 3 rep(s) at 176.0 kg
+        </title></circle>
+<circle class=dot cx="70.57142857142857%" cy="17.239780502358762%"><title>Date: 2024-06-10
+        Week: 86
+        Squat estimated: 177.95 kg
+        BW ratio: 1.66 : 3 rep(s) at 166.0 kg
+        </title></circle>
+<circle class=dot cx="71.3781512605042%" cy="20.94155927644931%"><title>Date: 2024-06-17
+        Week: 87
+        Squat estimated: 177.39 kg
+        BW ratio: 1.63 : 5 rep(s) at 156.0 kg
+        </title></circle>
+<circle class=dot cx="72.18487394957982%" cy="8.612240898865101%"><title>Date: 2024-06-24
+        Week: 88
+        Squat estimated: 188.59 kg
+        BW ratio: 1.75 : 1 rep(s) at 186.0 kg
+        </title></circle>
+<circle class=dot cx="72.99159663865547%" cy="3.7395840381313565%"><title>Date: 2024-07-01
+        Week: 89
+        Squat estimated: 193.66 kg
+        BW ratio: 1.79 : 1 rep(s) at 191.0 kg
+        </title></circle>
+<circle class=dot cx="73.7983193277311%" cy="16.754587129696716%"><title>Date: 2024-07-08
+        Week: 90
+        Squat estimated: 178.45 kg
+        BW ratio: 1.67 : 1 rep(s) at 176.0 kg
+        </title></circle>
+<circle class=dot cx="75.41176470588235%" cy="8.612240898865101%"><title>Date: 2024-07-22
+        Week: 92
+        Squat estimated: 188.59 kg
+        BW ratio: 1.75 : 1 rep(s) at 186.0 kg
+        </title></circle>
+<circle class=dot cx="76.218487394958%" cy="4.459097854949636%"><title>Date: 2024-07-29
+        Week: 93
+        Squat estimated: 191.12 kg
+        BW ratio: 1.79 : 1 rep(s) at 188.5 kg
+        </title></circle>
+<circle class=dot cx="77.02521008403363%" cy="8.534832530657136%"><title>Date: 2024-08-05
+        Week: 94
+        Squat estimated: 188.67 kg
+        BW ratio: 1.75 : 3 rep(s) at 176.0 kg
+        </title></circle>
+<circle class=dot cx="77.83193277310926%" cy="2.0%"><title>Date: 2024-08-12
+        Week: 95
+        Squat estimated: 193.66 kg
+        BW ratio: 1.81 : 1 rep(s) at 191.0 kg
+        </title></circle>
+<circle class=dot cx="81.05882352941177%" cy="25.050562534696247%"><title>Date: 2024-09-09
+        Week: 99
+        Squat estimated: 168.31 kg
+        BW ratio: 1.59 : 1 rep(s) at 166.0 kg
+        </title></circle>
+<circle class=dot cx="82.67226890756302%" cy="15.12137496942852%"><title>Date: 2024-09-23
+        Week: 101
+        Squat estimated: 178.45 kg
+        BW ratio: 1.68 : 1 rep(s) at 176.0 kg
+        </title></circle>
+<circle class=dot cx="83.47899159663865%" cy="6.918195709899246%"><title>Date: 2024-09-30
+        Week: 102
+        Squat estimated: 188.59 kg
+        BW ratio: 1.76 : 1 rep(s) at 186.0 kg
+        </title></circle>
+<circle class=dot cx="84.28571428571428%" cy="16.754587129696716%"><title>Date: 2024-10-07
+        Week: 103
+        Squat estimated: 178.45 kg
+        BW ratio: 1.67 : 1 rep(s) at 176.0 kg
+        </title></circle>
+<circle class=dot_ignore cx="93.96638655462185%" cy="55.92130932852889%"><title>Date: 2024-12-30
+        Week: 115
+        Squat estimated: 141.95 kg
+        BW ratio: 1.29 : 1 rep(s) at 140.0 kg
+        </title></circle>
+<circle class=dot cx="97.19327731092437%" cy="34.97975009996397%"><title>Date: 2025-01-27
+        Week: 119
+        Squat estimated: 158.17 kg
+        BW ratio: 1.49 : 1 rep(s) at 156.0 kg
+        </title></circle>
+<circle class=dot cx="98.0%" cy="25.050562534696247%"><title>Date: 2025-02-03
+        Week: 120
+        Squat estimated: 168.31 kg
+        BW ratio: 1.59 : 1 rep(s) at 166.0 kg
+        </title></circle>
+
+            </svg>
+
+            <div class="stats">
+                <div class="stat">
+                    <p>Max squat 1RM</p>
+                    <p class="big-font">191 kg</p>
+                </div>
+                <div class="stat">
+                    <p>Max estimated squat</p>
+                    <p class="big-font">193.7 kg</p>
+                </div>
+                <div class="stat">
+                    <p>Max est. lift/BW</p>
+                    <p class="big-font">1.81</p>
+                </div>
+            </div>
+
+            <br><br><br><br>
+            <p>Bench progress - max estimated from set (hover for details)</p>
+            <svg id="bench_stats">
+                <line x1="53.2258064516129%" y1="0%" x2="53.2258064516129%" y2="100%" style="stroke:var(--dark-scarlet);stroke-width:3px" />
+<rect x="48.2258064516129%" y="95%" width="10%" height="5%" fill="black" />
+<text x="53.2258064516129%" y="98%" text-anchor="middle" style="font-size: 12px; font-family: ImpactuDesu; fill: var(--egg-white);">CUTTING</text>
+<line x1="59.67741935483871%" y1="0%" x2="59.67741935483871%" y2="100%" style="stroke:var(--dark-scarlet);stroke-width:3px" />
+<rect x="54.67741935483871%" y="95%" width="10%" height="5%" fill="black" />
+<text x="59.67741935483871%" y="98%" text-anchor="middle" style="font-size: 12px; font-family: ImpactuDesu; fill: var(--egg-white);">SUPPLEMENTS</text>
+<line class="line_avg" x1="2.0%" y1="91.6916397327301%" x2="3.6271186440677967%" y2="84.77962022804095%"> </line>
+<line class="line_avg" x1="3.6271186440677967%" y1="84.77962022804095%" x2="5.254237288135593%" y2="78.91780738842154%"> </line>
+<line class="line_avg" x1="5.254237288135593%" y1="78.91780738842154%" x2="6.88135593220339%" y2="73.75489416123308%"> </line>
+<line class="line_avg" x1="6.88135593220339%" y1="73.75489416123308%" x2="8.508474576271187%" y2="69.11766673370019%"> </line>
+<line class="line_avg" x1="8.508474576271187%" y1="69.11766673370019%" x2="10.135593220338983%" y2="64.9027633477886%"> </line>
+<line class="line_avg" x1="10.135593220338983%" y1="64.9027633477886%" x2="11.76271186440678%" y2="61.041532071505%"> </line>
+<line class="line_avg" x1="11.76271186440678%" y1="61.041532071505%" x2="13.389830508474578%" y2="57.48508895768569%"> </line>
+<line class="line_avg" x1="13.389830508474578%" y1="57.48508895768569%" x2="15.016949152542374%" y2="54.196873295074454%"> </line>
+<line class="line_avg" x1="15.016949152542374%" y1="54.196873295074454%" x2="16.64406779661017%" y2="51.14852069106084%"> </line>
+<line class="line_avg" x1="16.64406779661017%" y1="51.14852069106084%" x2="18.271186440677965%" y2="48.31739132200755%"> </line>
+<line class="line_avg" x1="18.271186440677965%" y1="48.31739132200755%" x2="19.898305084745765%" y2="45.684999609862956%"> </line>
+<line class="line_avg" x1="19.898305084745765%" y1="45.684999609862956%" x2="21.52542372881356%" y2="43.235969050856625%"> </line>
+<line class="line_avg" x1="21.52542372881356%" y1="43.235969050856625%" x2="23.152542372881356%" y2="40.95730981875738%"> </line>
+<line class="line_avg" x1="23.152542372881356%" y1="40.95730981875738%" x2="24.779661016949156%" y2="38.83790361241495%"> </line>
+<line class="line_avg" x1="24.779661016949156%" y1="38.83790361241495%" x2="26.40677966101695%" y2="36.868126494551234%"> </line>
+<line class="line_avg" x1="26.40677966101695%" y1="36.868126494551234%" x2="28.033898305084747%" y2="35.03956647886599%"> </line>
+<line class="line_avg" x1="28.033898305084747%" y1="35.03956647886599%" x2="29.661016949152543%" y2="33.344807912831186%"> </line>
+<line class="line_avg" x1="29.661016949152543%" y1="33.344807912831186%" x2="31.28813559322034%" y2="31.77726403880189%"> </line>
+<line class="line_avg" x1="31.28813559322034%" y1="31.77726403880189%" x2="32.91525423728814%" y2="30.331045008881745%"> </line>
+<line class="line_avg" x1="32.91525423728814%" y1="30.331045008881745%" x2="34.54237288135593%" y2="29.000852455372637%"> </line>
+<line class="line_avg" x1="34.54237288135593%" y1="29.000852455372637%" x2="36.16949152542373%" y2="27.781894268006226%"> </line>
+<line class="line_avg" x1="36.16949152542373%" y1="27.781894268006226%" x2="37.79661016949153%" y2="26.669814965374883%"> </line>
+<line class="line_avg" x1="37.79661016949153%" y1="26.669814965374883%" x2="39.42372881355932%" y2="25.660638255056085%"> </line>
+<line class="line_avg" x1="39.42372881355932%" y1="25.660638255056085%" x2="41.05084745762712%" y2="24.750719231285643%"> </line>
+<line class="line_avg" x1="41.05084745762712%" y1="24.750719231285643%" x2="42.67796610169492%" y2="23.936704272831264%"> </line>
+<line class="line_avg" x1="42.67796610169492%" y1="23.936704272831264%" x2="44.30508474576271%" y2="23.21549715321555%"> </line>
+<line class="line_avg" x1="44.30508474576271%" y1="23.21549715321555%" x2="45.93220338983051%" y2="22.584230206398388%"> </line>
+<line class="line_avg" x1="45.93220338983051%" y1="22.584230206398388%" x2="47.55932203389831%" y2="22.040239640901632%"> </line>
+<line class="line_avg" x1="47.55932203389831%" y1="22.040239640901632%" x2="49.186440677966104%" y2="21.581044282742937%"> </line>
+<line class="line_avg" x1="49.186440677966104%" y1="21.581044282742937%" x2="50.8135593220339%" y2="21.204327172940225%"> </line>
+<line class="line_avg" x1="50.8135593220339%" y1="21.204327172940225%" x2="52.440677966101696%" y2="20.90791955632278%"> </line>
+<line class="line_avg" x1="52.440677966101696%" y1="20.90791955632278%" x2="54.067796610169495%" y2="20.689786885983267%"> </line>
+<line class="line_avg" x1="54.067796610169495%" y1="20.689786885983267%" x2="55.694915254237294%" y2="20.548016536465866%"> </line>
+<line class="line_avg" x1="55.694915254237294%" y1="20.548016536465866%" x2="57.32203389830509%" y2="20.48080697236719%"> </line>
+<line class="line_avg" x1="57.32203389830509%" y1="20.48080697236719%" x2="58.949152542372886%" y2="20.486458163824295%"> </line>
+<line class="line_avg" x1="58.949152542372886%" y1="20.486458163824295%" x2="60.57627118644068%" y2="20.563363074373342%"> </line>
+<line class="line_avg" x1="60.57627118644068%" y1="20.563363074373342%" x2="62.20338983050848%" y2="20.71000007542068%"> </line>
+<line class="line_avg" x1="62.20338983050848%" y1="20.71000007542068%" x2="63.83050847457628%" y2="20.924926164777162%"> </line>
+<line class="line_avg" x1="63.83050847457628%" y1="20.924926164777162%" x2="65.45762711864407%" y2="21.206770885543392%"> </line>
+<line class="line_avg" x1="65.45762711864407%" y1="21.206770885543392%" x2="67.08474576271186%" y2="21.554230857078664%"> </line>
+<line class="line_avg" x1="67.08474576271186%" y1="21.554230857078664%" x2="68.71186440677967%" y2="21.966064843383833%"> </line>
+<line class="line_avg" x1="68.71186440677967%" y1="21.966064843383833%" x2="70.33898305084746%" y2="22.44108929406127%"> </line>
+<line class="line_avg" x1="70.33898305084746%" y1="22.44108929406127%" x2="71.96610169491525%" y2="22.97817430292855%"> </line>
+<line class="line_avg" x1="71.96610169491525%" y1="22.97817430292855%" x2="73.59322033898306%" y2="23.57623993637162%"> </line>
+<line class="line_avg" x1="73.59322033898306%" y1="23.57623993637162%" x2="75.22033898305085%" y2="24.234252890112884%"> </line>
+<line class="line_avg" x1="75.22033898305085%" y1="24.234252890112884%" x2="76.84745762711864%" y2="24.951223438568377%"> </line>
+<line class="line_avg" x1="76.84745762711864%" y1="24.951223438568377%" x2="78.47457627118645%" y2="25.726202645489025%"> </line>
+<line class="line_avg" x1="78.47457627118645%" y1="25.726202645489025%" x2="80.10169491525424%" y2="26.55827980824563%"> </line>
+<line class="line_avg" x1="80.10169491525424%" y1="26.55827980824563%" x2="81.72881355932203%" y2="27.446580112295464%"> </line>
+<line class="line_avg" x1="81.72881355932203%" y1="27.446580112295464%" x2="83.35593220338984%" y2="28.3902624740806%"> </line>
+<line class="line_avg" x1="83.35593220338984%" y1="28.3902624740806%" x2="84.98305084745763%" y2="29.388517554391%"> </line>
+<line class="line_avg" x1="84.98305084745763%" y1="29.388517554391%" x2="86.61016949152543%" y2="30.440565925060355%"> </line>
+<line class="line_avg" x1="86.61016949152543%" y1="30.440565925060355%" x2="88.23728813559323%" y2="31.54565637504834%"> </line>
+<line class="line_avg" x1="88.23728813559323%" y1="31.54565637504834%" x2="89.86440677966102%" y2="32.70306434253462%"> </line>
+<line class="line_avg" x1="89.86440677966102%" y1="32.70306434253462%" x2="91.49152542372882%" y2="33.91209046167478%"> </line>
+<line class="line_avg" x1="91.49152542372882%" y1="33.91209046167478%" x2="93.11864406779662%" y2="35.1720592137126%"> </line>
+<line class="line_avg" x1="93.11864406779662%" y1="35.1720592137126%" x2="94.74576271186442%" y2="36.4823176731486%"> </line>
+<line class="line_avg" x1="94.74576271186442%" y1="36.4823176731486%" x2="96.37288135593221%" y2="37.842234340840605%"> </line>
+<line class="line_avg" x1="96.37288135593221%" y1="37.842234340840605%" x2="98.0%" y2="39.25119805650161%"> </line>
+ <circle class="dot" cx="2.0%" cy="98.0%"><title>Date: 2022-10-24
+        Week: 1
+        Bench estimated: 60.83 kg
+        BW ratio: 0.60 : 1 rep(s) at 60.0 kg
+        </title></circle>
+<circle class="dot" cx="2.7804878048780486%" cy="98.0%"><title>Date: 2022-10-31
+        Week: 2
+        Bench estimated: 60.83 kg
+        BW ratio: 0.59 : 1 rep(s) at 60.0 kg
+        </title></circle>
+<circle class="dot" cx="3.5609756097560976%" cy="91.53191569430645%"><title>Date: 2022-11-07
+        Week: 3
+        Bench estimated: 64.32 kg
+        BW ratio: 0.62 : 3 rep(s) at 60.0 kg
+        </title></circle>
+<circle class="dot" cx="4.341463414634147%" cy="85.1822200184152%"><title>Date: 2022-11-14
+        Week: 4
+        Bench estimated: 67.74 kg
+        BW ratio: 0.65 : 2 rep(s) at 65.0 kg
+        </title></circle>
+<circle class="dot" cx="5.121951219512195%" cy="79.17647058823532%"><title>Date: 2022-11-21
+        Week: 5
+        Bench estimated: 70.97 kg
+        BW ratio: 0.68 : 1 rep(s) at 70.0 kg
+        </title></circle>
+<circle class="dot" cx="5.902439024390243%" cy="71.63037223159294%"><title>Date: 2022-11-28
+        Week: 6
+        Bench estimated: 75.04 kg
+        BW ratio: 0.72 : 3 rep(s) at 70.0 kg
+        </title></circle>
+<circle class="dot" cx="7.463414634146341%" cy="69.764705882353%"><title>Date: 2022-12-12
+        Week: 8
+        Bench estimated: 76.04 kg
+        BW ratio: 0.73 : 1 rep(s) at 75.0 kg
+        </title></circle>
+<circle class="dot" cx="8.24390243902439%" cy="60.35294117647064%"><title>Date: 2022-12-19
+        Week: 9
+        Bench estimated: 81.11 kg
+        BW ratio: 0.77 : 1 rep(s) at 80.0 kg
+        </title></circle>
+<circle class="dot" cx="9.024390243902438%" cy="60.35294117647064%"><title>Date: 2022-12-26
+        Week: 10
+        Bench estimated: 81.11 kg
+        BW ratio: 0.77 : 1 rep(s) at 80.0 kg
+        </title></circle>
+<circle class="dot" cx="9.804878048780486%" cy="56.160922375606305%"><title>Date: 2023-01-02
+        Week: 11
+        Bench estimated: 83.37 kg
+        BW ratio: 0.79 : 2 rep(s) at 80.0 kg
+        </title></circle>
+<circle class="dot" cx="10.585365853658537%" cy="60.35294117647064%"><title>Date: 2023-01-09
+        Week: 12
+        Bench estimated: 81.11 kg
+        BW ratio: 0.77 : 1 rep(s) at 80.0 kg
+        </title></circle>
+<circle class="dot" cx="12.146341463414634%" cy="56.160922375606305%"><title>Date: 2023-01-23
+        Week: 14
+        Bench estimated: 83.37 kg
+        BW ratio: 0.79 : 2 rep(s) at 80.0 kg
+        </title></circle>
+<circle class="dot" cx="12.926829268292682%" cy="56.160922375606305%"><title>Date: 2023-01-30
+        Week: 15
+        Bench estimated: 83.37 kg
+        BW ratio: 0.79 : 2 rep(s) at 80.0 kg
+        </title></circle>
+<circle class="dot" cx="13.707317073170731%" cy="50.94117647058851%"><title>Date: 2023-02-06
+        Week: 16
+        Bench estimated: 86.18 kg
+        BW ratio: 0.83 : 1 rep(s) at 85.0 kg
+        </title></circle>
+<circle class="dot" cx="15.26829268292683%" cy="51.728828768879424%"><title>Date: 2023-02-20
+        Week: 18
+        Bench estimated: 85.76 kg
+        BW ratio: 0.82 : 3 rep(s) at 80.0 kg
+        </title></circle>
+<circle class="dot" cx="16.829268292682926%" cy="51.728828768879424%"><title>Date: 2023-03-06
+        Week: 20
+        Bench estimated: 85.76 kg
+        BW ratio: 0.82 : 3 rep(s) at 80.0 kg
+        </title></circle>
+<circle class="dot" cx="17.60975609756097%" cy="46.48715649466992%"><title>Date: 2023-03-13
+        Week: 21
+        Bench estimated: 88.58 kg
+        BW ratio: 0.84 : 2 rep(s) at 85.0 kg
+        </title></circle>
+<circle class="dot" cx="19.170731707317074%" cy="41.529411764706154%"><title>Date: 2023-03-27
+        Week: 23
+        Bench estimated: 91.25 kg
+        BW ratio: 0.89 : 1 rep(s) at 90.0 kg
+        </title></circle>
+<circle class="dot" cx="19.95121951219512%" cy="50.94117647058851%"><title>Date: 2023-04-03
+        Week: 24
+        Bench estimated: 86.18 kg
+        BW ratio: 0.83 : 1 rep(s) at 85.0 kg
+        </title></circle>
+<circle class="dot" cx="21.51219512195122%" cy="50.94117647058851%"><title>Date: 2023-04-17
+        Week: 26
+        Bench estimated: 86.18 kg
+        BW ratio: 0.81 : 1 rep(s) at 85.0 kg
+        </title></circle>
+<circle class="dot_ignore" cx="23.853658536585364%" cy="63.16744504322607%"><title>Date: 2023-05-08
+        Week: 29
+        Bench estimated: 79.60 kg
+        BW ratio: 0.75 : 5 rep(s) at 70.0 kg
+        </title></circle>
+<circle class="dot" cx="24.634146341463413%" cy="46.48715649466992%"><title>Date: 2023-05-15
+        Week: 30
+        Bench estimated: 88.58 kg
+        BW ratio: 0.84 : 2 rep(s) at 85.0 kg
+        </title></circle>
+<circle class="dot" cx="25.414634146341463%" cy="47.035428955611756%"><title>Date: 2023-05-22
+        Week: 31
+        Bench estimated: 88.29 kg
+        BW ratio: 0.84 : 4 rep(s) at 80.0 kg
+        </title></circle>
+<circle class="dot" cx="26.195121951219512%" cy="36.76648330964884%"><title>Date: 2023-05-29
+        Week: 32
+        Bench estimated: 93.82 kg
+        BW ratio: 0.90 : 6 rep(s) at 80.0 kg
+        </title></circle>
+<circle class="dot" cx="26.975609756097562%" cy="42.05691198217451%"><title>Date: 2023-06-05
+        Week: 33
+        Bench estimated: 90.97 kg
+        BW ratio: 0.87 : 5 rep(s) at 80.0 kg
+        </title></circle>
+<circle class="dot" cx="29.317073170731707%" cy="36.76648330964884%"><title>Date: 2023-06-26
+        Week: 36
+        Bench estimated: 93.82 kg
+        BW ratio: 0.89 : 6 rep(s) at 80.0 kg
+        </title></circle>
+<circle class="dot" cx="30.87804878048781%" cy="25.124803482852627%"><title>Date: 2023-07-10
+        Week: 38
+        Bench estimated: 100.09 kg
+        BW ratio: 0.94 : 8 rep(s) at 80.0 kg
+        </title></circle>
+<circle class="dot" cx="31.658536585365855%" cy="26.5472105162399%"><title>Date: 2023-07-17
+        Week: 39
+        Bench estimated: 99.32 kg
+        BW ratio: 0.94 : 4 rep(s) at 90.0 kg
+        </title></circle>
+<circle class="dot" cx="32.4390243902439%" cy="21.87651357480999%"><title>Date: 2023-07-24
+        Week: 40
+        Bench estimated: 101.84 kg
+        BW ratio: 0.96 : 3 rep(s) at 95.0 kg
+        </title></circle>
+<circle class="dot" cx="33.21951219512194%" cy="27.139624732797223%"><title>Date: 2023-07-31
+        Week: 41
+        Bench estimated: 99.00 kg
+        BW ratio: 0.93 : 2 rep(s) at 95.0 kg
+        </title></circle>
+<circle class="dot" cx="33.99999999999999%" cy="26.5472105162399%"><title>Date: 2023-08-07
+        Week: 42
+        Bench estimated: 99.32 kg
+        BW ratio: 0.93 : 4 rep(s) at 90.0 kg
+        </title></circle>
+<circle class="dot" cx="35.5609756097561%" cy="27.139624732797223%"><title>Date: 2023-08-21
+        Week: 44
+        Bench estimated: 99.00 kg
+        BW ratio: 0.93 : 2 rep(s) at 95.0 kg
+        </title></circle>
+<circle class="dot" cx="36.34146341463415%" cy="27.139624732797223%"><title>Date: 2023-08-28
+        Week: 45
+        Bench estimated: 99.00 kg
+        BW ratio: 0.93 : 2 rep(s) at 95.0 kg
+        </title></circle>
+<circle class="dot" cx="37.1219512195122%" cy="21.87651357480999%"><title>Date: 2023-09-04
+        Week: 46
+        Bench estimated: 101.84 kg
+        BW ratio: 0.95 : 3 rep(s) at 95.0 kg
+        </title></circle>
+<circle class="dot" cx="37.90243902439024%" cy="31.827285306165916%"><title>Date: 2023-09-11
+        Week: 47
+        Bench estimated: 96.48 kg
+        BW ratio: 0.90 : 3 rep(s) at 90.0 kg
+        </title></circle>
+<circle class="dot" cx="40.24390243902439%" cy="22.705882352940733%"><title>Date: 2023-10-02
+        Week: 50
+        Bench estimated: 101.39 kg
+        BW ratio: 0.95 : 1 rep(s) at 100.0 kg
+        </title></circle>
+<circle class="dot" cx="41.02439024390244%" cy="31.827285306165916%"><title>Date: 2023-10-09
+        Week: 51
+        Bench estimated: 96.48 kg
+        BW ratio: 0.89 : 3 rep(s) at 90.0 kg
+        </title></circle>
+<circle class="dot" cx="42.58536585365854%" cy="32.117647058823806%"><title>Date: 2023-10-23
+        Week: 53
+        Bench estimated: 96.32 kg
+        BW ratio: 0.90 : 1 rep(s) at 95.0 kg
+        </title></circle>
+<circle class="dot" cx="44.14634146341464%" cy="31.827285306165916%"><title>Date: 2023-11-06
+        Week: 55
+        Bench estimated: 96.48 kg
+        BW ratio: 0.89 : 3 rep(s) at 90.0 kg
+        </title></circle>
+<circle class="dot" cx="44.92682926829268%" cy="36.813390613733574%"><title>Date: 2023-11-13
+        Week: 56
+        Bench estimated: 93.79 kg
+        BW ratio: 0.86 : 2 rep(s) at 90.0 kg
+        </title></circle>
+<circle class="dot" cx="45.70731707317073%" cy="22.705882352940733%"><title>Date: 2023-11-20
+        Week: 57
+        Bench estimated: 101.39 kg
+        BW ratio: 0.94 : 1 rep(s) at 100.0 kg
+        </title></circle>
+<circle class="dot" cx="46.487804878048784%" cy="31.133882385956106%"><title>Date: 2023-11-27
+        Week: 58
+        Bench estimated: 96.85 kg
+        BW ratio: 0.90 : 7 rep(s) at 80.0 kg
+        </title></circle>
+<circle class="dot" cx="47.26829268292683%" cy="31.827285306165916%"><title>Date: 2023-12-04
+        Week: 59
+        Bench estimated: 96.48 kg
+        BW ratio: 0.89 : 3 rep(s) at 90.0 kg
+        </title></circle>
+<circle class="dot" cx="48.048780487804876%" cy="19.895926505667582%"><title>Date: 2023-12-11
+        Week: 60
+        Bench estimated: 102.90 kg
+        BW ratio: 0.95 : 7 rep(s) at 85.0 kg
+        </title></circle>
+<circle class="dot" cx="48.829268292682926%" cy="27.139624732797223%"><title>Date: 2023-12-18
+        Week: 61
+        Bench estimated: 99.00 kg
+        BW ratio: 0.92 : 2 rep(s) at 95.0 kg
+        </title></circle>
+<circle class="dot" cx="49.609756097560975%" cy="22.705882352940733%"><title>Date: 2023-12-25
+        Week: 62
+        Bench estimated: 101.39 kg
+        BW ratio: 0.93 : 1 rep(s) at 100.0 kg
+        </title></circle>
+<circle class="dot" cx="50.390243902439025%" cy="13.294117647058577%"><title>Date: 2024-01-01
+        Week: 63
+        Bench estimated: 106.46 kg
+        BW ratio: 0.97 : 1 rep(s) at 105.0 kg
+        </title></circle>
+<circle class="dot" cx="51.170731707317074%" cy="21.87651357480999%"><title>Date: 2024-01-08
+        Week: 64
+        Bench estimated: 101.84 kg
+        BW ratio: 0.93 : 3 rep(s) at 95.0 kg
+        </title></circle>
+<circle class="dot" cx="51.951219512195124%" cy="17.465858851860283%"><title>Date: 2024-01-15
+        Week: 65
+        Bench estimated: 104.21 kg
+        BW ratio: 0.94 : 2 rep(s) at 100.0 kg
+        </title></circle>
+<circle class="dot" cx="52.73170731707317%" cy="21.87651357480999%"><title>Date: 2024-01-22
+        Week: 66
+        Bench estimated: 101.84 kg
+        BW ratio: 0.92 : 3 rep(s) at 95.0 kg
+        </title></circle>
+<circle class="dot" cx="53.51219512195122%" cy="21.87651357480999%"><title>Date: 2024-01-29
+        Week: 67
+        Bench estimated: 101.84 kg
+        BW ratio: 0.92 : 3 rep(s) at 95.0 kg
+        </title></circle>
+<circle class="dot" cx="54.292682926829265%" cy="22.705882352940733%"><title>Date: 2024-02-05
+        Week: 68
+        Bench estimated: 101.39 kg
+        BW ratio: 0.91 : 1 rep(s) at 100.0 kg
+        </title></circle>
+<circle class="dot" cx="55.07317073170732%" cy="22.705882352940733%"><title>Date: 2024-02-12
+        Week: 69
+        Bench estimated: 101.39 kg
+        BW ratio: 0.91 : 1 rep(s) at 100.0 kg
+        </title></circle>
+<circle class="dot" cx="55.85365853658537%" cy="26.5472105162399%"><title>Date: 2024-02-19
+        Week: 70
+        Bench estimated: 99.32 kg
+        BW ratio: 0.90 : 4 rep(s) at 90.0 kg
+        </title></circle>
+<circle class="dot" cx="57.41463414634147%" cy="32.117647058823806%"><title>Date: 2024-03-04
+        Week: 72
+        Bench estimated: 96.32 kg
+        BW ratio: 0.88 : 1 rep(s) at 95.0 kg
+        </title></circle>
+<circle class="dot" cx="58.195121951219505%" cy="27.139624732797223%"><title>Date: 2024-03-11
+        Week: 73
+        Bench estimated: 99.00 kg
+        BW ratio: 0.90 : 2 rep(s) at 95.0 kg
+        </title></circle>
+<circle class="dot" cx="58.97560975609756%" cy="22.705882352940733%"><title>Date: 2024-03-18
+        Week: 74
+        Bench estimated: 101.39 kg
+        BW ratio: 0.92 : 1 rep(s) at 100.0 kg
+        </title></circle>
+<circle class="dot" cx="59.75609756097562%" cy="31.827285306165916%"><title>Date: 2024-03-25
+        Week: 75
+        Bench estimated: 96.48 kg
+        BW ratio: 0.89 : 3 rep(s) at 90.0 kg
+        </title></circle>
+<circle class="dot" cx="60.536585365853654%" cy="27.139624732797223%"><title>Date: 2024-04-01
+        Week: 76
+        Bench estimated: 99.00 kg
+        BW ratio: 0.92 : 2 rep(s) at 95.0 kg
+        </title></circle>
+<circle class="dot" cx="61.31707317073171%" cy="18.83532561501821%"><title>Date: 2024-04-08
+        Week: 77
+        Bench estimated: 103.48 kg
+        BW ratio: 0.95 : 5 rep(s) at 91.0 kg
+        </title></circle>
+<circle class="dot" cx="62.09756097560975%" cy="11.411764705882142%"><title>Date: 2024-04-15
+        Week: 78
+        Bench estimated: 107.47 kg
+        BW ratio: 0.99 : 1 rep(s) at 106.0 kg
+        </title></circle>
+<circle class="dot" cx="62.8780487804878%" cy="12.817463000020275%"><title>Date: 2024-04-22
+        Week: 79
+        Bench estimated: 106.72 kg
+        BW ratio: 0.99 : 6 rep(s) at 91.0 kg
+        </title></circle>
+<circle class="dot" cx="64.43902439024389%" cy="20.823529411764298%"><title>Date: 2024-05-06
+        Week: 81
+        Bench estimated: 102.40 kg
+        BW ratio: 0.96 : 1 rep(s) at 101.0 kg
+        </title></circle>
+<circle class="dot" cx="65.21951219512195%" cy="27.139624732797223%"><title>Date: 2024-05-13
+        Week: 82
+        Bench estimated: 99.00 kg
+        BW ratio: 0.93 : 2 rep(s) at 95.0 kg
+        </title></circle>
+<circle class="dot" cx="65.99999999999999%" cy="20.823529411764298%"><title>Date: 2024-05-20
+        Week: 83
+        Bench estimated: 102.40 kg
+        BW ratio: 0.95 : 1 rep(s) at 101.0 kg
+        </title></circle>
+<circle class="dot" cx="67.5609756097561%" cy="15.531105675674457%"><title>Date: 2024-06-03
+        Week: 85
+        Bench estimated: 105.25 kg
+        BW ratio: 0.97 : 2 rep(s) at 101.0 kg
+        </title></circle>
+<circle class="dot" cx="68.34146341463415%" cy="15.531105675674457%"><title>Date: 2024-06-10
+        Week: 86
+        Bench estimated: 105.25 kg
+        BW ratio: 0.98 : 2 rep(s) at 101.0 kg
+        </title></circle>
+<circle class="dot" cx="69.1219512195122%" cy="11.411764705882142%"><title>Date: 2024-06-17
+        Week: 87
+        Bench estimated: 107.47 kg
+        BW ratio: 0.99 : 1 rep(s) at 106.0 kg
+        </title></circle>
+<circle class="dot" cx="69.90243902439025%" cy="11.411764705882142%"><title>Date: 2024-06-24
+        Week: 88
+        Bench estimated: 107.47 kg
+        BW ratio: 1.00 : 1 rep(s) at 106.0 kg
+        </title></circle>
+<circle class="dot" cx="70.6829268292683%" cy="2.0%"><title>Date: 2024-07-01
+        Week: 89
+        Bench estimated: 112.54 kg
+        BW ratio: 1.04 : 1 rep(s) at 111.0 kg
+        </title></circle>
+<circle class="dot" cx="71.46341463414635%" cy="15.531105675674457%"><title>Date: 2024-07-08
+        Week: 90
+        Bench estimated: 105.25 kg
+        BW ratio: 0.98 : 2 rep(s) at 101.0 kg
+        </title></circle>
+<circle class="dot" cx="72.2439024390244%" cy="20.823529411764298%"><title>Date: 2024-07-15
+        Week: 91
+        Bench estimated: 102.40 kg
+        BW ratio: 0.96 : 1 rep(s) at 101.0 kg
+        </title></circle>
+<circle class="dot" cx="73.02439024390245%" cy="11.411764705882142%"><title>Date: 2024-07-22
+        Week: 92
+        Bench estimated: 107.47 kg
+        BW ratio: 1.00 : 1 rep(s) at 106.0 kg
+        </title></circle>
+<circle class="dot" cx="73.80487804878048%" cy="11.411764705882142%"><title>Date: 2024-07-29
+        Week: 93
+        Bench estimated: 107.47 kg
+        BW ratio: 1.00 : 1 rep(s) at 106.0 kg
+        </title></circle>
+<circle class="dot" cx="74.58536585365854%" cy="11.411764705882142%"><title>Date: 2024-08-05
+        Week: 94
+        Bench estimated: 107.47 kg
+        BW ratio: 1.00 : 1 rep(s) at 106.0 kg
+        </title></circle>
+<circle class="dot" cx="75.36585365853658%" cy="20.823529411764298%"><title>Date: 2024-08-12
+        Week: 95
+        Bench estimated: 102.40 kg
+        BW ratio: 0.96 : 1 rep(s) at 101.0 kg
+        </title></circle>
+<circle class="dot" cx="76.14634146341463%" cy="20.823529411764298%"><title>Date: 2024-08-19
+        Week: 96
+        Bench estimated: 102.40 kg
+        BW ratio: 0.97 : 1 rep(s) at 101.0 kg
+        </title></circle>
+<circle class="dot" cx="79.26829268292684%" cy="39.64705882352972%"><title>Date: 2024-09-16
+        Week: 100
+        Bench estimated: 92.27 kg
+        BW ratio: 0.87 : 1 rep(s) at 91.0 kg
+        </title></circle>
+<circle class="dot" cx="80.04878048780488%" cy="20.823529411764298%"><title>Date: 2024-09-23
+        Week: 101
+        Bench estimated: 102.40 kg
+        BW ratio: 0.97 : 1 rep(s) at 101.0 kg
+        </title></circle>
+<circle class="dot" cx="81.60975609756098%" cy="39.64705882352972%"><title>Date: 2024-10-07
+        Week: 103
+        Bench estimated: 92.27 kg
+        BW ratio: 0.86 : 1 rep(s) at 91.0 kg
+        </title></circle>
+<circle class="dot" cx="83.17073170731707%" cy="29.837130959894573%"><title>Date: 2024-10-21
+        Week: 105
+        Bench estimated: 97.55 kg
+        BW ratio: 0.92 : 3 rep(s) at 91.0 kg
+        </title></circle>
+<circle class="dot" cx="90.97560975609757%" cy="39.64705882352972%"><title>Date: 2024-12-30
+        Week: 115
+        Bench estimated: 92.27 kg
+        BW ratio: 0.84 : 1 rep(s) at 91.0 kg
+        </title></circle>
+<circle class="dot" cx="91.75609756097562%" cy="39.64705882352972%"><title>Date: 2025-01-06
+        Week: 116
+        Bench estimated: 92.27 kg
+        BW ratio: 0.86 : 1 rep(s) at 91.0 kg
+        </title></circle>
+<circle class="dot" cx="92.53658536585365%" cy="39.64705882352972%"><title>Date: 2025-01-13
+        Week: 117
+        Bench estimated: 92.27 kg
+        BW ratio: 0.85 : 1 rep(s) at 91.0 kg
+        </title></circle>
+<circle class="dot" cx="94.09756097560975%" cy="39.64705882352972%"><title>Date: 2025-01-27
+        Week: 119
+        Bench estimated: 92.27 kg
+        BW ratio: 0.87 : 1 rep(s) at 91.0 kg
+        </title></circle>
+<circle class="dot" cx="94.8780487804878%" cy="39.64705882352972%"><title>Date: 2025-02-03
+        Week: 120
+        Bench estimated: 92.27 kg
+        BW ratio: 0.87 : 1 rep(s) at 91.0 kg
+        </title></circle>
+<circle class="dot" cx="98.0%" cy="41.529411764706154%"><title>Date: 2025-03-03
+        Week: 124
+        Bench estimated: 91.25 kg
+        BW ratio: 0.88 : 1 rep(s) at 90.0 kg
+        </title></circle>
+
+            </svg>
+
+            <div class="stats">
+                <div class="stat">
+                    <p>Max bench 1RM</p>
+                    <p class="big-font">111 kg</p>
+                </div>
+                <div class="stat">
+                    <p>Max estimated bench</p>
+                    <p class="big-font">112.5 kg</p>
+                </div>
+                <div class="stat">
+                    <p>Max est. lift/BW</p>
+                    <p class="big-font">1.04</p>
+                </div>
+            </div>
+
+            <br><br><br><br>
+            <p>Bodyweight timeline</p>
+            <svg id="weight_stats">
+                <line x1="53.2258064516129%" y1="0%" x2="53.2258064516129%" y2="100%" style="stroke:var(--dark-scarlet);stroke-width:3px" />
+<rect x="48.2258064516129%" y="95%" width="10%" height="5%" fill="black" />
+<text x="53.2258064516129%" y="98%" text-anchor="middle" style="font-size: 12px; font-family: ImpactuDesu; fill: var(--egg-white);">CUTTING</text>
+<line x1="59.67741935483871%" y1="0%" x2="59.67741935483871%" y2="100%" style="stroke:var(--dark-scarlet);stroke-width:3px" />
+<rect x="54.67741935483871%" y="95%" width="10%" height="5%" fill="black" />
+<text x="59.67741935483871%" y="98%" text-anchor="middle" style="font-size: 12px; font-family: ImpactuDesu; fill: var(--egg-white);">SUPPLEMENTS</text>
+<circle class=dot cx="2.0%" cy="98.0%"><title>Date: 2022-10-24
+        Weight: 102 kg
+        </title></circle>
+<circle class=dot cx="2.7804878048780486%" cy="87.33333333333333%"><title>Date: 2022-10-31
+        Weight: 103 kg
+        </title></circle>
+<circle class=dot cx="3.5609756097560976%" cy="76.66666666666666%"><title>Date: 2022-11-07
+        Weight: 104 kg
+        </title></circle>
+<circle class=dot cx="4.341463414634147%" cy="76.66666666666666%"><title>Date: 2022-11-14
+        Weight: 104 kg
+        </title></circle>
+<circle class=dot cx="5.121951219512195%" cy="66.0%"><title>Date: 2022-11-21
+        Weight: 105 kg
+        </title></circle>
+<circle class=dot cx="5.902439024390243%" cy="76.66666666666666%"><title>Date: 2022-11-28
+        Weight: 104 kg
+        </title></circle>
+<circle class=dot cx="6.682926829268293%" cy="76.66666666666666%"><title>Date: 2022-12-05
+        Weight: 104 kg
+        </title></circle>
+<circle class=dot cx="7.463414634146341%" cy="76.66666666666666%"><title>Date: 2022-12-12
+        Weight: 104 kg
+        </title></circle>
+<circle class=dot cx="8.24390243902439%" cy="66.0%"><title>Date: 2022-12-19
+        Weight: 105 kg
+        </title></circle>
+<circle class=dot cx="9.024390243902438%" cy="66.0%"><title>Date: 2022-12-26
+        Weight: 105 kg
+        </title></circle>
+<circle class=dot cx="9.804878048780486%" cy="66.0%"><title>Date: 2023-01-02
+        Weight: 105 kg
+        </title></circle>
+<circle class=dot cx="10.585365853658537%" cy="66.0%"><title>Date: 2023-01-09
+        Weight: 105 kg
+        </title></circle>
+<circle class=dot cx="11.365853658536587%" cy="66.0%"><title>Date: 2023-01-16
+        Weight: 105 kg
+        </title></circle>
+<circle class=dot cx="12.146341463414634%" cy="66.0%"><title>Date: 2023-01-23
+        Weight: 105 kg
+        </title></circle>
+<circle class=dot cx="12.926829268292682%" cy="66.0%"><title>Date: 2023-01-30
+        Weight: 105 kg
+        </title></circle>
+<circle class=dot cx="13.707317073170731%" cy="76.66666666666666%"><title>Date: 2023-02-06
+        Weight: 104 kg
+        </title></circle>
+<circle class=dot cx="14.487804878048781%" cy="66.0%"><title>Date: 2023-02-13
+        Weight: 105 kg
+        </title></circle>
+<circle class=dot cx="15.26829268292683%" cy="66.0%"><title>Date: 2023-02-20
+        Weight: 105 kg
+        </title></circle>
+<circle class=dot cx="16.048780487804876%" cy="66.0%"><title>Date: 2023-02-27
+        Weight: 105 kg
+        </title></circle>
+<circle class=dot cx="16.829268292682926%" cy="76.66666666666666%"><title>Date: 2023-03-06
+        Weight: 104 kg
+        </title></circle>
+<circle class=dot cx="17.60975609756097%" cy="66.0%"><title>Date: 2023-03-13
+        Weight: 105 kg
+        </title></circle>
+<circle class=dot cx="18.390243902439025%" cy="76.66666666666666%"><title>Date: 2023-03-20
+        Weight: 104 kg
+        </title></circle>
+<circle class=dot cx="19.170731707317074%" cy="87.33333333333333%"><title>Date: 2023-03-27
+        Weight: 103 kg
+        </title></circle>
+<circle class=dot cx="19.95121951219512%" cy="76.66666666666666%"><title>Date: 2023-04-03
+        Weight: 104 kg
+        </title></circle>
+<circle class=dot cx="20.731707317073173%" cy="66.0%"><title>Date: 2023-04-10
+        Weight: 105 kg
+        </title></circle>
+<circle class=dot cx="21.51219512195122%" cy="55.333333333333336%"><title>Date: 2023-04-17
+        Weight: 106 kg
+        </title></circle>
+<circle class=dot cx="22.29268292682927%" cy="55.333333333333336%"><title>Date: 2023-04-24
+        Weight: 106 kg
+        </title></circle>
+<circle class=dot cx="23.07317073170732%" cy="55.333333333333336%"><title>Date: 2023-05-01
+        Weight: 106 kg
+        </title></circle>
+<circle class=dot cx="23.853658536585364%" cy="55.333333333333336%"><title>Date: 2023-05-08
+        Weight: 106 kg
+        </title></circle>
+<circle class=dot cx="24.634146341463413%" cy="55.333333333333336%"><title>Date: 2023-05-15
+        Weight: 106 kg
+        </title></circle>
+<circle class=dot cx="25.414634146341463%" cy="66.0%"><title>Date: 2023-05-22
+        Weight: 105 kg
+        </title></circle>
+<circle class=dot cx="26.195121951219512%" cy="76.66666666666666%"><title>Date: 2023-05-29
+        Weight: 104 kg
+        </title></circle>
+<circle class=dot cx="26.975609756097562%" cy="66.0%"><title>Date: 2023-06-05
+        Weight: 105 kg
+        </title></circle>
+<circle class=dot cx="27.75609756097561%" cy="66.0%"><title>Date: 2023-06-12
+        Weight: 105 kg
+        </title></circle>
+<circle class=dot cx="28.53658536585366%" cy="66.0%"><title>Date: 2023-06-19
+        Weight: 105 kg
+        </title></circle>
+<circle class=dot cx="29.317073170731707%" cy="66.0%"><title>Date: 2023-06-26
+        Weight: 105 kg
+        </title></circle>
+<circle class=dot cx="30.097560975609753%" cy="66.0%"><title>Date: 2023-07-03
+        Weight: 105 kg
+        </title></circle>
+<circle class=dot cx="30.87804878048781%" cy="55.333333333333336%"><title>Date: 2023-07-10
+        Weight: 106 kg
+        </title></circle>
+<circle class=dot cx="31.658536585365855%" cy="55.333333333333336%"><title>Date: 2023-07-17
+        Weight: 106 kg
+        </title></circle>
+<circle class=dot cx="32.4390243902439%" cy="55.333333333333336%"><title>Date: 2023-07-24
+        Weight: 106 kg
+        </title></circle>
+<circle class=dot cx="33.21951219512194%" cy="44.666666666666664%"><title>Date: 2023-07-31
+        Weight: 107 kg
+        </title></circle>
+<circle class=dot cx="33.99999999999999%" cy="44.666666666666664%"><title>Date: 2023-08-07
+        Weight: 107 kg
+        </title></circle>
+<circle class=dot cx="34.78048780487805%" cy="44.666666666666664%"><title>Date: 2023-08-14
+        Weight: 107 kg
+        </title></circle>
+<circle class=dot cx="35.5609756097561%" cy="44.666666666666664%"><title>Date: 2023-08-21
+        Weight: 107 kg
+        </title></circle>
+<circle class=dot cx="36.34146341463415%" cy="44.666666666666664%"><title>Date: 2023-08-28
+        Weight: 107 kg
+        </title></circle>
+<circle class=dot cx="37.1219512195122%" cy="44.666666666666664%"><title>Date: 2023-09-04
+        Weight: 107 kg
+        </title></circle>
+<circle class=dot cx="37.90243902439024%" cy="44.666666666666664%"><title>Date: 2023-09-11
+        Weight: 107 kg
+        </title></circle>
+<circle class=dot cx="38.68292682926829%" cy="44.666666666666664%"><title>Date: 2023-09-18
+        Weight: 107 kg
+        </title></circle>
+<circle class=dot cx="39.463414634146346%" cy="44.666666666666664%"><title>Date: 2023-09-25
+        Weight: 107 kg
+        </title></circle>
+<circle class=dot cx="40.24390243902439%" cy="44.666666666666664%"><title>Date: 2023-10-02
+        Weight: 107 kg
+        </title></circle>
+<circle class=dot cx="41.02439024390244%" cy="34.00000000000001%"><title>Date: 2023-10-09
+        Weight: 108 kg
+        </title></circle>
+<circle class=dot cx="41.80487804878049%" cy="44.666666666666664%"><title>Date: 2023-10-16
+        Weight: 107 kg
+        </title></circle>
+<circle class=dot cx="42.58536585365854%" cy="44.666666666666664%"><title>Date: 2023-10-23
+        Weight: 107 kg
+        </title></circle>
+<circle class=dot cx="43.36585365853659%" cy="34.00000000000001%"><title>Date: 2023-10-30
+        Weight: 108 kg
+        </title></circle>
+<circle class=dot cx="44.14634146341464%" cy="23.33333333333333%"><title>Date: 2023-11-06
+        Weight: 109 kg
+        </title></circle>
+<circle class=dot cx="44.92682926829268%" cy="23.33333333333333%"><title>Date: 2023-11-13
+        Weight: 109 kg
+        </title></circle>
+<circle class=dot cx="45.70731707317073%" cy="34.00000000000001%"><title>Date: 2023-11-20
+        Weight: 108 kg
+        </title></circle>
+<circle class=dot cx="46.487804878048784%" cy="34.00000000000001%"><title>Date: 2023-11-27
+        Weight: 108 kg
+        </title></circle>
+<circle class=dot cx="47.26829268292683%" cy="34.00000000000001%"><title>Date: 2023-12-04
+        Weight: 108 kg
+        </title></circle>
+<circle class=dot cx="48.048780487804876%" cy="34.00000000000001%"><title>Date: 2023-12-11
+        Weight: 108 kg
+        </title></circle>
+<circle class=dot cx="48.829268292682926%" cy="34.00000000000001%"><title>Date: 2023-12-18
+        Weight: 108 kg
+        </title></circle>
+<circle class=dot cx="49.609756097560975%" cy="23.33333333333333%"><title>Date: 2023-12-25
+        Weight: 109 kg
+        </title></circle>
+<circle class=dot cx="50.390243902439025%" cy="12.66666666666667%"><title>Date: 2024-01-01
+        Weight: 110 kg
+        </title></circle>
+<circle class=dot cx="51.170731707317074%" cy="12.66666666666667%"><title>Date: 2024-01-08
+        Weight: 110 kg
+        </title></circle>
+<circle class=dot cx="51.951219512195124%" cy="2.0%"><title>Date: 2024-01-15
+        Weight: 111 kg
+        </title></circle>
+<circle class=dot cx="52.73170731707317%" cy="2.0%"><title>Date: 2024-01-22
+        Weight: 111 kg
+        </title></circle>
+<circle class=dot cx="53.51219512195122%" cy="2.0%"><title>Date: 2024-01-29
+        Weight: 111 kg
+        </title></circle>
+<circle class=dot cx="54.292682926829265%" cy="2.0%"><title>Date: 2024-02-05
+        Weight: 111 kg
+        </title></circle>
+<circle class=dot cx="55.07317073170732%" cy="2.0%"><title>Date: 2024-02-12
+        Weight: 111 kg
+        </title></circle>
+<circle class=dot cx="55.85365853658537%" cy="12.66666666666667%"><title>Date: 2024-02-19
+        Weight: 110 kg
+        </title></circle>
+<circle class=dot cx="56.63414634146341%" cy="2.0%"><title>Date: 2024-02-26
+        Weight: 111 kg
+        </title></circle>
+<circle class=dot cx="57.41463414634147%" cy="12.66666666666667%"><title>Date: 2024-03-04
+        Weight: 110 kg
+        </title></circle>
+<circle class=dot cx="58.195121951219505%" cy="12.66666666666667%"><title>Date: 2024-03-11
+        Weight: 110 kg
+        </title></circle>
+<circle class=dot cx="58.97560975609756%" cy="12.66666666666667%"><title>Date: 2024-03-18
+        Weight: 110 kg
+        </title></circle>
+<circle class=dot cx="59.75609756097562%" cy="23.33333333333333%"><title>Date: 2024-03-25
+        Weight: 109 kg
+        </title></circle>
+<circle class=dot cx="60.536585365853654%" cy="34.00000000000001%"><title>Date: 2024-04-01
+        Weight: 108 kg
+        </title></circle>
+<circle class=dot cx="61.31707317073171%" cy="23.33333333333333%"><title>Date: 2024-04-08
+        Weight: 109 kg
+        </title></circle>
+<circle class=dot cx="62.09756097560975%" cy="23.33333333333333%"><title>Date: 2024-04-15
+        Weight: 109 kg
+        </title></circle>
+<circle class=dot cx="62.8780487804878%" cy="34.00000000000001%"><title>Date: 2024-04-22
+        Weight: 108 kg
+        </title></circle>
+<circle class=dot cx="63.65853658536586%" cy="34.00000000000001%"><title>Date: 2024-04-29
+        Weight: 108 kg
+        </title></circle>
+<circle class=dot cx="64.43902439024389%" cy="44.666666666666664%"><title>Date: 2024-05-06
+        Weight: 107 kg
+        </title></circle>
+<circle class=dot cx="65.21951219512195%" cy="44.666666666666664%"><title>Date: 2024-05-13
+        Weight: 107 kg
+        </title></circle>
+<circle class=dot cx="65.99999999999999%" cy="34.00000000000001%"><title>Date: 2024-05-20
+        Weight: 108 kg
+        </title></circle>
+<circle class=dot cx="66.78048780487805%" cy="44.666666666666664%"><title>Date: 2024-05-27
+        Weight: 107 kg
+        </title></circle>
+<circle class=dot cx="67.5609756097561%" cy="34.00000000000001%"><title>Date: 2024-06-03
+        Weight: 108 kg
+        </title></circle>
+<circle class=dot cx="68.34146341463415%" cy="44.666666666666664%"><title>Date: 2024-06-10
+        Weight: 107 kg
+        </title></circle>
+<circle class=dot cx="69.1219512195122%" cy="23.33333333333333%"><title>Date: 2024-06-17
+        Weight: 109 kg
+        </title></circle>
+<circle class=dot cx="69.90243902439025%" cy="34.00000000000001%"><title>Date: 2024-06-24
+        Weight: 108 kg
+        </title></circle>
+<circle class=dot cx="70.6829268292683%" cy="34.00000000000001%"><title>Date: 2024-07-01
+        Weight: 108 kg
+        </title></circle>
+<circle class=dot cx="71.46341463414635%" cy="44.666666666666664%"><title>Date: 2024-07-08
+        Weight: 107 kg
+        </title></circle>
+<circle class=dot cx="72.2439024390244%" cy="44.666666666666664%"><title>Date: 2024-07-15
+        Weight: 107 kg
+        </title></circle>
+<circle class=dot cx="73.02439024390245%" cy="34.00000000000001%"><title>Date: 2024-07-22
+        Weight: 108 kg
+        </title></circle>
+<circle class=dot cx="73.80487804878048%" cy="44.666666666666664%"><title>Date: 2024-07-29
+        Weight: 107 kg
+        </title></circle>
+<circle class=dot cx="74.58536585365854%" cy="34.00000000000001%"><title>Date: 2024-08-05
+        Weight: 108 kg
+        </title></circle>
+<circle class=dot cx="75.36585365853658%" cy="44.666666666666664%"><title>Date: 2024-08-12
+        Weight: 107 kg
+        </title></circle>
+<circle class=dot cx="76.14634146341463%" cy="55.333333333333336%"><title>Date: 2024-08-19
+        Weight: 106 kg
+        </title></circle>
+<circle class=dot cx="76.92682926829269%" cy="55.333333333333336%"><title>Date: 2024-08-26
+        Weight: 106 kg
+        </title></circle>
+<circle class=dot cx="77.70731707317073%" cy="55.333333333333336%"><title>Date: 2024-09-02
+        Weight: 106 kg
+        </title></circle>
+<circle class=dot cx="78.48780487804878%" cy="55.333333333333336%"><title>Date: 2024-09-09
+        Weight: 106 kg
+        </title></circle>
+<circle class=dot cx="79.26829268292684%" cy="55.333333333333336%"><title>Date: 2024-09-16
+        Weight: 106 kg
+        </title></circle>
+<circle class=dot cx="80.04878048780488%" cy="55.333333333333336%"><title>Date: 2024-09-23
+        Weight: 106 kg
+        </title></circle>
+<circle class=dot cx="80.82926829268291%" cy="44.666666666666664%"><title>Date: 2024-09-30
+        Weight: 107 kg
+        </title></circle>
+<circle class=dot cx="81.60975609756098%" cy="44.666666666666664%"><title>Date: 2024-10-07
+        Weight: 107 kg
+        </title></circle>
+<circle class=dot cx="83.17073170731707%" cy="55.333333333333336%"><title>Date: 2024-10-21
+        Weight: 106 kg
+        </title></circle>
+<circle class=dot cx="85.51219512195121%" cy="55.333333333333336%"><title>Date: 2024-11-11
+        Weight: 106 kg
+        </title></circle>
+<circle class=dot cx="89.41463414634146%" cy="76.66666666666666%"><title>Date: 2024-12-16
+        Weight: 104 kg
+        </title></circle>
+<circle class=dot cx="90.97560975609757%" cy="12.66666666666667%"><title>Date: 2024-12-30
+        Weight: 110 kg
+        </title></circle>
+<circle class=dot cx="91.75609756097562%" cy="44.666666666666664%"><title>Date: 2025-01-06
+        Weight: 107 kg
+        </title></circle>
+<circle class=dot cx="92.53658536585365%" cy="34.00000000000001%"><title>Date: 2025-01-13
+        Weight: 108 kg
+        </title></circle>
+<circle class=dot cx="94.09756097560975%" cy="55.333333333333336%"><title>Date: 2025-01-27
+        Weight: 106 kg
+        </title></circle>
+<circle class=dot cx="94.8780487804878%" cy="55.333333333333336%"><title>Date: 2025-02-03
+        Weight: 106 kg
+        </title></circle>
+<circle class=dot cx="95.65853658536585%" cy="76.66666666666666%"><title>Date: 2025-02-10
+        Weight: 104 kg
+        </title></circle>
+<circle class=dot cx="96.4390243902439%" cy="55.333333333333336%"><title>Date: 2025-02-17
+        Weight: 106 kg
+        </title></circle>
+<circle class=dot cx="97.21951219512195%" cy="66.0%"><title>Date: 2025-02-24
+        Weight: 105 kg
+        </title></circle>
+<circle class=dot cx="98.0%" cy="76.66666666666666%"><title>Date: 2025-03-03
+        Weight: 104 kg
+        </title></circle>
+
+            </svg>
+
+            <p>The formula used to calculate the statistics in "Main power level" graph is a Landers formula (1985):
+                ( 100 * Weight ) / ( 101.3 - ( 2.67123 * repetitions ) ). There are also: The Brzycki (1993),
+                The Baechle (2000) and The Epley (1985) formulas but this one works fine for me.</p>
+
+            <p>The fitting of the curve was carried out by using 
+            <a href="https://en.wikipedia.org/wiki/Generalised_logistic_function">generalised logistic function</a>
+                which in some cases worked out just fine but in some failed as other tried formulas. This can be either 
+                due to too poor dataset or the fact that I am not a machine :) </p>
+
+            <p>The fitting equation employed is given by: <span style="color:var(--dark-scarlet);">((a - d) / ((1 + 
+            ((x / c) ** b)) ** e)) + d + f * x </span>
+            I took the liberty of adding the linear function to the equation, which resulted in a slight improvement. 
+            The grayed-out points are not considered in the fit calculation.</p>
+
+            <div style="height: 30vh;"></div>
+
+        </div>
+
+      <script type="text/javascript" src="plot.js"></script>
+
+      <script type="text/javascript" src="../scripts/transition.js"></script>
+      </body>
+
+    </html>
+    

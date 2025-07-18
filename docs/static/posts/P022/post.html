@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>POST</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../../styles/fonts.css">
+    <link rel="stylesheet" href="../../styles/transitions.css">
+    <link rel="stylesheet" href="../../styles/global.css">
+    <link rel="stylesheet" href="../../styles/post.css">
+    <script type="text/javascript" src="../../scripts/global.js"></script>
+
+
+  </head>
+  <body id="post_body">
+    <audio id="hover" src="../../sounds/hover.wav"></audio>
+    <audio id="click" src="../../sounds/click.wav"></audio>
+
+    <div class="transition transition-1 is-active"></div>
+    <div id="home"><img src="../../graphics/home.svg" onmouseenter="handleHover()" onmousedown='clickWaitGo(event, "/")'></div>
+
+    <div id="post_content">
+
+      <p>From when I was a little kid I always wanted to take x-ray pictures. Now I have a way to realise this dream.
+        As a first step
+        I bought an RTG cassette with intensifying screen inside. To check if what I was looking at really was an
+        intensifying screen I had to test it somehow. I came up with fun way to do this :). I placed the americium
+        extracted from a smoke alarm on saied screen with a vase made out of uranium glass. The glass was way to week to
+        produce visible response on the screen however the americium showed a clear response!</p>
+      <img src="americium.jpg">
+      <p>These photos show a stack of 3 photos with 7 min exposure (left) and one with a reference light photo (right).
+      This clearly shows the color of the intensifying screen and confirm that it works :)</p>
+
+      <p>How it sounds under a Geiger Miller counter (I turned on a power supply for ambient):</p>
+      <audio controls loop src="background.mp3"></audio>
+      <p style="text-align: right;">~background</p>
+      <audio controls loop src="uranium_glass.mp3"></audio>
+      <p style="text-align: right;">~uranium glass vase</p>
+      <audio controls loop src="americium.mp3"></audio>
+      <p style="text-align: right;">~americium</p>
+      <p>Note that americium is only 2mm diameter thin coated disc D:</p>
+
+      <div style="min-height: 10vh;"></div>
+    </div>
+
+
+  <script type="text/javascript" src="../../scripts/transition.js"></script>
+  </body>
+
+</html>

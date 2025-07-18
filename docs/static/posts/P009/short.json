@@ -1,0 +1,7 @@
+{
+  "title1": "SYNTH",
+  "title2": "CD4046",
+  "id": "P009",
+  "date": "24.09.2019",
+  "description": "Using three 4046 VCO oscillators connected in series I was able to make a very simple yet quite unpredictable mono synth. It was designed to work with guitar pedals as modulators to make sort of drone ambient music. The controls are volume, three inputs to control oscillators inputs and two capacitor switches for first VCO. Project was a successful first step in DIY synth and gave me some experience in audio electronics. First audio file below is presenting raw oscillator sounds. It may be rough but nevertheless still suspiring for that simple design. Second file is same oscillator but connected to guitar effects such as wah pedal, delay and reverb. It was recorded quite randomly and mixed from 3 separate recordings. The outcome, given the randomness of its creation, is very pleasing to ear for ambient background."
+}

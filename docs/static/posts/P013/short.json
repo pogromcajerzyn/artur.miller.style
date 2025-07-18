@@ -1,0 +1,7 @@
+{
+  "title1": "ELECTROSCOPE",
+  "title2": "VER.1",
+  "id": "P013",
+  "date": "22.04.2021",
+  "description": "When it comes to measuring voltage we usually make it happen by introducing some apparatus in contact with the object. But sometimes, the voltage is either too high or the charge is very small which makes the measurement hard or simply not applicable. Electroscope is a device not measuring voltage directly but the presence of charge. Each charged object is exhibiting an electric field which fades with a square. We can test for presence of charge without destroying it by observing induction. I found that the perfect fit for this task is a FET transistor as it’s very sensitive to noise (when not grounded nor shielded). "
+}

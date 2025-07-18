@@ -1,0 +1,7 @@
+{
+  "title1": "UV / IR",
+  "title2": "IMAGING",
+  "id": "P004",
+  "date": "11.10.2018",
+  "description": "Human eye can see light in range of about 380 – 740nm but CMOS sensor commonly used in cameras is capable of reregistering light in wider spectrum, starting in infrared ~1100nm to UV-A ~200nm. Sensitivity may differ depending on manufacturer. Average camera doesn’t see the hidden part of the spectrum. It’s because it has special filters that block certain parts of light, therefore letting it see the world as we see it. In order to take picture in UV or IR we firstly had to remove the blocking filter."
+}

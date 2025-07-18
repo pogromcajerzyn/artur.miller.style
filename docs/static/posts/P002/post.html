@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>POST</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../../styles/fonts.css">
+    <link rel="stylesheet" href="../../styles/transitions.css">
+    <link rel="stylesheet" href="../../styles/global.css">
+    <link rel="stylesheet" href="../../styles/post.css">
+    <script type="text/javascript" src="../../scripts/global.js"></script>
+
+
+  </head>
+  <body id="post_body">
+    <audio id="hover" src="../../sounds/hover.wav"></audio>
+    <audio id="click" src="../../sounds/click.wav"></audio>
+
+    <div class="transition transition-1 is-active"></div>
+    <div id="home"><img src="../../graphics/home.svg" onmouseenter="handleHover()" onmousedown='clickWaitGo(event, "/")'></div>
+
+    <div id="post_content">
+
+      <p>We upgraded our vacuum chamber and can finally perform tests without the need to worry about air leakage. The new chamber is built from cylindrical glass tube, aluminum bottom plate and dielectric top plate. We added a two step pump system ( only rotary pump working now ) Rotary pump and Diffusion pump. Lower pressure resulted in predictable and center based plasma which can already be used to make fusion happen. The voltage during tests did not get passed 10kV.</p>
+      <iframe  src="https://www.youtube.com/embed/TWJvYL05gEk"></iframe>
+
+
+      <div style="min-height: 10vh;"></div>
+    </div>
+
+
+  <script type="text/javascript" src="../../scripts/transition.js"></script>
+  </body>
+
+</html>

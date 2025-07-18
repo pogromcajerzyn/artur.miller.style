@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Przygody Chomiczka</title>
+    <link rel="icon" href="../graphics/icon.png" type="image/x-icon">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../styles/fonts.css">
+    <link rel="stylesheet" href="../styles/transitions.css">
+    <link rel="stylesheet" href="../styles/global.css">
+    <link rel="stylesheet" href="chomik.css">
+    <script type="text/javascript" src="../scripts/global.js"></script>
+
+
+  </head>
+  <body id="chomik_body">
+    <audio id="hover" src="../sounds/hover.wav"></audio>
+    <audio id="click" src="../sounds/click.wav"></audio>
+
+    <div class="transition transition-1 is-active"></div>
+    <div id="home"><img src="../graphics/home.svg" onmouseenter="handleHover()" onmousedown='clickWaitGo(event, "/")'></div>
+
+    <div id="chomik_content">
+        <p style="font-size: 28px;">Przygody Chomiczka</p>
+
+        <div id="map_container" style="position: relative; width: 100%;">
+            <img src="graphics/world.svg" style="width: 100%; height: auto; border: 0 solid black;">
+        </div>
+
+
+        <p>Niegdyś pluszowy chomik zalegający ze swoimi braćmi na sklepowej półce, teraz wielki podróżnik. Nieustraszony
+        pokonuje morza i oceany w poszukiwaniu wrażeń. Przysiągł, iż nie spocznie dopóki nie zobaczy całego świata.
+            Każdą swoją ekspedycję dokumentuje zdjęciem, które możecie podziwiać na tej stronie.</p>
+        <p></p>
+
+        <div class="chomik" data-lat="35.89478307002257" data-lng="14.512282111413962" data-name="malta">
+            <img src="graphics/malta_light.jpg" loading="lazy">
+            <p>Malta - Valletta 2024</p>
+        </div>
+
+        <div class="chomik" data-lat="48.19317435396862" data-lng="16.380583572159086" data-name="austria">
+            <img src="graphics/austria_light.jpg" loading="lazy">
+            <p>Austria - Vienna 2022</p>
+        </div>
+
+        <div class="chomik" data-lat="53.892147877" data-lng="21.479532846" data-name="poland3">
+            <img src="graphics/poland3_light.jpg" loading="lazy">
+            <p>Poland - Mazury 2022</p>
+        </div>
+
+        <div class="chomik" data-lat="50.38645318709299" data-lng="16.081679025867807" data-name="czech_republic">
+            <img src="graphics/czech_republic_light.jpg" loading="lazy">
+            <p>Czech Republic – Pláž u Rozkoše – Šeřeč 2022</p>
+        </div>
+
+        <div class="chomik" data-lat="34.92612010038234" data-lng="32.34799824232903" data-name="cyprus2">
+            <img src="graphics/cyprus2_light.jpg" loading="lazy">
+            <p>Cyprus – Avakas Gorge 2022</p>
+        </div>
+
+        <div class="chomik" data-lat="34.87370919179218" data-lng="32.34099497211328" data-name="cyprus1">
+            <img src="graphics/cyprus1_light.jpg" loading="lazy">
+            <p>Cyprus – Pegeia 2022</p>
+        </div>
+
+        <div class="chomik" data-lat="53.799184750" data-lng="21.5724125636" data-name="poland2">
+            <img src="graphics/poland2_light.jpg" loading="lazy">
+            <p>Poland - Mazury 2021</p>
+        </div>
+
+        <div class="chomik" data-lat="51.885074150" data-lng="16.0283627907" data-name="poland1">
+            <img src="graphics/poland1_light.jpg" loading="lazy">
+            <p>Poland – Sława 2021</p>
+        </div>
+
+        <div class="chomik" data-lat="47.50262130667" data-lng="19.034549224514" data-name="hungary">
+            <img src="graphics/hungary_light.jpg" loading="lazy">
+            <p>Hungary – Budapest 2019</p>
+        </div>
+
+        <div class="chomik" data-lat="45.31013839914581" data-lng="14.279666630943375" data-name="croatia">
+            <img src="graphics/croatia_light.jpg" loading="lazy">
+            <p>Croatia – Ičići 2019</p>
+        </div>
+
+        <div class="chomik" data-lat="39.85177601077151" data-lng="2.806312344283777" data-name="mallorca">
+            <img src="graphics/mallorca_light.jpg" loading="lazy">
+            <p>Mallorca – Sa Calobra 2018</p>
+        </div>
+
+        <p></p><p></p>
+    </div>
+
+
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const mapContainer = document.getElementById('map_container');
+        const chomiks = document.querySelectorAll('.chomik');
+
+        chomiks.forEach((chomik, index) => {
+            // Assuming your map is globally stretched from lat 90 to -90 and lng -180 to 180
+            const lat = parseFloat(chomik.getAttribute('data-lat'));
+            const lng = parseFloat(chomik.getAttribute('data-lng'));
+            const name = chomik.getAttribute('data-name') || 'Unknown location';
+
+            const topPercent = (90 - lat) / 180 * 100;
+            const leftPercent = (180 + lng) / 360 * 100;
+
+            const marker = document.createElement('div');
+            marker.className = 'marker';
+            marker.dataset.name = name;
+            marker.style.position = 'absolute';
+            marker.style.top = `${topPercent}%`;
+            marker.style.left = `${leftPercent}%`;
+            marker.innerHTML = '🐹';
+            marker.title = name;
+
+            marker.addEventListener('mouseenter', () => {
+                handleHover();
+            });
+
+            marker.addEventListener('click', () => {
+                handleClick();
+                chomik.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            });
+
+            mapContainer.appendChild(marker);
+        });
+    });
+    </script>
+
+
+  <script type="text/javascript" src="../scripts/transition.js"></script>
+  </body>
+
+</html>

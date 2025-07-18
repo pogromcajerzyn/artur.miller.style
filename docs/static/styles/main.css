@@ -1,0 +1,183 @@
+:root {
+    --me-border-radius: 6px;
+}
+
+#middle_column {
+    user-select: none;
+    margin: 0 auto;
+    max-width: var(--max-width);
+    min-width: var(--min-width);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0;
+    padding: var(--site-padding);
+}
+
+#me_container{
+
+    max-height: 70vh;
+    border: var(--small-edges) solid var(--dark-scarlet);
+    border-top-left-radius: calc(var(--me-border-radius) * var(--font-scaler));
+    border-top-right-radius: calc(var(--me-border-radius) * var(--font-scaler));
+    aspect-ratio: 3 / 2;
+    overflow: hidden;
+    background-image:  linear-gradient( rgba(5, 5, 5, 0.9), rgba(25, 25, 25, 0.9) ), url('../graphics/tloszachownica_BW_light.png');
+    background-size: cover;
+    position: relative;
+
+}
+#me {
+    transform: translate(10%, 0);
+    width: 100%;
+    height: auto;
+}
+
+#me_overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.main_text {
+    font-family: ImpactedDesu;
+    text-anchor: left; /* Center horizontally */
+    dominant-baseline: middle; /* Center vertically */
+}
+
+#me_hello{
+    fill: rgb(45, 45, 45);
+    font-size: calc(10px * var(--font-scaler));
+}
+#me_name{
+    fill: var(--dark-scarlet);
+    font-size: calc(30px * var(--font-scaler));
+}
+#me_title{
+    fill: var(--egg-white);
+    font-size: calc(10px * var(--font-scaler));
+}
+
+#me_invite{
+    fill: rgb(55, 55, 55);
+    font-size: calc(8px * var(--font-scaler));
+    font-family: UnixelDesu
+}
+
+#me_directional {
+    fill: rgb(55, 55, 55);
+    font-size: calc(8px * var(--font-scaler));
+    font-family: UnixelDesu
+}
+
+#me_contact {
+    fill: var(--egg-white);
+    font-size: calc(8px * var(--font-scaler));
+    user-select: text;
+    font-family: UnixelDesu
+
+}
+
+#about_me {
+    overflow: hidden;
+    display: flex;
+    padding: var(--text-padding);
+    background: black;
+
+    font-size: calc(6px * var(--font-scaler));
+    font-family: UnixelDesu;
+    color: var(--egg-white);
+
+    white-space: nowrap;
+    text-align: justify;
+    text-justify: inter-word;
+
+    transition: none;
+
+    margin: 0 0 calc(2px * var(--font-scaler)) 0;
+
+    border: var(--small-edges) solid var(--dark-scarlet);
+    border-top: 0 solid var(--dark-scarlet);
+}
+
+
+#my_text{
+    width: 100%;
+    white-space: pre-wrap;
+    margin: 0;
+}
+
+
+#foot{
+    height: 10vw;
+}
+
+
+#more{
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+
+    margin: 0 0 calc(2px * var(--font-scaler)) 0;
+    background: black;
+
+    transition: color 0.5s ease, height 0.5s ease, margin 0.5s ease, border-color 0.5s ease;
+
+}
+
+.me_option{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: var(--small-edges) solid var(--dark-scarlet);
+    aspect-ratio: 10 / 1;
+    overflow: hidden;
+    border-bottom: none;
+}
+.me_option_last{
+    border: var(--small-edges) solid var(--dark-scarlet);
+    border-bottom-left-radius: calc(var(--me-border-radius) * var(--font-scaler));
+    border-bottom-right-radius: calc(var(--me-border-radius) * var(--font-scaler));
+}
+
+
+.butt_on {
+    height:100%;
+    padding-right: calc(8px * var(--font-scaler));
+
+    font-family: ImpactedDesu;
+    font-size: calc(12px * var(--font-scaler));
+    color: var(--egg-white);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-shadow: 0.1em 0.1em var(--dark-scarlet);
+    transition: all var(--transition-time) ease-out;
+    text-decoration: none;
+
+    white-space: pre;
+}
+
+.me_option:hover {
+    background-color: var(--dark-gray);
+}
+
+.me_option:hover .butt_on {
+    font-size: calc(13px * var(--font-scaler));
+    transition: all var(--transition-time) ease-out;
+}
+
+.more_icon {
+    padding-left: calc(8px * var(--font-scaler));;
+    height: calc(18px * var(--font-scaler));
+    transition: all 0.1s ease;
+}
+
+.me_option:hover .more_icon {
+    height: calc(20px * var(--font-scaler));
+    transition: all 0.1s ease
+}

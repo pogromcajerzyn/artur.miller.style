@@ -1,0 +1,100 @@
+#cv_body {
+    background-color: black;
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    margin-bottom: 0;
+    padding: 40px;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+#cv_content {
+    position: relative;
+    margin: 8vh var(--main-borders) auto;
+    padding: calc(1px * var(--font-scaler));
+
+    width: 100%;
+    max-width: 1240px;
+    min-width: 460px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background-color: var(--dark-gray);
+    border: var(--small-edges) solid var(--dark-gray);
+
+}
+
+#cv_content pre {
+    margin: 0 auto;
+    font-family: PTMono;
+    color: var(--egg-white);
+    font-size: calc(5px * var(--font-scaler));
+    /*line-height: 0;!*calc(6px * var(--font-scaler));*!*/
+    /*text-align: justify;*/
+    /*text-justify: inter-word;*/
+    /*margin-top: var(--main-borders); !* Adjust as needed *!*/
+}
+
+.cv_item {
+    width: 100%;
+    margin: calc(1px * var(--font-scaler)) 0 0;
+    padding: calc(1px * var(--font-scaler));
+    color: var(--egg-white);
+    font-family: BrutaluDesu;
+    font-size: calc(6px * var(--font-scaler));
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    position: relative;
+}
+
+.cv_item > div {
+  z-index: 1;
+}
+
+.cv_block_header {
+    margin: calc(26px * var(--font-scaler)) 0 0;
+    justify-content: center;
+    height: calc(8px * var(--font-scaler));
+    border: var(--small-edges) solid var(--gray);
+    background-color: var(--dark-scarlet);
+    font-size: calc(5px * var(--font-scaler));
+    border-top-left-radius: calc(var(--thumbnail-border-radius)/3);
+    border-top-right-radius: calc(var(--thumbnail-border-radius)/3);
+
+}
+
+.cv_block {
+    justify-content: space-between;
+    height: auto;
+    border: var(--small-edges) solid var(--gray);
+    background-color: var(--gray);
+    font-size: calc(5px * var(--font-scaler));
+}
+
+.cv_position {
+    justify-content: space-between;
+    height: auto;
+    border: var(--small-edges) solid var(--not-very-dark-gray);
+    background-color: var(--not-very-dark-gray);
+    font-size: calc(5px * var(--font-scaler));
+    font-family: PTMono;
+}
+
+.cv_precentage {
+    position: absolute;
+    background-color: var(--dark-scarlet);
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    z-index: 0;
+}

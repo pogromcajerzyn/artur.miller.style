@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>POST</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../../styles/fonts.css">
+    <link rel="stylesheet" href="../../styles/transitions.css">
+    <link rel="stylesheet" href="../../styles/global.css">
+    <link rel="stylesheet" href="../../styles/post.css">
+    <script type="text/javascript" src="../../scripts/global.js"></script>
+
+
+  </head>
+  <body id="post_body">
+    <audio id="hover" src="../../sounds/hover.wav"></audio>
+    <audio id="click" src="../../sounds/click.wav"></audio>
+
+    <div class="transition transition-1 is-active"></div>
+    <div id="home"><img src="../../graphics/home.svg" onmouseenter="handleHover()" onmousedown='clickWaitGo(event, "/")'></div>
+
+    <div id="post_content">
+
+      <p>Most of the work on this project is unfortunately lost due to hard drive death... But here is the summary of
+         what this project has been about (after over a year) :D</p>
+      <p>This project is a continuation of a UV / IR imaging project. It utilises a different approach than filters. It
+         uses a LED diodes as a source of decently narrowband light source (+-40nm). The benefit from this solution is
+         a much (and I mean much) cheaper way to get a multi-spectral photo. Moreover, the LEDs also in some cases
+         induce fluorescence which after calibration can be easily identified (the rgb response is different from
+         illumination).</p>
+      <p>The algorithm and images were unfortunately lost...</p>
+
+      <div style="min-height: 10vh;"></div>
+    </div>
+
+
+  <script type="text/javascript" src="../../scripts/transition.js"></script>
+  </body>
+
+</html>

@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "miller.style"
+version = "1.0.0"
+readme = "README.md"
+package-mode = false
+
+[tool.poetry.dependencies]
+python = "^3.12"
+pandas = "^2.1.4"
+ezodf = "^0.3.2"
+lxml = "^4.9.3"
+pyexcel = "^0.7.0"
+pyexcel-ods3 = "^0.6.1"
+scipy = "^1.11.4"
+matplotlib = "^3.8.2"
+paramiko = "^3.3.1"
+requests = "^2.31.0"
+mutagen = "^1.47.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

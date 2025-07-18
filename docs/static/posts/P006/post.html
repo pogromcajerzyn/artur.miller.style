@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>POST</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../../styles/fonts.css">
+    <link rel="stylesheet" href="../../styles/transitions.css">
+    <link rel="stylesheet" href="../../styles/global.css">
+    <link rel="stylesheet" href="../../styles/post.css">
+    <script type="text/javascript" src="../../scripts/global.js"></script>
+
+
+  </head>
+  <body id="post_body">
+    <audio id="hover" src="../../sounds/hover.wav"></audio>
+    <audio id="click" src="../../sounds/click.wav"></audio>
+
+    <div class="transition transition-1 is-active"></div>
+    <div id="home"><img src="../../graphics/home.svg" onmouseenter="handleHover()" onmousedown='clickWaitGo(event, "/")'></div>
+
+    <div id="post_content">
+
+      <p>Slowly but consistently our reactor is being upgraded with new features. In comparison to our first prototype this one has see-through glass cylinder allowing to view the reaction from different angles. For now, it still uses the same voltage source. Vacuum problem has been solved but we’re still waiting for second diffusion pump to be repaired. After that we can achieve even lower level of pressure than ever before, which will result in higher “contrast” in potential well. Current vacuum level is around 0.2 [mbar]. The measurement system has been mostly assembled and is currently waiting for a software. New electronics will allow to perform precise measurements of pressure voltage and other factors. Deuterium injection system was constructed out of two valves and a buffer pipe which holds dosed gas, until necessary.</p>
+      <p>We conducted an experiment to see if a visible cloud of ions inside the inner electrode is enough to start fusion but failed to do so. Problem with deuterium is that injection is controlled manually leading to uncertainty in quantity of released gas. The other problem is that deuterium is not pumped directly into the electrode. Those issues will be solved in next update. New impulse voltage source is being constructed to raise the voltage level and improve process efficiency. Below is a brief video showing our progress.</p>
+      <iframe  src="https://www.youtube.com/embed/DZ4NWwpWY7o"></iframe>
+
+
+      <div style="min-height: 10vh;"></div>
+    </div>
+
+
+  <script type="text/javascript" src="../../scripts/transition.js"></script>
+  </body>
+
+</html>

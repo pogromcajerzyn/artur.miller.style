@@ -1,0 +1,697 @@
+
+    <!DOCTYPE html>
+<html>
+  <head>
+    <title>My CDs</title>
+    <link rel="icon" href="../graphics/icon.png" type="image/x-icon">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../styles/fonts.css">
+    <link rel="stylesheet" href="../styles/transitions.css">
+    <link rel="stylesheet" href="../styles/global.css">
+    <link rel="stylesheet" href="cds.css">
+    <script type="text/javascript" src="../scripts/global.js"></script>
+
+
+  </head>
+  <body id="cds_body">
+    <audio id="hover" src="../sounds/hover.wav"></audio>
+    <audio id="click" src="../sounds/click.wav"></audio>
+
+    <div class="transition transition-1 is-active"></div>
+    <div id="home"><img src="../graphics/home.svg" onmouseenter="handleHover()" onmousedown='clickWaitGo(event, "/")'></div>
+
+
+    <div id="cds_content">
+      <h1>The CDs I'm craving</h1>
+      <p></p>
+      <p>Mariya Takeuchi - Variety (30TH Annversary Edition)</p>
+      <p>Brad Sucks - I Don't Know What I'm Doing</p>
+      <p>Voltaire: To the Bottom of the Sea</p>
+      <p>Sons of Perdition - The Kingdom Is On Fire</p>
+      <p>Yasuha - Transit</p>
+      <p>Brad Sucks - Guess Who's a Mess</p>
+      <p>Brad Sucks - Out of It</p>
+      <p>Swans - White Light From The Mouth Of Infinity</p>
+      <p></p><p></p>
+      <h1>My collection</h1>
+      <p></p>
+    <div id="showcase">
+      
+      <div class="cd"><img src="cd_thumbnails/Celloverse.jpg" alt="Celloverse cover" width="200" height="200">
+<p>2CELLOS - Celloverse (2015)</p></div>
+<div class="cd"><img src="cd_thumbnails/In Da Club [Single].jpg" alt="In Da Club [Single] cover" width="200" height="200">
+<p>50 Cent - In Da Club [Single] (2002)</p></div>
+<div class="cd"><img src="cd_thumbnails/Eat The Elephant.jpg" alt="Eat The Elephant cover" width="200" height="200">
+<p>A Perfect Circle - Eat The Elephant (2018)</p></div>
+<div class="cd"><img src="cd_thumbnails/Slumdog Millionaire.jpg" alt="Slumdog Millionaire cover" width="200" height="200">
+<p>A.R. Rahman - Slumdog Millionaire (2008)</p></div>
+<div class="cd"><img src="cd_thumbnails/Ballbreaker.jpg" alt="Ballbreaker cover" width="200" height="200">
+<p>AC-DC - Ballbreaker (1995)</p></div>
+<div class="cd"><img src="cd_thumbnails/Iron Man 2.jpg" alt="Iron Man 2 cover" width="200" height="200">
+<p>AC-DC - Iron Man 2 (2010)</p></div>
+<div class="cd"><img src="cd_thumbnails/Fishdick Zwei.jpg" alt="Fishdick Zwei cover" width="200" height="200">
+<p>Acid Drinkers - Fishdick Zwei (2010)</p></div>
+<div class="cd"><img src="cd_thumbnails/Verses of Steel.jpg" alt="Verses of Steel cover" width="200" height="200">
+<p>Acid Drinkers - Verses of Steel (2008)</p></div>
+<div class="cd"><img src="cd_thumbnails/Le Voyage Dans La Lune.jpg" alt="Le Voyage Dans La Lune cover" width="200" height="200">
+<p>Air - Le Voyage Dans La Lune (2012)</p></div>
+<div class="cd"><img src="cd_thumbnails/No Grave But The Sea.jpg" alt="No Grave But The Sea cover" width="200" height="200">
+<p>Alestorm - No Grave But The Sea (2017)</p></div>
+<div class="cd"><img src="cd_thumbnails/Dirt.jpg" alt="Dirt cover" width="200" height="200">
+<p>Alice In Chains - Dirt (2003)</p></div>
+<div class="cd"><img src="cd_thumbnails/Jomsviking.jpg" alt="Jomsviking cover" width="200" height="200">
+<p>Amon Amarth - Jomsviking (2016)</p></div>
+<div class="cd"><img src="cd_thumbnails/Selected Ambient Works 85-92.jpg" alt="Selected Ambient Works 85-92 cover" width="200" height="200">
+<p>Aphex Twin - Selected Ambient Works 85-92 (1993)</p></div>
+<div class="cd"><img src="cd_thumbnails/Raise The Devil.jpg" alt="Raise The Devil cover" width="200" height="200">
+<p>Aquasky - Raise The Devil (2011)</p></div>
+<div class="cd"><img src="cd_thumbnails/AM.jpg" alt="AM cover" width="200" height="200">
+<p>Arctic Monkeys - AM (2006)</p></div>
+<div class="cd"><img src="cd_thumbnails/Run.jpg" alt="Run cover" width="200" height="200">
+<p>AWOLNATION - Run (2015)</p></div>
+<div class="cd"><img src="cd_thumbnails/01011001 [Disc 1].jpg" alt="01011001 [Disc 1] cover" width="200" height="200">
+<p>Ayreon - 01011001 [Disc 1] (2018)</p></div>
+<div class="cd"><img src="cd_thumbnails/01011001 [Disc 2].jpg" alt="01011001 [Disc 2] cover" width="200" height="200">
+<p>Ayreon - 01011001 [Disc 2] (2018)</p></div>
+<div class="cd"><img src="cd_thumbnails/Actual Fantasy- Revisited.jpg" alt="Actual Fantasy- Revisited cover" width="200" height="200">
+<p>Ayreon - Actual Fantasy- Revisited (1996)</p></div>
+<div class="cd"><img src="cd_thumbnails/Into The Electric Castle [Disc 1].jpg" alt="Into The Electric Castle [Disc 1] cover" width="200" height="200">
+<p>Ayreon - Into The Electric Castle [Disc 1] (1998)</p></div>
+<div class="cd"><img src="cd_thumbnails/Into The Electric Castle [Disc 2].jpg" alt="Into The Electric Castle [Disc 2] cover" width="200" height="200">
+<p>Ayreon - Into The Electric Castle [Disc 2] (1998)</p></div>
+<div class="cd"><img src="cd_thumbnails/The Final Experiment [Disc 1].jpg" alt="The Final Experiment [Disc 1] cover" width="200" height="200">
+<p>Ayreon - The Final Experiment [Disc 1] (1995)</p></div>
+<div class="cd"><img src="cd_thumbnails/The Final Experiment [Disc 2].jpg" alt="The Final Experiment [Disc 2] cover" width="200" height="200">
+<p>Ayreon - The Final Experiment [Disc 2] (1995)</p></div>
+<div class="cd"><img src="cd_thumbnails/The Human Equation [Disc 1].jpg" alt="The Human Equation [Disc 1] cover" width="200" height="200">
+<p>Ayreon - The Human Equation [Disc 1] (2004)</p></div>
+<div class="cd"><img src="cd_thumbnails/The Human Equation [Disc 2].jpg" alt="The Human Equation [Disc 2] cover" width="200" height="200">
+<p>Ayreon - The Human Equation [Disc 2] (2004)</p></div>
+<div class="cd"><img src="cd_thumbnails/The Source [Disc 1].jpg" alt="The Source [Disc 1] cover" width="200" height="200">
+<p>Ayreon - The Source [Disc 1] (2017)</p></div>
+<div class="cd"><img src="cd_thumbnails/The Source [Disc 1] instrumental.jpg" alt="The Source [Disc 1] instrumental cover" width="200" height="200">
+<p>Ayreon - The Source [Disc 1] instrumental (2017)</p></div>
+<div class="cd"><img src="cd_thumbnails/The Source [Disc 2].jpg" alt="The Source [Disc 2] cover" width="200" height="200">
+<p>Ayreon - The Source [Disc 2] (2017)</p></div>
+<div class="cd"><img src="cd_thumbnails/The Source [Disc 2] instrumantal.jpg" alt="The Source [Disc 2] instrumantal cover" width="200" height="200">
+<p>Ayreon - The Source [Disc 2] instrumantal (2017)</p></div>
+<div class="cd"><img src="cd_thumbnails/The Theory Of Everything [Disc 1].jpg" alt="The Theory Of Everything [Disc 1] cover" width="200" height="200">
+<p>Ayreon - The Theory Of Everything [Disc 1] (2013)</p></div>
+<div class="cd"><img src="cd_thumbnails/The Theory Of Everything [Disc 2].jpg" alt="The Theory Of Everything [Disc 2] cover" width="200" height="200">
+<p>Ayreon - The Theory Of Everything [Disc 2] (2013)</p></div>
+<div class="cd"><img src="cd_thumbnails/Transitus [Disc 1].jpg" alt="Transitus [Disc 1] cover" width="200" height="200">
+<p>Ayreon - Transitus [Disc 1] (2020)</p></div>
+<div class="cd"><img src="cd_thumbnails/Transitus [Disc 2].jpg" alt="Transitus [Disc 2] cover" width="200" height="200">
+<p>Ayreon - Transitus [Disc 2] (2018)</p></div>
+<div class="cd"><img src="cd_thumbnails/Universal Migrator Part 2- Flight Of The Migrator.jpg" alt="Universal Migrator Part 2- Flight Of The Migrator cover" width="200" height="200">
+<p>Ayreon - Universal Migrator Part 2- Flight Of The Migrator (2000)</p></div>
+<div class="cd"><img src="cd_thumbnails/Universal Migrator Pt.1 & 2 [Disc 1].jpg" alt="Universal Migrator Pt.1 & 2 [Disc 1] cover" width="200" height="200">
+<p>Ayreon - Universal Migrator Pt.1 & 2 [Disc 1] (2000)</p></div>
+<div class="cd"><img src="cd_thumbnails/Crazy Itch Radio.jpg" alt="Crazy Itch Radio cover" width="200" height="200">
+<p>Basement Jaxx - Crazy Itch Radio (2006)</p></div>
+<div class="cd"><img src="cd_thumbnails/Junto (Special Edition).jpg" alt="Junto (Special Edition) cover" width="200" height="200">
+<p>Basement Jaxx - Junto (Special Edition) (2014)</p></div>
+<div class="cd"><img src="cd_thumbnails/Junto Remixed.jpg" alt="Junto Remixed cover" width="200" height="200">
+<p>Basement Jaxx - Junto Remixed (2015)</p></div>
+<div class="cd"><img src="cd_thumbnails/Remedy.jpg" alt="Remedy cover" width="200" height="200">
+<p>Basement Jaxx - Remedy (1999)</p></div>
+<div class="cd"><img src="cd_thumbnails/Rooty.jpg" alt="Rooty cover" width="200" height="200">
+<p>Basement Jaxx - Rooty (2001)</p></div>
+<div class="cd"><img src="cd_thumbnails/Scars.jpg" alt="Scars cover" width="200" height="200">
+<p>Basement Jaxx - Scars (2009)</p></div>
+<div class="cd"><img src="cd_thumbnails/Licensed To Ill.jpg" alt="Licensed To Ill cover" width="200" height="200">
+<p>Beastie Boys - Licensed To Ill (1986)</p></div>
+<div class="cd"><img src="cd_thumbnails/Evangelion.jpg" alt="Evangelion cover" width="200" height="200">
+<p>Behemoth - Evangelion (2009)</p></div>
+<div class="cd"><img src="cd_thumbnails/The Apostasy.jpg" alt="The Apostasy cover" width="200" height="200">
+<p>Behemoth - The Apostasy (2007)</p></div>
+<div class="cd"><img src="cd_thumbnails/Scope Neglect.jpg" alt="Scope Neglect cover" width="200" height="200">
+<p>Ben Frost - Scope Neglect (2024)</p></div>
+<div class="cd"><img src="cd_thumbnails/Best Of Benny Benassi.jpg" alt="Best Of Benny Benassi cover" width="200" height="200">
+<p>Benny Benassi - Best Of Benny Benassi (2006)</p></div>
+<div class="cd"><img src="cd_thumbnails/HIT ME HARD AND SOFT.jpg" alt="HIT ME HARD AND SOFT cover" width="200" height="200">
+<p>Billie Eilish - HIT ME HARD AND SOFT (2024)</p></div>
+<div class="cd"><img src="cd_thumbnails/WHEN WE ALL FALL ASLEEP, WHERE DO WE GO-.jpg" alt="WHEN WE ALL FALL ASLEEP, WHERE DO WE GO- cover" width="200" height="200">
+<p>Billie Eilish - WHEN WE ALL FALL ASLEEP, WHERE DO WE GO- (2019)</p></div>
+<div class="cd"><img src="cd_thumbnails/Stronger Than Death.jpg" alt="Stronger Than Death cover" width="200" height="200">
+<p>Black Label Society - Stronger Than Death (2000)</p></div>
+<div class="cd"><img src="cd_thumbnails/13.jpg" alt="13 cover" width="200" height="200">
+<p>Black Sabbath - 13 (2013)</p></div>
+<div class="cd"><img src="cd_thumbnails/Paranoid.jpg" alt="Paranoid cover" width="200" height="200">
+<p>Black Sabbath - Paranoid (1976)</p></div>
+<div class="cd"><img src="cd_thumbnails/Melody Of Certain Damaged Lemons.jpg" alt="Melody Of Certain Damaged Lemons cover" width="200" height="200">
+<p>Blonde Redhead - Melody Of Certain Damaged Lemons (2000)</p></div>
+<div class="cd"><img src="cd_thumbnails/Epilogue.jpg" alt="Epilogue cover" width="200" height="200">
+<p>Blowpipe - Epilogue ()</p></div>
+<div class="cd"><img src="cd_thumbnails/Greatest Hits [Disc 1].jpg" alt="Greatest Hits [Disc 1] cover" width="200" height="200">
+<p>Bon Jovi - Greatest Hits [Disc 1] (2008)</p></div>
+<div class="cd"><img src="cd_thumbnails/Greatest Hits [Disc 2].jpg" alt="Greatest Hits [Disc 2] cover" width="200" height="200">
+<p>Bon Jovi - Greatest Hits [Disc 2] (2010)</p></div>
+<div class="cd"><img src="cd_thumbnails/Black Sands.jpg" alt="Black Sands cover" width="200" height="200">
+<p>Bonobo - Black Sands (2010)</p></div>
+<div class="cd"><img src="cd_thumbnails/Without Me.jpg" alt="Without Me cover" width="200" height="200">
+<p>British Beef - Without Me (2005)</p></div>
+<div class="cd"><img src="cd_thumbnails/Last Poem.jpg" alt="Last Poem cover" width="200" height="200">
+<p>Brunette Models - Last Poem (2008)</p></div>
+<div class="cd"><img src="cd_thumbnails/Sound_A.jpg" alt="Sound_A cover" width="200" height="200">
+<p>Bubble Chamber - Sound_A (2016)</p></div>
+<div class="cd"><img src="cd_thumbnails/The Poison.jpg" alt="The Poison cover" width="200" height="200">
+<p>Bullet For My Valentine - The Poison (2005)</p></div>
+<div class="cd"><img src="cd_thumbnails/Cage The Elephant.jpg" alt="Cage The Elephant cover" width="200" height="200">
+<p>Cage The Elephant - Cage The Elephant (2008)</p></div>
+<div class="cd"><img src="cd_thumbnails/Goodbye Cruel World.jpg" alt="Goodbye Cruel World cover" width="200" height="200">
+<p>Custard - Goodbye Cruel World (2000)</p></div>
+<div class="cd"><img src="cd_thumbnails/Musique, Vol. 1- 1993-2005.jpg" alt="Musique, Vol. 1- 1993-2005 cover" width="200" height="200">
+<p>Daft Punk - Musique, Vol. 1- 1993-2005 (2006)</p></div>
+<div class="cd"><img src="cd_thumbnails/Midnight.jpg" alt="Midnight cover" width="200" height="200">
+<p>Dan Lissvik - Midnight (2016)</p></div>
+<div class="cd"><img src="cd_thumbnails/The Serpent's Egg.jpg" alt="The Serpent's Egg cover" width="200" height="200">
+<p>Dead Can Dance - The Serpent's Egg (1988)</p></div>
+<div class="cd"><img src="cd_thumbnails/Within The Realm Of A Dying Sun.jpg" alt="Within The Realm Of A Dying Sun cover" width="200" height="200">
+<p>Dead Can Dance - Within The Realm Of A Dying Sun (1987)</p></div>
+<div class="cd"><img src="cd_thumbnails/] album title goes here [.jpg" alt="] album title goes here [ cover" width="200" height="200">
+<p>deadmau5 - ] album title goes here [ (2012)</p></div>
+<div class="cd"><img src="cd_thumbnails/Made In Japan [Live] [Disc 1].jpg" alt="Made In Japan [Live] [Disc 1] cover" width="200" height="200">
+<p>Deep Purple - Made In Japan [Live] [Disc 1] (1972)</p></div>
+<div class="cd"><img src="cd_thumbnails/Made In Japan [Live] [Disc 2].jpg" alt="Made In Japan [Live] [Disc 2] cover" width="200" height="200">
+<p>Deep Purple - Made In Japan [Live] [Disc 2] (1972)</p></div>
+<div class="cd"><img src="cd_thumbnails/$O$.jpg" alt="$O$ cover" width="200" height="200">
+<p>Die Antwoord - $O$ (2018)</p></div>
+<div class="cd"><img src="cd_thumbnails/V.jpg" alt="V cover" width="200" height="200">
+<p>Digit All Love - V (2010)</p></div>
+<div class="cd"><img src="cd_thumbnails/The Collection.jpg" alt="The Collection cover" width="200" height="200">
+<p>Dio - The Collection (2003)</p></div>
+<div class="cd"><img src="cd_thumbnails/The Last In Line.jpg" alt="The Last In Line cover" width="200" height="200">
+<p>Dio - The Last In Line (1984)</p></div>
+<div class="cd"><img src="cd_thumbnails/Dire Straits.jpg" alt="Dire Straits cover" width="200" height="200">
+<p>Dire Straits - Dire Straits (1978)</p></div>
+<div class="cd"><img src="cd_thumbnails/Settle.jpg" alt="Settle cover" width="200" height="200">
+<p>Disclosure - Settle (2013)</p></div>
+<div class="cd"><img src="cd_thumbnails/Asylum.jpg" alt="Asylum cover" width="200" height="200">
+<p>Disturbed - Asylum (2010)</p></div>
+<div class="cd"><img src="cd_thumbnails/Immortalized.jpg" alt="Immortalized cover" width="200" height="200">
+<p>Disturbed - Immortalized (2015)</p></div>
+<div class="cd"><img src="cd_thumbnails/Indestructible.jpg" alt="Indestructible cover" width="200" height="200">
+<p>Disturbed - Indestructible (2008)</p></div>
+<div class="cd"><img src="cd_thumbnails/A Thing Called Divine Fits.jpg" alt="A Thing Called Divine Fits cover" width="200" height="200">
+<p>Divine Fits - A Thing Called Divine Fits (2012)</p></div>
+<div class="cd"><img src="cd_thumbnails/Explosive Cartuning 10 [Disc 1].jpg" alt="Explosive Cartuning 10 [Disc 1] cover" width="200" height="200">
+<p>DJ Marcky - Explosive Cartuning 10 [Disc 1] (2005)</p></div>
+<div class="cd"><img src="cd_thumbnails/Explosive Cartuning 10 [Disc 2].jpg" alt="Explosive Cartuning 10 [Disc 2] cover" width="200" height="200">
+<p>DJ Marcky - Explosive Cartuning 10 [Disc 2] (2020)</p></div>
+<div class="cd"><img src="cd_thumbnails/A Dramatic Turn Of Events.jpg" alt="A Dramatic Turn Of Events cover" width="200" height="200">
+<p>Dream Theater - A Dramatic Turn Of Events (2011)</p></div>
+<div class="cd"><img src="cd_thumbnails/Systematic Chaos.jpg" alt="Systematic Chaos cover" width="200" height="200">
+<p>Dream Theater - Systematic Chaos (2007)</p></div>
+<div class="cd"><img src="cd_thumbnails/Hotel California.jpg" alt="Hotel California cover" width="200" height="200">
+<p>Eagles - Hotel California (2020)</p></div>
+<div class="cd"><img src="cd_thumbnails/Ja stawiam.jpg" alt="Ja stawiam cover" width="200" height="200">
+<p>EKT Gdynia - Ja stawiam (1990)</p></div>
+<div class="cd"><img src="cd_thumbnails/Wreszcie płynę.jpg" alt="Wreszcie płynę cover" width="200" height="200">
+<p>EKT Gdynia - Wreszcie płynę ()</p></div>
+<div class="cd"><img src="cd_thumbnails/Good Technology.jpg" alt="Good Technology cover" width="200" height="200">
+<p>Electro Group - Good Technology (2007)</p></div>
+<div class="cd"><img src="cd_thumbnails/Chałutry [Live].jpg" alt="Chałutry [Live] cover" width="200" height="200">
+<p>Elektryczne Gitary - Chałutry [Live] (2003)</p></div>
+<div class="cd"><img src="cd_thumbnails/Curtain Call- The Hits.jpg" alt="Curtain Call- The Hits cover" width="200" height="200">
+<p>Eminem - Curtain Call- The Hits (2005)</p></div>
+<div class="cd"><img src="cd_thumbnails/The Best Of Ennio Morricone & Hugo Montenegro.jpg" alt="The Best Of Ennio Morricone & Hugo Montenegro cover" width="200" height="200">
+<p>Ennio Morricone - Hugo Montenegro - The Best Of Ennio Morricone & Hugo Montenegro (1996)</p></div>
+<div class="cd"><img src="cd_thumbnails/Ultimate Collection.jpg" alt="Ultimate Collection cover" width="200" height="200">
+<p>Eurythmics - Ultimate Collection (2005)</p></div>
+<div class="cd"><img src="cd_thumbnails/PRAWDZIWE POLSKIE TECHNO.jpg" alt="PRAWDZIWE POLSKIE TECHNO cover" width="200" height="200">
+<p>FANFARA AWANTURA - PRAWDZIWE POLSKIE TECHNO ()</p></div>
+<div class="cd"><img src="cd_thumbnails/Halfway Between The Gutter And The Stars.jpg" alt="Halfway Between The Gutter And The Stars cover" width="200" height="200">
+<p>Fatboy Slim - Halfway Between The Gutter And The Stars (2000)</p></div>
+<div class="cd"><img src="cd_thumbnails/Concrete.jpg" alt="Concrete cover" width="200" height="200">
+<p>Fear Factory - Concrete (2002)</p></div>
+<div class="cd"><img src="cd_thumbnails/Demanufacture.jpg" alt="Demanufacture cover" width="200" height="200">
+<p>Fear Factory - Demanufacture (1995)</p></div>
+<div class="cd"><img src="cd_thumbnails/Digimortal.jpg" alt="Digimortal cover" width="200" height="200">
+<p>Fear Factory - Digimortal (2001)</p></div>
+<div class="cd"><img src="cd_thumbnails/Obsolete [Bonus Track].jpg" alt="Obsolete [Bonus Track] cover" width="200" height="200">
+<p>Fear Factory - Obsolete [Bonus Track] (2006)</p></div>
+<div class="cd"><img src="cd_thumbnails/Remanufacture.jpg" alt="Remanufacture cover" width="200" height="200">
+<p>Fear Factory - Remanufacture (1997)</p></div>
+<div class="cd"><img src="cd_thumbnails/Soul Of A New Machine.jpg" alt="Soul Of A New Machine cover" width="200" height="200">
+<p>Fear Factory - Soul Of A New Machine (1992)</p></div>
+<div class="cd"><img src="cd_thumbnails/Rumours.jpg" alt="Rumours cover" width="200" height="200">
+<p>Fleetwood Mac - Rumours (1977)</p></div>
+<div class="cd"><img src="cd_thumbnails/Fight With Tools.jpg" alt="Fight With Tools cover" width="200" height="200">
+<p>Flobots - Fight With Tools (2007)</p></div>
+<div class="cd"><img src="cd_thumbnails/My Way.jpg" alt="My Way cover" width="200" height="200">
+<p>Frank Sinatra - My Way (1969)</p></div>
+<div class="cd"><img src="cd_thumbnails/Barowe Opowieści.jpg" alt="Barowe Opowieści cover" width="200" height="200">
+<p>Gdańska Formacja Szantowa - Barowe Opowieści (2004)</p></div>
+<div class="cd"><img src="cd_thumbnails/Electric Forest.jpg" alt="Electric Forest cover" width="200" height="200">
+<p>Gekko Projekt - Electric Forest (2012)</p></div>
+<div class="cd"><img src="cd_thumbnails/Meliora.jpg" alt="Meliora cover" width="200" height="200">
+<p>Ghost - Meliora (2015)</p></div>
+<div class="cd"><img src="cd_thumbnails/Popestar.jpg" alt="Popestar cover" width="200" height="200">
+<p>Ghost - Popestar (2020)</p></div>
+<div class="cd"><img src="cd_thumbnails/The Real... Glenn Miller [Disc 1].jpg" alt="The Real... Glenn Miller [Disc 1] cover" width="200" height="200">
+<p>Glenn Miller - The Real... Glenn Miller [Disc 1] (2020)</p></div>
+<div class="cd"><img src="cd_thumbnails/The Real... Glenn Miller [Disc 2].jpg" alt="The Real... Glenn Miller [Disc 2] cover" width="200" height="200">
+<p>Glenn Miller - The Real... Glenn Miller [Disc 2] (2013)</p></div>
+<div class="cd"><img src="cd_thumbnails/The Real... Glenn Miller [Disc 3].jpg" alt="The Real... Glenn Miller [Disc 3] cover" width="200" height="200">
+<p>Glenn Miller - The Real... Glenn Miller [Disc 3] (2013)</p></div>
+<div class="cd"><img src="cd_thumbnails/Maya.jpg" alt="Maya cover" width="200" height="200">
+<p>Goffredo Orlandi - Maya ()</p></div>
+<div class="cd"><img src="cd_thumbnails/You.jpg" alt="You cover" width="200" height="200">
+<p>Gong - You (1997)</p></div>
+<div class="cd"><img src="cd_thumbnails/The Singles Collection 2001-2011.jpg" alt="The Singles Collection 2001-2011 cover" width="200" height="200">
+<p>Gorillaz - The Singles Collection 2001-2011 (2011)</p></div>
+<div class="cd"><img src="cd_thumbnails/My God-Given Right.jpg" alt="My God-Given Right cover" width="200" height="200">
+<p>Helloween - My God-Given Right (2015)</p></div>
+<div class="cd"><img src="cd_thumbnails/Straight Out Of Hell.jpg" alt="Straight Out Of Hell cover" width="200" height="200">
+<p>Helloween - Straight Out Of Hell (2013)</p></div>
+<div class="cd"><img src="cd_thumbnails/American Tragedy.jpg" alt="American Tragedy cover" width="200" height="200">
+<p>Hollywood Undead - American Tragedy (2011)</p></div>
+<div class="cd"><img src="cd_thumbnails/Let Them Talk.jpg" alt="Let Them Talk cover" width="200" height="200">
+<p>Hugh Laurie - Let Them Talk (2011)</p></div>
+<div class="cd"><img src="cd_thumbnails/Hellwood.jpg" alt="Hellwood cover" width="200" height="200">
+<p>Hunter - Hellwood (2009)</p></div>
+<div class="cd"><img src="cd_thumbnails/Imperium.jpg" alt="Imperium cover" width="200" height="200">
+<p>Hunter - Imperium (2013)</p></div>
+<div class="cd"><img src="cd_thumbnails/T.E.L.I.jpg" alt="T.E.L.I cover" width="200" height="200">
+<p>Hunter - T.E.L.I (2020)</p></div>
+<div class="cd"><img src="cd_thumbnails/Breslau.jpg" alt="Breslau cover" width="200" height="200">
+<p>Igor Boxx - Breslau (2010)</p></div>
+<div class="cd"><img src="cd_thumbnails/Dream Logic.jpg" alt="Dream Logic cover" width="200" height="200">
+<p>Igor Boxx - Dream Logic (2012)</p></div>
+<div class="cd"><img src="cd_thumbnails/Night Visions.jpg" alt="Night Visions cover" width="200" height="200">
+<p>Imagine Dragons - Night Visions (2012)</p></div>
+<div class="cd"><img src="cd_thumbnails/Indios Bravos.jpg" alt="Indios Bravos cover" width="200" height="200">
+<p>Indios Bravos - Indios Bravos (2009)</p></div>
+<div class="cd"><img src="cd_thumbnails/mental revolution [Disc 2].jpg" alt="mental revolution [Disc 2] cover" width="200" height="200">
+<p>Indios Bravos - mental revolution [Disc 2] (2004)</p></div>
+<div class="cd"><img src="cd_thumbnails/mental revolution [Disc1].jpg" alt="mental revolution [Disc1] cover" width="200" height="200">
+<p>Indios Bravos - mental revolution [Disc1] (2004)</p></div>
+<div class="cd"><img src="cd_thumbnails/IM The Supervisor.jpg" alt="IM The Supervisor cover" width="200" height="200">
+<p>Infected Mushroom - IM The Supervisor (2004)</p></div>
+<div class="cd"><img src="cd_thumbnails/Axolotl Eyes.jpg" alt="Axolotl Eyes cover" width="200" height="200">
+<p>Irmin Schmidt & Kumo - Axolotl Eyes (2015)</p></div>
+<div class="cd"><img src="cd_thumbnails/A Matter Of Life And Death.jpg" alt="A Matter Of Life And Death cover" width="200" height="200">
+<p>Iron Maiden - A Matter Of Life And Death (2006)</p></div>
+<div class="cd"><img src="cd_thumbnails/Dance Of Death.jpg" alt="Dance Of Death cover" width="200" height="200">
+<p>Iron Maiden - Dance Of Death (2003)</p></div>
+<div class="cd"><img src="cd_thumbnails/Fear Of The Dark.jpg" alt="Fear Of The Dark cover" width="200" height="200">
+<p>Iron Maiden - Fear Of The Dark (1992)</p></div>
+<div class="cd"><img src="cd_thumbnails/Iron Maiden.jpg" alt="Iron Maiden cover" width="200" height="200">
+<p>Iron Maiden - Iron Maiden (2004)</p></div>
+<div class="cd"><img src="cd_thumbnails/Killers.jpg" alt="Killers cover" width="200" height="200">
+<p>Iron Maiden - Killers (1981)</p></div>
+<div class="cd"><img src="cd_thumbnails/Live After Death [Disc 1].jpg" alt="Live After Death [Disc 1] cover" width="200" height="200">
+<p>Iron Maiden - Live After Death [Disc 1] (1985)</p></div>
+<div class="cd"><img src="cd_thumbnails/Live After Death [Disc 2].jpg" alt="Live After Death [Disc 2] cover" width="200" height="200">
+<p>Iron Maiden - Live After Death [Disc 2] (1985)</p></div>
+<div class="cd"><img src="cd_thumbnails/Live At Donington [Disc 1].jpg" alt="Live At Donington [Disc 1] cover" width="200" height="200">
+<p>Iron Maiden - Live At Donington [Disc 1] (1993)</p></div>
+<div class="cd"><img src="cd_thumbnails/Live At Donington [Disc 2].jpg" alt="Live At Donington [Disc 2] cover" width="200" height="200">
+<p>Iron Maiden - Live At Donington [Disc 2] (1993)</p></div>
+<div class="cd"><img src="cd_thumbnails/No Prayer For The Dying.jpg" alt="No Prayer For The Dying cover" width="200" height="200">
+<p>Iron Maiden - No Prayer For The Dying (1990)</p></div>
+<div class="cd"><img src="cd_thumbnails/Piece Of Mind.jpg" alt="Piece Of Mind cover" width="200" height="200">
+<p>Iron Maiden - Piece Of Mind (1983)</p></div>
+<div class="cd"><img src="cd_thumbnails/Somewhere Back In Time.jpg" alt="Somewhere Back In Time cover" width="200" height="200">
+<p>Iron Maiden - Somewhere Back In Time (2008)</p></div>
+<div class="cd"><img src="cd_thumbnails/Somewhere In Time.jpg" alt="Somewhere In Time cover" width="200" height="200">
+<p>Iron Maiden - Somewhere In Time (1986)</p></div>
+<div class="cd"><img src="cd_thumbnails/The Book Of Souls [Disc 1].jpg" alt="The Book Of Souls [Disc 1] cover" width="200" height="200">
+<p>Iron Maiden - The Book Of Souls [Disc 1] (2015)</p></div>
+<div class="cd"><img src="cd_thumbnails/The Book Of Souls [Disc 2].jpg" alt="The Book Of Souls [Disc 2] cover" width="200" height="200">
+<p>Iron Maiden - The Book Of Souls [Disc 2] (2015)</p></div>
+<div class="cd"><img src="cd_thumbnails/The Final Frontier.jpg" alt="The Final Frontier cover" width="200" height="200">
+<p>Iron Maiden - The Final Frontier (2010)</p></div>
+<div class="cd"><img src="cd_thumbnails/The Number Of The Beast.jpg" alt="The Number Of The Beast cover" width="200" height="200">
+<p>Iron Maiden - The Number Of The Beast (2001)</p></div>
+<div class="cd"><img src="cd_thumbnails/Jamie Cullum [Disc 2].jpg" alt="Jamie Cullum [Disc 2] cover" width="200" height="200">
+<p>Jamie Cullum - Jamie Cullum [Disc 2] (2006)</p></div>
+<div class="cd"><img src="cd_thumbnails/Alone In The Universe.jpg" alt="Alone In The Universe cover" width="200" height="200">
+<p>Jeff Lynne's ELO - Alone In The Universe (2015)</p></div>
+<div class="cd"><img src="cd_thumbnails/Dziękuje Ci, Oceanie.jpg" alt="Dziękuje Ci, Oceanie cover" width="200" height="200">
+<p>Jerzy Porębski - Dziękuje Ci, Oceanie ()</p></div>
+<div class="cd"><img src="cd_thumbnails/Niech Tak Zostanie.jpg" alt="Niech Tak Zostanie cover" width="200" height="200">
+<p>Jerzy Porębski - Niech Tak Zostanie (2009)</p></div>
+<div class="cd"><img src="cd_thumbnails/Last Of Their Kind.jpg" alt="Last Of Their Kind cover" width="200" height="200">
+<p>Joe And Janette Carter - Last Of Their Kind (2004)</p></div>
+<div class="cd"><img src="cd_thumbnails/The Real Johnny Cash.jpg" alt="The Real Johnny Cash cover" width="200" height="200">
+<p>Johnny Cash - The Real Johnny Cash (2011)</p></div>
+<div class="cd"><img src="cd_thumbnails/British Steel.jpg" alt="British Steel cover" width="200" height="200">
+<p>Judas Priest - British Steel (2015)</p></div>
+<div class="cd"><img src="cd_thumbnails/Redeemer Of Souls.jpg" alt="Redeemer Of Souls cover" width="200" height="200">
+<p>Judas Priest - Redeemer Of Souls (2014)</p></div>
+<div class="cd"><img src="cd_thumbnails/Gods & Monsters.jpg" alt="Gods & Monsters cover" width="200" height="200">
+<p>Juno Reactor - Gods & Monsters (2008)</p></div>
+<div class="cd"><img src="cd_thumbnails/Labyrinth [Single].jpg" alt="Labyrinth [Single] cover" width="200" height="200">
+<p>Juno Reactor - Labyrinth [Single] (2004)</p></div>
+<div class="cd"><img src="cd_thumbnails/Kolędy polskie.jpg" alt="Kolędy polskie cover" width="200" height="200">
+<p>K. Chudzik-Bazydło, R. Kanaan - Kolędy polskie ()</p></div>
+<div class="cd"><img src="cd_thumbnails/3-44.jpg" alt="3-44 cover" width="200" height="200">
+<p>Kaliber 44 - 3-44 (2020)</p></div>
+<div class="cd"><img src="cd_thumbnails/W 63 Minuty Dookoła Świata.jpg" alt="W 63 Minuty Dookoła Świata cover" width="200" height="200">
+<p>Kaliber 44 - W 63 Minuty Dookoła Świata (1998)</p></div>
+<div class="cd"><img src="cd_thumbnails/Leftoverture.jpg" alt="Leftoverture cover" width="200" height="200">
+<p>Kansas - Leftoverture (1976)</p></div>
+<div class="cd"><img src="cd_thumbnails/Nel Nome Del Codice.jpg" alt="Nel Nome Del Codice cover" width="200" height="200">
+<p>Keygen Church - Nel Nome Del Codice (2024)</p></div>
+<div class="cd"><img src="cd_thumbnails/Rock And Roll Over.jpg" alt="Rock And Roll Over cover" width="200" height="200">
+<p>Kiss - Rock And Roll Over (1976)</p></div>
+<div class="cd"><img src="cd_thumbnails/Abandon Ship.jpg" alt="Abandon Ship cover" width="200" height="200">
+<p>Knife Party - Abandon Ship (2014)</p></div>
+<div class="cd"><img src="cd_thumbnails/Follow The Leader.jpg" alt="Follow The Leader cover" width="200" height="200">
+<p>Korn - Follow The Leader (1998)</p></div>
+<div class="cd"><img src="cd_thumbnails/Greatest Hits Vol. 1.jpg" alt="Greatest Hits Vol. 1 cover" width="200" height="200">
+<p>Korn - Greatest Hits Vol. 1 (2004)</p></div>
+<div class="cd"><img src="cd_thumbnails/Autobahn.jpg" alt="Autobahn cover" width="200" height="200">
+<p>Kraftwerk - Autobahn (1974)</p></div>
+<div class="cd"><img src="cd_thumbnails/Balkansko-cyganskie rytmy.jpg" alt="Balkansko-cyganskie rytmy cover" width="200" height="200">
+<p>Krzysztof Krawczyk - Balkansko-cyganskie rytmy (2004)</p></div>
+<div class="cd"><img src="cd_thumbnails/Morze Nasze Morze- Polish Sailor Songs, Szanty.jpg" alt="Morze Nasze Morze- Polish Sailor Songs, Szanty cover" width="200" height="200">
+<p>Krzysztof Piechota 'Kubryk' - Morze Nasze Morze- Polish Sailor Songs, Szanty (2010)</p></div>
+<div class="cd"><img src="cd_thumbnails/Ruinism.jpg" alt="Ruinism cover" width="200" height="200">
+<p>Lapalux - Ruinism ()</p></div>
+<div class="cd"><img src="cd_thumbnails/Around The Planet.jpg" alt="Around The Planet cover" width="200" height="200">
+<p>Laserdance - Around The Planet (1988)</p></div>
+<div class="cd"><img src="cd_thumbnails/Pattern of Excel.jpg" alt="Pattern of Excel cover" width="200" height="200">
+<p>Lee Bannon - Pattern of Excel (2015)</p></div>
+<div class="cd"><img src="cd_thumbnails/Lee Monca [Singiel].jpg" alt="Lee Monca [Singiel] cover" width="200" height="200">
+<p>LEE MONCA - Lee Monca [Singiel] (2019)</p></div>
+<div class="cd"><img src="cd_thumbnails/Les Misérables.jpg" alt="Les Misérables cover" width="200" height="200">
+<p>Les Misérables Motion Picture Cast - Les Misérables (2012)</p></div>
+<div class="cd"><img src="cd_thumbnails/Chocolate Starfish And The Hot Dog Flavored Water.jpg" alt="Chocolate Starfish And The Hot Dog Flavored Water cover" width="200" height="200">
+<p>Limp Bizkit - Chocolate Starfish And The Hot Dog Flavored Water (2000)</p></div>
+<div class="cd"><img src="cd_thumbnails/Chocolate Starfish And The Hot Dog Flavored Water (Bonus CD).jpg" alt="Chocolate Starfish And The Hot Dog Flavored Water (Bonus CD) cover" width="200" height="200">
+<p>Limp Bizkit - Chocolate Starfish And The Hot Dog Flavored Water (Bonus CD) (2000)</p></div>
+<div class="cd"><img src="cd_thumbnails/Lindsey Stirling.jpg" alt="Lindsey Stirling cover" width="200" height="200">
+<p>Lindsey Stirling - Lindsey Stirling (2012)</p></div>
+<div class="cd"><img src="cd_thumbnails/Meteora.jpg" alt="Meteora cover" width="200" height="200">
+<p>Linkin Park - Meteora (2003)</p></div>
+<div class="cd"><img src="cd_thumbnails/Afro Groove [Disc 1].jpg" alt="Afro Groove [Disc 1] cover" width="200" height="200">
+<p>Magda Piskorczyk (with Billy Gibson) - Afro Groove [Disc 1] (2005)</p></div>
+<div class="cd"><img src="cd_thumbnails/Afro Groove [Disc 2].jpg" alt="Afro Groove [Disc 2] cover" width="200" height="200">
+<p>Magda Piskorczyk (with Billy Gibson) - Afro Groove [Disc 2] (2005)</p></div>
+<div class="cd"><img src="cd_thumbnails/Kolędy.jpg" alt="Kolędy cover" width="200" height="200">
+<p>Marek Napiorkowski - Artur Lesicki - Kolędy (2020)</p></div>
+<div class="cd"><img src="cd_thumbnails/Lest We Forget.jpg" alt="Lest We Forget cover" width="200" height="200">
+<p>Marilyn Manson - Lest We Forget (2004)</p></div>
+<div class="cd"><img src="cd_thumbnails/Sweet Dreams (Single).jpg" alt="Sweet Dreams (Single) cover" width="200" height="200">
+<p>Marilyn Manson - Sweet Dreams (Single) (1995)</p></div>
+<div class="cd"><img src="cd_thumbnails/Privateering [Disc 1].jpg" alt="Privateering [Disc 1] cover" width="200" height="200">
+<p>Mark Knopfler - Privateering [Disc 1] (2022)</p></div>
+<div class="cd"><img src="cd_thumbnails/Privateering [Disc 2].jpg" alt="Privateering [Disc 2] cover" width="200" height="200">
+<p>Mark Knopfler - Privateering [Disc 2] (2022)</p></div>
+<div class="cd"><img src="cd_thumbnails/Mezzanine.jpg" alt="Mezzanine cover" width="200" height="200">
+<p>Massive Attack - Mezzanine (1998)</p></div>
+<div class="cd"><img src="cd_thumbnails/Crack The Skye.jpg" alt="Crack The Skye cover" width="200" height="200">
+<p>Mastodon - Crack The Skye (2009)</p></div>
+<div class="cd"><img src="cd_thumbnails/Rust In Peace.jpg" alt="Rust In Peace cover" width="200" height="200">
+<p>Megadeth - Rust In Peace (1990)</p></div>
+<div class="cd"><img src="cd_thumbnails/Melon Twister EP.jpg" alt="Melon Twister EP cover" width="200" height="200">
+<p>Melon Twister - Melon Twister EP (1993)</p></div>
+<div class="cd"><img src="cd_thumbnails/Metallica.jpg" alt="Metallica cover" width="200" height="200">
+<p>Metallica - Metallica (1996)</p></div>
+<div class="cd"><img src="cd_thumbnails/Doom (Original Game Soundtrack) [Disc 2].jpg" alt="Doom (Original Game Soundtrack) [Disc 2] cover" width="200" height="200">
+<p>Mick Gordon - Doom (Original Game Soundtrack) [Disc 2] (2020)</p></div>
+<div class="cd"><img src="cd_thumbnails/Doom [Original Game Soundtrack] [Disc 1].jpg" alt="Doom [Original Game Soundtrack] [Disc 1] cover" width="200" height="200">
+<p>Mick Gordon - Doom [Original Game Soundtrack] [Disc 1] (2020)</p></div>
+<div class="cd"><img src="cd_thumbnails/Miracle Milk.jpg" alt="Miracle Milk cover" width="200" height="200">
+<p>Mili - Miracle Milk (2016)</p></div>
+<div class="cd"><img src="cd_thumbnails/Play.jpg" alt="Play cover" width="200" height="200">
+<p>Moby - Play (1999)</p></div>
+<div class="cd"><img src="cd_thumbnails/These Systems Are Failing.jpg" alt="These Systems Are Failing cover" width="200" height="200">
+<p>Moby & The Void Pacific Choir - These Systems Are Failing (2016)</p></div>
+<div class="cd"><img src="cd_thumbnails/Irreligious.jpg" alt="Irreligious cover" width="200" height="200">
+<p>Moonspell - Irreligious (2018)</p></div>
+<div class="cd"><img src="cd_thumbnails/Ace Of Spades.jpg" alt="Ace Of Spades cover" width="200" height="200">
+<p>Motörhead - Ace Of Spades (1980)</p></div>
+<div class="cd"><img src="cd_thumbnails/All Around Surround.jpg" alt="All Around Surround cover" width="200" height="200">
+<p>Mrenc - All Around Surround (2020)</p></div>
+<div class="cd"><img src="cd_thumbnails/Black Holes And Revelations.jpg" alt="Black Holes And Revelations cover" width="200" height="200">
+<p>Muse - Black Holes And Revelations (2006)</p></div>
+<div class="cd"><img src="cd_thumbnails/The Resistance.jpg" alt="The Resistance cover" width="200" height="200">
+<p>Muse - The Resistance (2009)</p></div>
+<div class="cd"><img src="cd_thumbnails/Hand Built By Robots.jpg" alt="Hand Built By Robots cover" width="200" height="200">
+<p>Newton Faulkner - Hand Built By Robots (2007)</p></div>
+<div class="cd"><img src="cd_thumbnails/Dark Horse.jpg" alt="Dark Horse cover" width="200" height="200">
+<p>Nickelback - Dark Horse (2008)</p></div>
+<div class="cd"><img src="cd_thumbnails/Here And Now.jpg" alt="Here And Now cover" width="200" height="200">
+<p>Nickelback - Here And Now (2011)</p></div>
+<div class="cd"><img src="cd_thumbnails/Silver Side Up.jpg" alt="Silver Side Up cover" width="200" height="200">
+<p>Nickelback - Silver Side Up (2001)</p></div>
+<div class="cd"><img src="cd_thumbnails/Total Nihilism.jpg" alt="Total Nihilism cover" width="200" height="200">
+<p>Nitro-Noise - Total Nihilism (2005)</p></div>
+<div class="cd"><img src="cd_thumbnails/O Jeden Most Za Daleko.jpg" alt="O Jeden Most Za Daleko cover" width="200" height="200">
+<p>Nocny Kochanek - O Jeden Most Za Daleko (2022)</p></div>
+<div class="cd"><img src="cd_thumbnails/Randka w Ciemność.jpg" alt="Randka w Ciemność cover" width="200" height="200">
+<p>Nocny Kochanek - Randka w Ciemność (2019)</p></div>
+<div class="cd"><img src="cd_thumbnails/Stosunki Międzynarodowe.jpg" alt="Stosunki Międzynarodowe cover" width="200" height="200">
+<p>Nocny Kochanek - Stosunki Międzynarodowe (2021)</p></div>
+<div class="cd"><img src="cd_thumbnails/Urwany Film.jpg" alt="Urwany Film cover" width="200" height="200">
+<p>Nocny Kochanek - Urwany Film (2025)</p></div>
+<div class="cd"><img src="cd_thumbnails/Zdrajcy Metalu.jpg" alt="Zdrajcy Metalu cover" width="200" height="200">
+<p>Nocny Kochanek - Zdrajcy Metalu (2017)</p></div>
+<div class="cd"><img src="cd_thumbnails/Blackwater Park.jpg" alt="Blackwater Park cover" width="200" height="200">
+<p>Opeth - Blackwater Park (2001)</p></div>
+<div class="cd"><img src="cd_thumbnails/Brain Surgery Machine.jpg" alt="Brain Surgery Machine cover" width="200" height="200">
+<p>Organic Cage - Brain Surgery Machine (2011)</p></div>
+<div class="cd"><img src="cd_thumbnails/Kurs do domu.jpg" alt="Kurs do domu cover" width="200" height="200">
+<p>Orkiestra Samanta - Kurs do domu (2002)</p></div>
+<div class="cd"><img src="cd_thumbnails/Ozzmosis.jpg" alt="Ozzmosis cover" width="200" height="200">
+<p>Ozzy Osbourne - Ozzmosis (1995)</p></div>
+<div class="cd"><img src="cd_thumbnails/Scream [Disc 1].jpg" alt="Scream [Disc 1] cover" width="200" height="200">
+<p>Ozzy Osbourne - Scream [Disc 1] (2010)</p></div>
+<div class="cd"><img src="cd_thumbnails/Scream [Disc 2].jpg" alt="Scream [Disc 2] cover" width="200" height="200">
+<p>Ozzy Osbourne - Scream [Disc 2] (2010)</p></div>
+<div class="cd"><img src="cd_thumbnails/You Only Live Twice [Disc 1].jpg" alt="You Only Live Twice [Disc 1] cover" width="200" height="200">
+<p>Pain - You Only Live Twice [Disc 1] (2011)</p></div>
+<div class="cd"><img src="cd_thumbnails/You Only Live Twice [Disc 2].jpg" alt="You Only Live Twice [Disc 2] cover" width="200" height="200">
+<p>Pain - You Only Live Twice [Disc 2] (2011)</p></div>
+<div class="cd"><img src="cd_thumbnails/Cowboys From Hell.jpg" alt="Cowboys From Hell cover" width="200" height="200">
+<p>Pantera - Cowboys From Hell (1990)</p></div>
+<div class="cd"><img src="cd_thumbnails/Pentatonix [Deluxe Edition].jpg" alt="Pentatonix [Deluxe Edition] cover" width="200" height="200">
+<p>Pentatonix - Pentatonix [Deluxe Edition] (1999)</p></div>
+<div class="cd"><img src="cd_thumbnails/PTX, Vol. IV- Classics [EP].jpg" alt="PTX, Vol. IV- Classics [EP] cover" width="200" height="200">
+<p>Pentatonix - PTX, Vol. IV- Classics [EP] (2017)</p></div>
+<div class="cd"><img src="cd_thumbnails/Wild Hunt.jpg" alt="Wild Hunt cover" width="200" height="200">
+<p>Percival - Wild Hunt (2015)</p></div>
+<div class="cd"><img src="cd_thumbnails/Percival Schuttenbach - Strzyga.jpg" alt="Percival Schuttenbach - Strzyga cover" width="200" height="200">
+<p>Percival Schuttenbach - Percival Schuttenbach - Strzyga (2020)</p></div>
+<div class="cd"><img src="cd_thumbnails/Tibetan Meditation.jpg" alt="Tibetan Meditation cover" width="200" height="200">
+<p>Phil Thornton - Tibetan Meditation (2003)</p></div>
+<div class="cd"><img src="cd_thumbnails/The Dark Side Of The Moon.jpg" alt="The Dark Side Of The Moon cover" width="200" height="200">
+<p>Pink Floyd - The Dark Side Of The Moon (2003)</p></div>
+<div class="cd"><img src="cd_thumbnails/The Division Bell.jpg" alt="The Division Bell cover" width="200" height="200">
+<p>Pink Floyd - The Division Bell (1994)</p></div>
+<div class="cd"><img src="cd_thumbnails/Global Warming.jpg" alt="Global Warming cover" width="200" height="200">
+<p>Pitbull - Global Warming (2012)</p></div>
+<div class="cd"><img src="cd_thumbnails/Doolittle.jpg" alt="Doolittle cover" width="200" height="200">
+<p>Pixies - Doolittle (2017)</p></div>
+<div class="cd"><img src="cd_thumbnails/Surfer Rosa & Come On Pilgrim.jpg" alt="Surfer Rosa & Come On Pilgrim cover" width="200" height="200">
+<p>Pixies - Surfer Rosa & Come On Pilgrim (1988)</p></div>
+<div class="cd"><img src="cd_thumbnails/Dummy.jpg" alt="Dummy cover" width="200" height="200">
+<p>Portishead - Dummy (1994)</p></div>
+<div class="cd"><img src="cd_thumbnails/Third.jpg" alt="Third cover" width="200" height="200">
+<p>Portishead - Third (2008)</p></div>
+<div class="cd"><img src="cd_thumbnails/Era Vulgaris.jpg" alt="Era Vulgaris cover" width="200" height="200">
+<p>Queens Of The Stone Age - Era Vulgaris (2007)</p></div>
+<div class="cd"><img src="cd_thumbnails/Lullabies To Paralyze.jpg" alt="Lullabies To Paralyze cover" width="200" height="200">
+<p>Queens Of The Stone Age - Lullabies To Paralyze (2005)</p></div>
+<div class="cd"><img src="cd_thumbnails/Don Legend The Kamelion.jpg" alt="Don Legend The Kamelion cover" width="200" height="200">
+<p>Qusai - Don Legend The Kamelion (2020)</p></div>
+<div class="cd"><img src="cd_thumbnails/Amnesiac.jpg" alt="Amnesiac cover" width="200" height="200">
+<p>Radiohead - Amnesiac (2020)</p></div>
+<div class="cd"><img src="cd_thumbnails/1.jpg" alt="1 cover" width="200" height="200">
+<p>Rairbirds - 1 (2007)</p></div>
+<div class="cd"><img src="cd_thumbnails/Westworld- Season 2.jpg" alt="Westworld- Season 2 cover" width="200" height="200">
+<p>Ramin Djawadi - Westworld- Season 2 (2018)</p></div>
+<div class="cd"><img src="cd_thumbnails/Hey Ho, Lets Go! Greatest Hits.jpg" alt="Hey Ho, Lets Go! Greatest Hits cover" width="200" height="200">
+<p>Ramones - Hey Ho, Lets Go! Greatest Hits (1999)</p></div>
+<div class="cd"><img src="cd_thumbnails/7aflat Jeddah.jpg" alt="7aflat Jeddah cover" width="200" height="200">
+<p>Rashed Al Majed - 7aflat Jeddah (2020)</p></div>
+<div class="cd"><img src="cd_thumbnails/Hiatus on the Horizon.jpg" alt="Hiatus on the Horizon cover" width="200" height="200">
+<p>Recloose - Hiatus on the Horizon (2005)</p></div>
+<div class="cd"><img src="cd_thumbnails/Perfect Timing.jpg" alt="Perfect Timing cover" width="200" height="200">
+<p>Recloose - Perfect Timing (2008)</p></div>
+<div class="cd"><img src="cd_thumbnails/Blood Sugar Sex Magik.jpg" alt="Blood Sugar Sex Magik cover" width="200" height="200">
+<p>Red Hot Chili Peppers - Blood Sugar Sex Magik (1991)</p></div>
+<div class="cd"><img src="cd_thumbnails/War On Plastic Plants.jpg" alt="War On Plastic Plants cover" width="200" height="200">
+<p>Regular Fries - War On Plastic Plants (2000)</p></div>
+<div class="cd"><img src="cd_thumbnails/Educated Horses.jpg" alt="Educated Horses cover" width="200" height="200">
+<p>Rob Zombie - Educated Horses (2006)</p></div>
+<div class="cd"><img src="cd_thumbnails/The Sinister Urge.jpg" alt="The Sinister Urge cover" width="200" height="200">
+<p>Rob Zombie - The Sinister Urge (2001)</p></div>
+<div class="cd"><img src="cd_thumbnails/Supernatural.jpg" alt="Supernatural cover" width="200" height="200">
+<p>Santana - Supernatural (1999)</p></div>
+<div class="cd"><img src="cd_thumbnails/Gold.jpg" alt="Gold cover" width="200" height="200">
+<p>Scorpions - Gold (2006)</p></div>
+<div class="cd"><img src="cd_thumbnails/Nuit de Rêve.jpg" alt="Nuit de Rêve cover" width="200" height="200">
+<p>Scratch Massive - Nuit de Rêve (2011)</p></div>
+<div class="cd"><img src="cd_thumbnails/Time.jpg" alt="Time cover" width="200" height="200">
+<p>Scratch Massive - Time (2007)</p></div>
+<div class="cd"><img src="cd_thumbnails/Origins.jpg" alt="Origins cover" width="200" height="200">
+<p>Skalpel - Origins (2022)</p></div>
+<div class="cd"><img src="cd_thumbnails/Transit Extended.jpg" alt="Transit Extended cover" width="200" height="200">
+<p>Skalpel - Transit Extended (2020)</p></div>
+<div class="cd"><img src="cd_thumbnails/Bangarang [EP].jpg" alt="Bangarang [EP] cover" width="200" height="200">
+<p>Skrillex - Bangarang [EP] (2011)</p></div>
+<div class="cd"><img src="cd_thumbnails/Reign In Blood.jpg" alt="Reign In Blood cover" width="200" height="200">
+<p>Slayer - Reign In Blood (1986)</p></div>
+<div class="cd"><img src="cd_thumbnails/Lotus.jpg" alt="Lotus cover" width="200" height="200">
+<p>Soen - Lotus (2019)</p></div>
+<div class="cd"><img src="cd_thumbnails/Advancement.jpg" alt="Advancement cover" width="200" height="200">
+<p>Solar Bears - Advancement (2016)</p></div>
+<div class="cd"><img src="cd_thumbnails/We Are Eyes, We Are Builders.jpg" alt="We Are Eyes, We Are Builders cover" width="200" height="200">
+<p>Soviet - We Are Eyes, We Are Builders (2001)</p></div>
+<div class="cd"><img src="cd_thumbnails/2k19.jpg" alt="2k19 cover" width="200" height="200">
+<p>Stachursky - 2k19 (2019)</p></div>
+<div class="cd"><img src="cd_thumbnails/Gdzieś tam za oceanem.jpg" alt="Gdzieś tam za oceanem cover" width="200" height="200">
+<p>Stara Kuźnia - Gdzieś tam za oceanem (2023)</p></div>
+<div class="cd"><img src="cd_thumbnails/Zagubieni Zeglarze.jpg" alt="Zagubieni Zeglarze cover" width="200" height="200">
+<p>Stara Kuźnia - Zagubieni Zeglarze ()</p></div>
+<div class="cd"><img src="cd_thumbnails/Alium.jpg" alt="Alium cover" width="200" height="200">
+<p>Submotion Orchestra - Alium (2014)</p></div>
+<div class="cd"><img src="cd_thumbnails/The Blaze Game.jpg" alt="The Blaze Game cover" width="200" height="200">
+<p>Sunburned Circle - The Blaze Game (2007)</p></div>
+<div class="cd"><img src="cd_thumbnails/Hypnotize.jpg" alt="Hypnotize cover" width="200" height="200">
+<p>System Of A Down - Hypnotize (2005)</p></div>
+<div class="cd"><img src="cd_thumbnails/Toxicity.jpg" alt="Toxicity cover" width="200" height="200">
+<p>System Of A Down - Toxicity (2002)</p></div>
+<div class="cd"><img src="cd_thumbnails/El Camino.jpg" alt="El Camino cover" width="200" height="200">
+<p>The Black Keys - El Camino (2011)</p></div>
+<div class="cd"><img src="cd_thumbnails/The Blues Brothers Soundtrack.jpg" alt="The Blues Brothers Soundtrack cover" width="200" height="200">
+<p>The Blues Brothers - The Blues Brothers Soundtrack (1980)</p></div>
+<div class="cd"><img src="cd_thumbnails/Brotherhood.jpg" alt="Brotherhood cover" width="200" height="200">
+<p>The Chemical Brothers - Brotherhood (2008)</p></div>
+<div class="cd"><img src="cd_thumbnails/Surrender.jpg" alt="Surrender cover" width="200" height="200">
+<p>The Chemical Brothers - Surrender (1999)</p></div>
+<div class="cd"><img src="cd_thumbnails/London Calling.jpg" alt="London Calling cover" width="200" height="200">
+<p>The Clash - London Calling (1979)</p></div>
+<div class="cd"><img src="cd_thumbnails/Power Joy Happiness Fame!.jpg" alt="Power Joy Happiness Fame! cover" width="200" height="200">
+<p>The Complainer & The Complainers - Power Joy Happiness Fame! (2008)</p></div>
+<div class="cd"><img src="cd_thumbnails/Talking Microtonal Blues.jpg" alt="Talking Microtonal Blues cover" width="200" height="200">
+<p>The House Of Bedlam - Talking Microtonal Blues (2020)</p></div>
+<div class="cd"><img src="cd_thumbnails/Anthropomorphic.jpg" alt="Anthropomorphic cover" width="200" height="200">
+<p>The Mount Fuji Doom Jazz Corporation - Anthropomorphic (2011)</p></div>
+<div class="cd"><img src="cd_thumbnails/The Best Of The Pogues.jpg" alt="The Best Of The Pogues cover" width="200" height="200">
+<p>The Pogues - The Best Of The Pogues (1991)</p></div>
+<div class="cd"><img src="cd_thumbnails/Light Me Up.jpg" alt="Light Me Up cover" width="200" height="200">
+<p>The Pretty Reckless - Light Me Up (2010)</p></div>
+<div class="cd"><img src="cd_thumbnails/Invaders Must Die.jpg" alt="Invaders Must Die cover" width="200" height="200">
+<p>The Prodigy - Invaders Must Die (2008)</p></div>
+<div class="cd"><img src="cd_thumbnails/The Day Is My Enemy.jpg" alt="The Day Is My Enemy cover" width="200" height="200">
+<p>The Prodigy - The Day Is My Enemy (2015)</p></div>
+<div class="cd"><img src="cd_thumbnails/Their Law- The Singles 1990-2005.jpg" alt="Their Law- The Singles 1990-2005 cover" width="200" height="200">
+<p>The Prodigy - Their Law- The Singles 1990-2005 (2005)</p></div>
+<div class="cd"><img src="cd_thumbnails/Icky Thump.jpg" alt="Icky Thump cover" width="200" height="200">
+<p>The White Stripes - Icky Thump (2007)</p></div>
+<div class="cd"><img src="cd_thumbnails/Primate.jpg" alt="Primate cover" width="200" height="200">
+<p>Tommy Four Seven - Primate (2011)</p></div>
+<div class="cd"><img src="cd_thumbnails/Z Pradem- Sailors' songs from Poland, Szanty.jpg" alt="Z Pradem- Sailors' songs from Poland, Szanty cover" width="200" height="200">
+<p>Trzy Majtki - Z Pradem- Sailors' songs from Poland, Szanty (2010)</p></div>
+<div class="cd"><img src="cd_thumbnails/Blurryface.jpg" alt="Blurryface cover" width="200" height="200">
+<p>Twenty One Pilots - Blurryface (2015)</p></div>
+<div class="cd"><img src="cd_thumbnails/MOZZART CHOPIN.jpg" alt="MOZZART CHOPIN cover" width="200" height="200">
+<p>Tymoteusz Bies - MOZZART CHOPIN (1990)</p></div>
+<div class="cd"><img src="cd_thumbnails/The Best Of Both Worlds [Disc 1].jpg" alt="The Best Of Both Worlds [Disc 1] cover" width="200" height="200">
+<p>Van Halen - The Best Of Both Worlds [Disc 1] (1986)</p></div>
+<div class="cd"><img src="cd_thumbnails/The Best Of Both Worlds [Disc 2].jpg" alt="The Best Of Both Worlds [Disc 2] cover" width="200" height="200">
+<p>Van Halen - The Best Of Both Worlds [Disc 2] (1986)</p></div>
+<div class="cd"><img src="cd_thumbnails/Blade Runner.jpg" alt="Blade Runner cover" width="200" height="200">
+<p>Vangelis - Blade Runner (1993)</p></div>
+<div class="cd"><img src="cd_thumbnails/2 Fast 2 Furious.jpg" alt="2 Fast 2 Furious cover" width="200" height="200">
+<p>Various Artists - 2 Fast 2 Furious (2003)</p></div>
+<div class="cd"><img src="cd_thumbnails/Baby Driver- Music From The Motion Picture [Disc 1].jpg" alt="Baby Driver- Music From The Motion Picture [Disc 1] cover" width="200" height="200">
+<p>Various Artists - Baby Driver- Music From The Motion Picture [Disc 1] (2017)</p></div>
+<div class="cd"><img src="cd_thumbnails/Baby Driver- Music From The Motion Picture [Disc 2].jpg" alt="Baby Driver- Music From The Motion Picture [Disc 2] cover" width="200" height="200">
+<p>Various Artists - Baby Driver- Music From The Motion Picture [Disc 2] (2017)</p></div>
+<div class="cd"><img src="cd_thumbnails/Breaking Bad- Original Television Soundtrack.jpg" alt="Breaking Bad- Original Television Soundtrack cover" width="200" height="200">
+<p>Various Artists - Breaking Bad- Original Television Soundtrack (2010)</p></div>
+<div class="cd"><img src="cd_thumbnails/Capriccio Italiano [Disc 2].jpg" alt="Capriccio Italiano [Disc 2] cover" width="200" height="200">
+<p>Various Artists - Capriccio Italiano [Disc 2] (1998)</p></div>
+<div class="cd"><img src="cd_thumbnails/Classical Christmas.jpg" alt="Classical Christmas cover" width="200" height="200">
+<p>Various Artists - Classical Christmas ()</p></div>
+<div class="cd"><img src="cd_thumbnails/Evangelion Finally.jpg" alt="Evangelion Finally cover" width="200" height="200">
+<p>Various Artists - Evangelion Finally (2020)</p></div>
+<div class="cd"><img src="cd_thumbnails/Guardians Of The Galaxy, Vol.1- Original Motion Picture Soundtrack.jpg" alt="Guardians Of The Galaxy, Vol.1- Original Motion Picture Soundtrack cover" width="200" height="200">
+<p>Various Artists - Guardians Of The Galaxy, Vol.1- Original Motion Picture Soundtrack (2022)</p></div>
+<div class="cd"><img src="cd_thumbnails/Guardians Of The Galaxy, Vol.2- Original Motion Picture Soundtrack.jpg" alt="Guardians Of The Galaxy, Vol.2- Original Motion Picture Soundtrack cover" width="200" height="200">
+<p>Various Artists - Guardians Of The Galaxy, Vol.2- Original Motion Picture Soundtrack (2022)</p></div>
+<div class="cd"><img src="cd_thumbnails/IV MIĘDZYNARODOWY KONKURS PIANISTYCZNY IM. FRENCA LISZTA WE WROCŁAWIU 16 - 28 IX 2018.jpg" alt="IV MIĘDZYNARODOWY KONKURS PIANISTYCZNY IM. FRENCA LISZTA WE WROCŁAWIU 16 - 28 IX 2018 cover" width="200" height="200">
+<p>Various Artists - IV MIĘDZYNARODOWY KONKURS PIANISTYCZNY IM. FRENCA LISZTA WE WROCŁAWIU 16 - 28 IX 2018 (2008)</p></div>
+<div class="cd"><img src="cd_thumbnails/Kill Bill, Vol. 1- Original Soundtrack.jpg" alt="Kill Bill, Vol. 1- Original Soundtrack cover" width="200" height="200">
+<p>Various Artists - Kill Bill, Vol. 1- Original Soundtrack (2003)</p></div>
+<div class="cd"><img src="cd_thumbnails/O Brother, Where Art Thou-.jpg" alt="O Brother, Where Art Thou- cover" width="200" height="200">
+<p>Various Artists - O Brother, Where Art Thou- (2002)</p></div>
+<div class="cd"><img src="cd_thumbnails/Pianoffortissimo [Disc 1].jpg" alt="Pianoffortissimo [Disc 1] cover" width="200" height="200">
+<p>Various Artists - Pianoffortissimo [Disc 1] (2000)</p></div>
+<div class="cd"><img src="cd_thumbnails/pianoffortissimo [Disc 2].jpg" alt="pianoffortissimo [Disc 2] cover" width="200" height="200">
+<p>Various Artists - pianoffortissimo [Disc 2] (2000)</p></div>
+<div class="cd"><img src="cd_thumbnails/Quentin Tarantino's Django Unchained Original Motion Picture Soundtrack [Explicit Version].jpg" alt="Quentin Tarantino's Django Unchained Original Motion Picture Soundtrack [Explicit Version] cover" width="200" height="200">
+<p>Various Artists - Quentin Tarantino's Django Unchained Original Motion Picture Soundtrack [Explicit Version] (2012)</p></div>
+<div class="cd"><img src="cd_thumbnails/Shanties & Seasongs.jpg" alt="Shanties & Seasongs cover" width="200" height="200">
+<p>Various Artists - Shanties & Seasongs (2010)</p></div>
+<div class="cd"><img src="cd_thumbnails/Suicide Squad- The Album.jpg" alt="Suicide Squad- The Album cover" width="200" height="200">
+<p>Various Artists - Suicide Squad- The Album (2016)</p></div>
+<div class="cd"><img src="cd_thumbnails/The Fast And The Furious- Tokyo Drift.jpg" alt="The Fast And The Furious- Tokyo Drift cover" width="200" height="200">
+<p>Various Artists - The Fast And The Furious- Tokyo Drift (2006)</p></div>
+<div class="cd"><img src="cd_thumbnails/The Matrix- Music From The Motion Picture.jpg" alt="The Matrix- Music From The Motion Picture cover" width="200" height="200">
+<p>Various Artists - The Matrix- Music From The Motion Picture (1999)</p></div>
+<div class="cd"><img src="cd_thumbnails/The Witcher.jpg" alt="The Witcher cover" width="200" height="200">
+<p>Various Artists - The Witcher (1989)</p></div>
+<div class="cd"><img src="cd_thumbnails/Capriccio Italiano [Disc 1].jpg" alt="Capriccio Italiano [Disc 1] cover" width="200" height="200">
+<p>Various Classical Artists - Capriccio Italiano [Disc 1] (1998)</p></div>
+<div class="cd"><img src="cd_thumbnails/The Classical Collection 3 - Chopin- Piano Classics.jpg" alt="The Classical Collection 3 - Chopin- Piano Classics cover" width="200" height="200">
+<p>Various Classical Artists - The Classical Collection 3 - Chopin- Piano Classics (2000)</p></div>
+<div class="cd"><img src="cd_thumbnails/The Phantom of the Opera (Highlights).jpg" alt="The Phantom of the Opera (Highlights) cover" width="200" height="200">
+<p>Various Classical Artists - The Phantom of the Opera (Highlights) (1999)</p></div>
+<div class="cd"><img src="cd_thumbnails/Vivaldi- The Four Seasons.jpg" alt="Vivaldi- The Four Seasons cover" width="200" height="200">
+<p>Various Classical Artists - Vivaldi- The Four Seasons (1995)</p></div>
+<div class="cd"><img src="cd_thumbnails/Black Metal.jpg" alt="Black Metal cover" width="200" height="200">
+<p>Venom - Black Metal (1982)</p></div>
+<div class="cd"><img src="cd_thumbnails/Trouble.jpg" alt="Trouble cover" width="200" height="200">
+<p>Whitesnake - Trouble (1978)</p></div>
+<div class="cd"><img src="cd_thumbnails/Hydra.jpg" alt="Hydra cover" width="200" height="200">
+<p>Within Temptation - Hydra (2014)</p></div>
+<div class="cd"><img src="cd_thumbnails/Listen.jpg" alt="Listen cover" width="200" height="200">
+<p>WLF - Listen (2002)</p></div>
+<div class="cd"><img src="cd_thumbnails/Cosmic Egg.jpg" alt="Cosmic Egg cover" width="200" height="200">
+<p>Wolfmother - Cosmic Egg (2009)</p></div>
+<div class="cd"><img src="cd_thumbnails/Wolfmother.jpg" alt="Wolfmother cover" width="200" height="200">
+<p>Wolfmother - Wolfmother (2004)</p></div>
+<div class="cd"><img src="cd_thumbnails/The Golden Age.jpg" alt="The Golden Age cover" width="200" height="200">
+<p>Woodkid - The Golden Age (2013)</p></div>
+<div class="cd"><img src="cd_thumbnails/Dzięki Wam.jpg" alt="Dzięki Wam cover" width="200" height="200">
+<p>Własny Port - Dzięki Wam (2013)</p></div>
+<div class="cd"><img src="cd_thumbnails/A Warrior's Cry.jpg" alt="A Warrior's Cry cover" width="200" height="200">
+<p>Young Kingbird - A Warrior's Cry (2007)</p></div>
+<div class="cd"><img src="cd_thumbnails/Greatest Hits.jpg" alt="Greatest Hits cover" width="200" height="200">
+<p>ZZ Top - Greatest Hits (2017)</p></div>
+<div class="cd"><img src="cd_thumbnails/Nawiasem Mówiąc.jpg" alt="Nawiasem Mówiąc cover" width="200" height="200">
+<p>Łona I Webber - Nawiasem Mówiąc (2016)</p></div>
+<div class="cd"><img src="cd_thumbnails/剣風伝奇ベルセルク オリジナル・サウンドトラック.jpg" alt="剣風伝奇ベルセルク オリジナル・サウンドトラック cover" width="200" height="200">
+<p>平沢進 - 剣風伝奇ベルセルク オリジナル・サウンドトラック (1993)</p></div>
+</div>
+    <p>317 CDs with total length of 998455 seconds</p>
+    <p>This would total to 12.16 years of new album every two weeks</p>
+    <p>Assuming about 15PLN per CD it's 32.14 PLN/month</p>
+    <p></p>
+    <p>Unlike with streaming services...</p>
+    <p></p>
+    <p>...You get a hard coppy of loslees FLAC record</p>
+    <p>...Music is yours to keep forever and can be even passed on as inheritance</p>
+    <p>...They keep their value (4438 PLN you won't get back form streaming)</p>
+    
+      <p></p><p></p><p></p><p></p><p></p><p></p>
+      <img src="redpill.png" alt="meme" width="360" height="400">
+      <p>credit: stolen</p>
+      <p></p><p></p><p>
+
+    </div>
+
+    
+  <script type="text/javascript" src="../scripts/transition.js"></script>
+  </body>
+
+</html>
+    

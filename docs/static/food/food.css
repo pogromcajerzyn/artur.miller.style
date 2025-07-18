@@ -1,0 +1,56 @@
+#food_body {
+    background-color: black;
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    margin-bottom: 0;
+    padding: 40px;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+#food_content {
+
+    margin-top: 8vh;
+    margin-left: var(--main-borders);
+    margin-right: var(--main-borders);
+    margin-bottom: auto;
+    width: 100%;
+    max-width: 1240px;
+    min-width: 460px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+}
+
+#food_content p {
+    margin: 0 auto;
+    font-family: BrutaluDesu;
+    color: var(--egg-white);
+    font-size: calc(3px * var(--font-scaler));
+    line-height: calc(6px * var(--font-scaler));
+    text-align: justify;
+    text-justify: inter-word;
+    margin-top: var(--main-borders); /* Adjust as needed */
+}
+
+#food_content p.big-font {
+    font-size: calc(6px * var(--font-scaler));
+
+}
+
+
+#food_content pre {
+    margin: 0 auto;
+    font-family: BrutaluDesu;
+    color: var(--egg-white);
+    font-size: calc(3px * var(--font-scaler));
+    white-space: pre;
+    /*line-height: 0;!*calc(6px * var(--font-scaler));*!*/
+    /*text-align: justify;*/
+    /*text-justify: inter-word;*/
+    /*margin-top: var(--main-borders); !* Adjust as needed *!*/
+}

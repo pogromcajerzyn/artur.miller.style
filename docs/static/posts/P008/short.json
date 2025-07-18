@@ -1,0 +1,7 @@
+{
+  "title1": "DIFFRACTION",
+  "title2": "SIMULATOR",
+  "id": "P008",
+  "date": "07.11.2019",
+  "description": "In various systems in witch main role is played by waves such as optics or acoustics the main source of trouble can be diffraction. A simple equation is able to predict diffraction pattern but it gets more complicated with ungeometrical shapes. Computer algorithm that I wrote is definitely not the fastest but still accurate enough to show a wave propagation in form of intensity map. The script inputs a boolean transparency mask and calculates a produced image for 2D and 3D case. In case of 3D calculation it is necessary to provide distance from the screen. "
+}

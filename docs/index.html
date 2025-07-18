@@ -1,0 +1,85 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Artur Miller</title>
+    <link rel="icon" href="static/graphics/icon.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="static/styles/transitions.css">
+    <link rel="stylesheet" href="static/styles/fonts.css">
+    <link rel="stylesheet" href="static/styles/global.css">
+    <link rel="stylesheet" href="static/styles/main.css">
+
+
+    <link rel="stylesheet" href="static/styles/post.css">
+    <link rel="stylesheet" href="static/styles/blog.css">
+
+
+    <audio id="hover" src="static/sounds/hover.wav"></audio>
+    <audio id="click" src="static/sounds/click.wav"></audio>
+    <audio id="key" src="static/sounds/key.wav"></audio>
+
+
+
+</head>
+
+<body>
+
+    <div class="transition transition-1 is-active"></div>
+
+    <script type="text/javascript" src="static/scripts/global.js"></script>
+    <script type="text/javascript" src="static/scripts/main_page.js"></script>
+
+    <div id="middle_column">
+        <div id="me_container">
+            <img id="me" src="static/graphics/me_light.png" width="100%" height="100%">
+            <div id="me_overlay">
+                <svg width="100%" height="100%">
+                    <text id="me_hello" class="main_text" x="12%" y="10%" >Hello I'm</text>
+                    <text id="me_name" class="main_text" x="4%" y="22%" >Artur Miller</text>
+                    <text id="me_title" class="main_text" x="4%" y="33%" >Engineering Physicist and Inventor</text>
+                    <text id="me_invite" class="main_text" x="4%" y="85%" >BUT YOU CAN CALL ME ANYTIME</text>
+                    <text id="me_directional" class="main_text" x="4%" y="91%" style="user-select: text;">(48)500113874</text>
+                    <a href="mailto:artur@miller.style"><text id="me_contact" class="main_text" x="29%" y="91%" >ARTUR@MILLER.STYLE</text></a>
+                </svg>
+            </div>
+        </div>
+
+        <div id="about_me">
+            <span  id="my_text">Welcome to my creative hub!
+
+From a young age, my aspiration has consistently revolved around the pursuit of becoming a deviser. Despite evolving interests in collateral fields over the years, the core motivation has always remained constant: the innate desire to create.
+
+I'm passionate about sailing, engaging in DIY projects (in physics, electronics, and mechanics), exploring the art of cooking, practicing photography, teaming up with friends in video games like Destiny 2 and CS: GO, and weightlifting.
+
+Driven by curiosity, my background in physics and mechatronics is consistently guided by a dedicated commitment to the art of creation.</span >
+        </div>
+
+        <div class="me_option" onmouseenter="handleHover()" onmousedown="clickWaitGo(event, 'static/chomik/chomik.html')">
+            <img class="more_icon" src="static/graphics/chomik.svg">
+            <p class="butt_on">Przygody Chomiczka (PL)</p>
+        </div>
+        <div class="me_option" onmouseenter="handleHover()" onmousedown="clickWaitGo(event, 'static/strength/strength.html')">
+            <img class="more_icon" src="static/graphics/strength.svg">
+            <p class="butt_on">My weightlifting adventure (ENG)</p>
+        </div>
+        <div class="me_option" onmouseenter="handleHover()" onmousedown="clickWaitGo(event, 'static/cds/cds.html')">
+            <img class="more_icon" src="static/graphics/cds.svg">
+            <p class="butt_on">CD albums (wishlist) (ENG)</p>
+        </div>
+        <div class="me_option me_option_last" onmouseenter="handleHover()" onmousedown="clickWaitGo(event, 'static/food/food.html')">
+            <img class="more_icon" src="static/graphics/ham.svg">
+            <p class="butt_on">Kulinaria (PL)</p>
+        </div>
+        <div  id="post_space_background">
+            <div  id="post_space"> </div>
+        </div>
+        <div id="foot">v3</div>
+
+    </div>
+
+    <script type="text/javascript" src="static/scripts/transition.js"></script>
+    <script type="text/javascript" src="static/scripts/main_page_after.js"></script>
+
+</body>
+</html>

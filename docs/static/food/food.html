@@ -1,0 +1,110 @@
+
+    <!DOCTYPE html>
+    <html>
+      <head>
+        <title>Strength stats</title>
+        <link rel="icon" href="../graphics/icon.png" type="image/x-icon">
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="../styles/fonts.css">
+        <link rel="stylesheet" href="../styles/transitions.css">
+        <link rel="stylesheet" href="../styles/global.css">
+        <link rel="stylesheet" href="food.css">
+        <script type="text/javascript" src="../scripts/global.js"></script>
+      </head>
+      <body id="food_body">
+        <audio id="hover" src="../sounds/hover.wav"></audio>
+        <audio id="click" src="../sounds/click.wav"></audio>
+
+        <div class="transition transition-1 is-active"></div>
+        <div id="home"><img src="../graphics/home.svg" 
+        onmouseenter="handleHover()" onmousedown='clickWaitGo(event, "/")'></div>
+
+        <div id="food_content">
+
+            <p class="big-font">🐟 Śledź pod pierzynką 🐟</p><br><pre>
+
+
+|‾|^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^|‾|
+| |                               SER GOUDA GRUBO TARTY                                                              | |
+| |~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~| |
+| |                                                                          MAJONEZ 4/4                             | |
+| |------------------------------------------------------------------------------------------------------------------| |
+| |                   JAJKA UGNIECIONE WIDELCEM                                                                      | |
+| |~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~| |
+| |                                                                                    MAJONEZ 3/4                   | |
+\ \------------------------------------------------------------------------------------------------------------------/ /
+ \ \          MARCHEWKA GRUBO TARTA                                                                                 / /
+  \ \~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~/ /
+   \ \                                                                              MAJONEZ 2/4                   / /
+    \ \++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++/ /
+     \ \                 ŚLEDŹ W KOSTKĘ 1cm                                                                     / /
+      \ \++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++/ /
+       \ \   CEBULKA POKROJONA W DROBNĄ KOSTKĘ POSYPANA PIEPERZEM                                             / /
+        \ \~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~/ /
+         \ \                                                                    MAJONEZ 1/4                 / /
+          | |‾‾‾‾‾‾T‾‾‾‾T‾‾‾‾‾T‾‾‾‾‾‾‾T‾‾‾‾‾T‾‾‾‾‾‾‾T‾‾‾‾‾T‾‾‾‾‾‾‾T‾‾‾‾‾T‾‾‾‾‾‾‾T‾‾‾‾‾T‾‾‾‾‾‾‾T‾‾‾‾‾T‾‾‾‾‾‾| |
+          | \               ZIEMNAIKI h=2CM - POKROJONE W PLASTRY, UŁOŻEONE W MOZAIKĘ                      / |
+          \  \_____|____|_____|_______|_____|_______|_____|_______|_____|_______|_____|_______|_____|_____/  /
+           ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾
+
+________________________________________________________________________________________________________________________
+KUCHNIA ROSYJSKA                     DUŻA MISKA SAŁATKI (OKOŁO 40X20X10cm)                                   GOTOWE W 1H
+‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾T‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾T‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾
+        ** SKŁADNIKI **         |  per 100g -> total (E,B,T,W [kcal,g,g,g])        |     MAKRA total -> per 100g
+________________________________Ʇ__________________________________________________Ʇ____________________________________
+ZIEMNIAKI                  1.1kg| 77, 2, 0.09, 17.74  -> 847, 22, 0.99, 195.14     |  kcal    8876 (33,47 MJ) ->  253.6
+CEBULA                      150g| 50, 1.1, 0.1, 7.64  -> 75, 1.65, 0.15, 11.46     |  białko  206.9           ->  <span style="color: var(--dark-scarlet);">5.91</span>
+ŚLEDŹ (A'LA MATIAS w oleju).75kg| 182, 11, 14, 3.1    -> 1365, 82.5, 105, 23.25    |  tłuszcz 680.74          ->  <span style="color: var(--dark-scarlet);">19.45</span>
+MARCHEWKA                   400g| 35, 0.5, 0.5, 6     -> 140, 2, 2, 24             |  węgle   366.6           ->  <span style="color: var(--dark-scarlet);">10.47</span>
+SER GOUDA TARTY             350g| 334, 25, 0.1, 26    -> 1169, 87.5, 0.35, 91      |  masa    3.5kg
+MAJONEZ                    .75kg| 704, 1.5, 76.3, 2.9 -> 5280, 11.25, 572.25, 21.75|
+‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾
+
+            </pre><p class="big-font">🌶 Chili con carne 🌶</p><br><pre>
+________________________________________________________________________________________________________________________
+KUCHNIA MEKSYKAŃSKA                               3.14*3==> 4-6 porcji                                       GOTOWE W 1H
+‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾T‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾
+________________________________|
+        ** SKŁADNIKI **         |  Wstawić garnek na mały ogień
+________________________________|  Pokroić cebulę (4x30mm) i czosnek (1mm)
+CEBULA ŻÓŁTA + CZERWONA     3szt|  Jak już garnek gorący (ʇsoɹɟuǝpᴉǝ˥) wlawamy olej i czekamy 5s
+CZOSNEK                 1 główka|  wrzucamy i smażymy mięsko aż przestanie puszczać wodę...
+PAPRYKA ZIELONA + CZERWONA  3szt|                            ...w ten czas kroimy paprykę (6x30mm) i papryczki (3mm)
+MIĘSO MIELONE WOŁOWE        800g|  Dorzucić cebulę, czosnek, dodać sól, smażyć dalej
+PAPRYCZKA CHILLI          4-8szt|
+FASOLA CZERWONA         2 PUSZKI|                                        ...
+GROSZEK                 1 PUSZKA|
+KUKURYDZA               1 PUSZKA|   Jak mięsko jest na złoto (brązowo 50%) to zalewamy czerwonym winem ( >> 𝘥𝘦𝘨𝘭𝘢𝘻𝘦 << )
+DROBNO KROJONE POMIDORY 1 PUSZKA|       Dodajemy resztę warzyw
+SER ŻÓŁTY                   100g|           Dodajemy przyprawy
+OLEJ                       ~50ml|               Dodajemy pomidory
+WINO CZERWONE WYTRAWNE      50ml|                   Mieszamy, doprowadzamy do wrzenia
+________________________________|                       Przykrywamy i czekamy 30 min
+         ** PRZYPRAWY **        |                           Aż się ładnie ugotuje...
+________________________________|
+KMIN RZYMSKI                DUŻO|   Dodajemy ser pocięty w drobną kostkę (5mm) i czekamy aż pod przykryciem ładnie się
+KOLENDRA ŚWIEŻA            SPORO|
+SÓL                    ILE ŁASKA|                            _    _   r   o   z   p   u   ś   c   i   _    _
+KURKUMA            TYLKO TROSZKĘ|
+________________________________|   Mieszamy i gotowe
+         ** DODATKOWO **        |             Do podania na tortilkę lub z ryżem, moża dodać więcej sera na tym etapie
+________________________________|                                           (nie ma czegoś takiego jak zbyt dużo sera)
+RYŻ          LUB        60g / os|
+TORTILLA               2szt / os|
+SER DO POSYPANIA       ILE ŁASKA|_______________________________________________________________________________________
+
+            </pre>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+
+            <div style="height: 30vh;"></div>
+
+        </div>
+
+      <script type="text/javascript" src="food.js"></script>
+      <script type="text/javascript" src="../scripts/transition.js"></script>
+      </body>
+
+    </html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>POST</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../../styles/fonts.css">
+    <link rel="stylesheet" href="../../styles/transitions.css">
+    <link rel="stylesheet" href="../../styles/global.css">
+    <link rel="stylesheet" href="../../styles/post.css">
+    <script type="text/javascript" src="../../scripts/global.js"></script>
+
+
+  </head>
+  <body id="post_body">
+    <audio id="hover" src="../../sounds/hover.wav"></audio>
+    <audio id="click" src="../../sounds/click.wav"></audio>
+
+    <div class="transition transition-1 is-active"></div>
+    <div id="home"><img src="../../graphics/home.svg" onmouseenter="handleHover()" onmousedown='clickWaitGo(event, "/")'></div>
+
+    <div id="post_content">
+
+      <p>Each LED is simply a p-n junction that emits a photon when an electron falls to lower band state. Photovoltaic works on the same principal but the energy gap is much smaller which allows for longer wavelengths to be absorbed. Simply put a solar panel is a LED that is not very efficient in emitting light and LED is a solar panel not efficient at absorbing light. We can calculate the energy gap of p-n junction by making current-voltage characteristic. The band gap [eV] is equivalent of peak wavelength [nm] of a diode. Slope of the curve also shows the monochromaticity of diode if p-n junction is not covered by luminofore. I have measured band gap of a solar panel however it was made out of several smaller cells so the energy gap is unclear. I couldn’t get it to glow visibly in camera but the peak wavelength should be around 880nm.</p>
+      <img src="ledd.png">
+      <p>With the right type of diode a reflectance sensor can be made. The current produced by illuminated diode is very small, so it can only be used as a measurement device. It can be observed that LED that emits lower wavelength produces much higher voltages when illuminated by the other. In theory it shouldn’t produce any voltage as the electron energy threshold is not met but emission peak is wide enough to produce light that is of higher energy.</p>
+
+
+      <div style="min-height: 10vh;"></div>
+    </div>
+
+
+  <script type="text/javascript" src="../../scripts/transition.js"></script>
+  </body>
+
+</html>
