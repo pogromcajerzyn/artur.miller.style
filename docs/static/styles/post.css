@@ -7,14 +7,14 @@
 }
 
 #post_content {
-
     margin-left: var(--main-borders);
     margin-right: var(--main-borders);
     margin-bottom: auto;
     margin-top: 0;
     max-width: 1000px;
-    min-width: 500px;
+    width: 100%;
     padding-top: 16vh;
+    box-sizing: border-box;
 }
 
 #post_content p {
