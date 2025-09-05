@@ -43,7 +43,7 @@ def get_album_info(base_dir, script_dir):
                     album_cover_path = save_image(audio.pictures[-1].data, album_name, script_dir)
 
         if album_length > 0:
-            album_info_list.append((artist_name, album_name, album_year, album_length, album_cover_path))
+            album_info_list.append((artist_name, album_name, album_year, album_length, f"cd_thumbnails/{album_name}.jpg"))
             total_length += album_length
 
     return album_info_list, total_length
