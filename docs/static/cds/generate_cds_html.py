@@ -7,7 +7,7 @@ def save_image(data, album_name, script_dir):
     thumbnail_dir = os.path.join(script_dir, 'cd_thumbnails')
     os.makedirs(thumbnail_dir, exist_ok=True)
 
-    file_path = f"cd_thumbnails/{album_name}.jpg"
+    file_path = f"docs/static/cds/cd_thumbnails/{album_name}.jpg"
     with open(file_path, 'wb') as img_file:
         img_file.write(data)
 
