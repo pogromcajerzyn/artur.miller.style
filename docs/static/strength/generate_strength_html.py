@@ -1,9 +1,10 @@
 import sys
 import traceback
 from datetime import date
+from typing import Tuple
 from warnings import warn
 
-import pyexcel as pe
+import pandas as pd
 import numpy as np
 import requests
 from scipy.optimize import curve_fit
@@ -21,16 +22,23 @@ def process_data_file(filename,
 
     print("Reading ods file")
 
-    def read_ods_file():
-        book = pe.get_book(file_name=filename)
-        sheet = book[sheet_name_data]
-        data = sheet.to_array()
-        numpy_array = np.array(data)
-        return numpy_array
+    def read_ods_sheets(filename: str,
+                        sheet_name_data: str = "data_desu",
+                        sheet_name_stats: str = "stats") -> Tuple[np.ndarray, np.ndarray]:
+        dfs = pd.read_excel(
+            filename,
+            sheet_name=[sheet_name_data, sheet_name_stats],
+            engine="odf",
+            header=None,
+            dtype=object
+        )
+        data_arr = dfs[sheet_name_data].to_numpy()
+        stats_arr = dfs[sheet_name_stats].to_numpy()
+        return data_arr, stats_arr
 
     sheet_name_data = "data_desu"
     sheet_name_stats = "stats"
-    table_data = read_ods_file()
+    table_data = read_ods_sheets(filename)
 
     stats_book = pe.get_book(file_name=filename)
     stats_sheet = stats_book[sheet_name_stats]
@@ -433,7 +441,7 @@ def download_file(url, local_filename):
 
 if __name__ == "__main__":
     # get my data
-    my_data = process_data_file("data.ods",
+    my_data = process_data_file("docs/static/strength/data.ods",
                                 "dot",
                                 "dot_ignore",
                                 excluded_indices_total={14, 15, 29, 69, 73, 74, 75},
@@ -445,34 +453,6 @@ if __name__ == "__main__":
     dieta_line = svg_event_line(66, my_data["current_week"], "CUTTING")
     suplements = svg_event_line(74, my_data["current_week"], "SUPPLEMENTS")
     milestones = dieta_line + suplements
-
-    # # get baczek data
-    # baczek_site = "https://baczek.me/fit.ods"
-    # local_file_name = "fit.ods"
-    # try:
-    #     pass # download_file(baczek_site, local_file_name)
-    # except requests.exceptions.RequestException as e:
-    #     print(f"Failed to download the file: {e}")
-    # except Exception as e:
-    #     print(f"An unexpected error occurred during the download: {e}")
-    # else:
-    #     try:
-    #         baczek_data = process_data_file(local_file_name,
-    #                                         "dot_baczek",
-    #                                         "dot_ignore_baczek",
-    #                                         {0},
-    #                                         {0},
-    #                                         {0},
-    #                                         {0})
-    #     except FileNotFoundError as e:
-    #         print(f"Bączek się opierdala: File not found: {e}\nTraceback: {traceback.format_exc()}")
-    #     except ValueError as e:
-    #         print(f"Bączek się opierdala: Value error during processing: {e}\nTraceback: {traceback.format_exc()}")
-    #     except Exception as e:
-    #         print(
-    #             f"Bączek się opierdala: An unexpected error occurred during processing: {e}\nTraceback: {traceback.format_exc()}")
-    #
-    # # TODO: add Baczek failsafe to include the dots
 
     html_content = (f"""
     <!DOCTYPE html>
