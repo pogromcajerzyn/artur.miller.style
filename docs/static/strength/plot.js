@@ -9,8 +9,9 @@ function daysSinceDate(targetDate) {
 
 const targetDate = new Date('2022-10-24'); // I started lifting that day
 const daysSince = daysSinceDate(targetDate);
+const yearsSince = (daysSince / 365.25).toFixed(1);
 const daysCounterElement = document.getElementById('daysCounter');
-daysCounterElement.textContent = `${daysSince} days`;
+daysCounterElement.textContent = `${yearsSince} years`;
 
 
 function updateFontScaler() {

@@ -1,11 +1,8 @@
-
-
 if __name__ == "__main__":
-
     # TODO I can create expandable content here by usu=ing <pre id="empty_pre1"></pre> empty divs
     # TODO above 3 "switches" for the whole div categories <SKILLS AND TRAINING> <WORK HISTORY> <WORK HISTORY>
 
-    html_content = (f"""
+    html_content = """
     <!DOCTYPE html>
     <html>
       <head>
@@ -19,18 +16,18 @@ if __name__ == "__main__":
         <script type="text/javascript" src="../scripts/global.js"></script>
       </head>
       <body id="cv_body">
-      
+
         <audio id="hover" src="../sounds/hover.wav"></audio>
         <audio id="click" src="../sounds/click.wav"></audio>
-        
+
         <div class="transition transition-1 is-active">
         </div>
-        
-        <div id="home"><img src="../graphics/home.svg" 
+
+        <div id="home"><img src="../graphics/home.svg"
         onmouseenter="handleHover()" onmousedown='clickWaitGo(event, "/")'>
         </div>
 
-        
+
         <div id="cv_content">
 
     <pre>
@@ -89,8 +86,8 @@ if __name__ == "__main__":
       </body>
 
     </html>
-    
-    """)
+
+    """
 
     with open("cv.html", "w") as file:
         file.write(html_content)
