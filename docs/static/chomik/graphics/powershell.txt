@@ -1,0 +1,9 @@
+Get-ChildItem -File | Where-Object {
+  $_.Extension -in ".jpg", ".jpeg", ".png", ".webp" -and $_.BaseName -notlike "*_light"
+} | ForEach-Object {
+  magick $_.FullName `
+    -auto-orient `
+    -resize "600x" `
+    -define png:compression-level=9 `
+    "$($_.DirectoryName)\$($_.BaseName)_light.png"
+}
